@@ -1,48 +1,13 @@
 {
   "type": "better_tools:ruby_ore_feature",
   "config": {
-    "size": 5,
+    "size": 6,
     "discard_chance_on_air_exposure": 0,
     "targets": [
       {
         "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:granite"
-          }
-        },
-        "state": {
-          "Name": "better_tools:ruby_ore"
-        }
-      },
-      {
-        "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:diorite"
-          }
-        },
-        "state": {
-          "Name": "better_tools:ruby_ore"
-        }
-      },
-      {
-        "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:andesite"
-          }
-        },
-        "state": {
-          "Name": "better_tools:ruby_ore"
-        }
-      },
-      {
-        "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:stone"
-          }
+          "predicate_type": "tag_match",
+          "tag": "stone_ore_replaceables"
         },
         "state": {
           "Name": "better_tools:ruby_ore"

@@ -6,43 +6,8 @@
     "targets": [
       {
         "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:granite"
-          }
-        },
-        "state": {
-          "Name": "better_tools:topaz_ore"
-        }
-      },
-      {
-        "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:diorite"
-          }
-        },
-        "state": {
-          "Name": "better_tools:topaz_ore"
-        }
-      },
-      {
-        "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:andesite"
-          }
-        },
-        "state": {
-          "Name": "better_tools:topaz_ore"
-        }
-      },
-      {
-        "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:stone"
-          }
+          "predicate_type": "tag_match",
+          "tag": "stone_ore_replaceables"
         },
         "state": {
           "Name": "better_tools:topaz_ore"
