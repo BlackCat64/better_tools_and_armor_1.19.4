@@ -1,10 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": [
-    "forest",
-    "plains",
-    "flower_forest"
-  ],
+  "biomes": "beach",
   "features": "better_tools:oak_treehouse_feature",
   "step": "surface_structures"
 }

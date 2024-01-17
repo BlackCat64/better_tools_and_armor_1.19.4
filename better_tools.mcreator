@@ -26904,6 +26904,22 @@
         ]
       },
       "path": "~/Ender Titanium"
+    },
+    {
+      "name": "OakTreehouse",
+      "type": "structure",
+      "sortid": 1602,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_treehouse",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/worldgen/template_pool/oak_treehouse.json",
+          "src/main/resources/data/better_tools/worldgen/structure_set/oak_treehouse.json",
+          "src/main/resources/data/better_tools/worldgen/structure/oak_treehouse.json"
+        ]
+      },
+      "path": "~/Treehouses"
     }
   ],
   "variable_elements": [

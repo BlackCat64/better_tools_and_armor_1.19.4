@@ -1,0 +1,29 @@
+{
+  "_fv": 57,
+  "_type": "structure",
+  "definition": {
+    "structure": "oak_treehouse_2",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      },
+      {
+        "value": "Blocks.STRUCTURE_VOID"
+      }
+    ],
+    "spacing": 8,
+    "separation": 3,
+    "restrictionBiomes": [
+      {
+        "value": "forest"
+      },
+      {
+        "value": "mutated_forest"
+      }
+    ],
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES"
+  }
+}
