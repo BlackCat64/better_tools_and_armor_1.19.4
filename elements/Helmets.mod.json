@@ -1,0 +1,76 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamondArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:SapphireArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.helmet"
+      },
+      {
+        "value": "Items.LEATHER_HELMET"
+      },
+      {
+        "value": "Items.CHAINMAIL_HELMET"
+      },
+      {
+        "value": "Items.IRON_HELMET"
+      },
+      {
+        "value": "Items.GOLDEN_HELMET"
+      },
+      {
+        "value": "Items.DIAMOND_HELMET"
+      },
+      {
+        "value": "Items.NETHERITE_HELMET"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorIron.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorGold.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorLapis.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorDiamond.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherite.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRuby.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.helmet"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "helmets",
+    "namespace": "mod"
+  }
+}

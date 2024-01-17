@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "tag": "better_tools:crystallite_axes"
+  },
+  "addition": {
+    "item": "better_tools:magic_crystal"
+  },
+  "result": {
+    "item": "better_tools:crystallite_axe_lapis"
+  }
+}

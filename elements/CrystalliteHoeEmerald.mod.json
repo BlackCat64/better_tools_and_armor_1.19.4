@@ -1,0 +1,46 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Hoe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "crystallite_hoe_emerald",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Crystallite Hoe",
+    "specialInformation": {
+      "fixedValue": [
+        "§aNourishing - Right-click to grow surrounding crops",
+        "§7While sneaking: §aRight-click to turn dirt into grass"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:CrystalliteTab"
+    },
+    "harvestLevel": 5,
+    "efficiency": 10.0,
+    "attackSpeed": 4.0,
+    "enchantability": 20,
+    "damageVsEntity": 2.5,
+    "usageCount": 1800,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Items.EMERALD"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "CrystalliteHoeEmeraldProcedure"
+    }
+  }
+}

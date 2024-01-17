@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "tag": "better_tools:crystallite_swords"
+  },
+  "addition": {
+    "item": "better_tools:magic_crystal"
+  },
+  "result": {
+    "item": "better_tools:crystallite_sword_lapis"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "better_tools:custom/end_stone_pebbles",
+  "textures": {
+    "all": "better_tools:block/end_stone_pebbles",
+    "particle": "better_tools:block/end_stone_pebbles",
+    "0": "better_tools:block/end_stone_pebbles"
+  },
+  "render_type": "cutout"
+}

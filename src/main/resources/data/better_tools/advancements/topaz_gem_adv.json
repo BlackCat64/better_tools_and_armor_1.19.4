@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:topaz"
+    },
+    "title": {
+      "translate": "advancements.topaz_gem_adv.title"
+    },
+    "description": {
+      "translate": "advancements.topaz_gem_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "topaz_gem_adv": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "better_tools:topaz"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5,
+    "recipes": [
+      "better_tools:topaz_block_recipe",
+      "better_tools:topaz_block_reverse_recipe",
+      "better_tools:topaz_sword_recipe",
+      "better_tools:topaz_pickaxe_recipe",
+      "better_tools:topaz_axe_recipe",
+      "better_tools:topaz_shovel_recipe",
+      "better_tools:topaz_hoe_recipe",
+      "better_tools:topaz_dagger_recipe",
+      "better_tools:topaz_helmet_recipe",
+      "better_tools:topaz_body_recipe",
+      "better_tools:topaz_legs_recipe",
+      "better_tools:topaz_boots_recipe"
+    ]
+  },
+  "parent": "better_tools:progression_section"
+}

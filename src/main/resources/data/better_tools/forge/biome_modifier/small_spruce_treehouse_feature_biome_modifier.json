@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "taiga",
+    "plains",
+    "snowy_taiga",
+    "windswept_forest",
+    "grove"
+  ],
+  "features": "better_tools:small_spruce_treehouse_feature",
+  "step": "surface_structures"
+}

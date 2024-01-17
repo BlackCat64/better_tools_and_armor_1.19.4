@@ -1,0 +1,64 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamond"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "CUSTOM:RandomGem"
+      },
+      {
+        "value": "CUSTOM:Sapphire"
+      },
+      {
+        "value": "CUSTOM:Topaz"
+      },
+      {
+        "value": "CUSTOM:FireCore"
+      },
+      {
+        "value": "CUSTOM:IceCore"
+      },
+      {
+        "value": "CUSTOM:ElectricCore"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "CUSTOM:ToughCrystal"
+      },
+      {
+        "value": "CUSTOM:GildedCrystal"
+      },
+      {
+        "value": "CUSTOM:MagicCrystal"
+      },
+      {
+        "value": "CUSTOM:HealCrystal"
+      },
+      {
+        "value": "CUSTOM:DiamondHardCrystal"
+      },
+      {
+        "value": "CUSTOM:SpikedCrystal"
+      },
+      {
+        "value": "CUSTOM:SpeedyCrystal"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "gems",
+    "namespace": "forge"
+  }
+}

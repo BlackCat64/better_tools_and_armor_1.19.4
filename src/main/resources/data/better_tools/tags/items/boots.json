@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond_boots",
+    "better_tools:end_titanium_boots",
+    "better_tools:sapphire_boots",
+    "better_tools:topaz_boots",
+    "minecraft:leather_boots",
+    "minecraft:chainmail_boots",
+    "minecraft:iron_boots",
+    "minecraft:golden_boots",
+    "minecraft:diamond_boots",
+    "minecraft:netherite_boots",
+    "better_tools:crystallite_armor_iron_boots",
+    "better_tools:crystallite_armor_gold_boots",
+    "better_tools:crystallite_armor_lapis_boots",
+    "better_tools:crystallite_armor_redstone_boots",
+    "better_tools:crystallite_armor_diamond_boots",
+    "better_tools:crystallite_armor_netherite_boots",
+    "better_tools:crystallite_armor_ruby_boots",
+    "better_tools:crystallite_armor_sapphire_boots",
+    "better_tools:crystallite_armor_topaz_boots",
+    "better_tools:crystallite_armor_nether_diamond_boots"
+  ]
+}

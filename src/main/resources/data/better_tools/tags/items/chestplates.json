@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond_chestplate",
+    "better_tools:end_titanium_chestplate",
+    "better_tools:sapphire_chestplate",
+    "better_tools:topaz_chestplate",
+    "minecraft:leather_chestplate",
+    "minecraft:chainmail_chestplate",
+    "minecraft:iron_chestplate",
+    "minecraft:golden_chestplate",
+    "minecraft:diamond_chestplate",
+    "minecraft:netherite_chestplate",
+    "better_tools:crystallite_armor_iron_chestplate",
+    "better_tools:crystallite_armor_gold_chestplate",
+    "better_tools:crystallite_armor_lapis_chestplate",
+    "better_tools:crystallite_armor_redstone_chestplate",
+    "better_tools:crystallite_armor_diamond_chestplate",
+    "better_tools:crystallite_armor_netherite_chestplate",
+    "better_tools:crystallite_armor_ruby_chestplate",
+    "better_tools:crystallite_armor_sapphire_chestplate",
+    "better_tools:crystallite_armor_topaz_chestplate",
+    "better_tools:crystallite_armor_nether_diamond_chestplate"
+  ]
+}

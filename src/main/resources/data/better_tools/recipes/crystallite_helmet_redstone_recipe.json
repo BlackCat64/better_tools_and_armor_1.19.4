@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "tag": "better_tools:crystallite_helmets"
+  },
+  "addition": {
+    "item": "better_tools:heal_crystal"
+  },
+  "result": {
+    "item": "better_tools:crystallite_armor_redstone_helmet"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamondArmor.body"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumArmor.body"
+      },
+      {
+        "value": "CUSTOM:SapphireArmor.body"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.body"
+      },
+      {
+        "value": "Items.LEATHER_CHESTPLATE"
+      },
+      {
+        "value": "Items.CHAINMAIL_CHESTPLATE"
+      },
+      {
+        "value": "Items.IRON_CHESTPLATE"
+      },
+      {
+        "value": "Items.GOLDEN_CHESTPLATE"
+      },
+      {
+        "value": "Items.DIAMOND_CHESTPLATE"
+      },
+      {
+        "value": "Items.NETHERITE_CHESTPLATE"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorIron.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorGold.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorLapis.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorDiamond.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherite.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRuby.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.body"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "chestplates",
+    "namespace": "mod"
+  }
+}

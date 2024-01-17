@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "better_tools:crystallite_charm_base"
+  },
+  "addition": {
+    "item": "better_tools:end_titanium_ingot"
+  },
+  "result": {
+    "item": "better_tools:ender_goggles"
+  }
+}

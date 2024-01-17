@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "dark_forest",
+  "features": "better_tools:dark_oak_treehouse_feature",
+  "step": "surface_structures"
+}

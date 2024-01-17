@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "tag": "better_tools:crystallite_hoes"
+  },
+  "addition": {
+    "item": "better_tools:speedy_crystal"
+  },
+  "result": {
+    "item": "better_tools:crystallite_hoe_ruby"
+  }
+}

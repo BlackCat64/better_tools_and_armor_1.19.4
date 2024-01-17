@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "better_tools:crystallite_charm_base"
+  },
+  "addition": {
+    "item": "better_tools:diamond_hard_crystal"
+  },
+  "result": {
+    "item": "better_tools:diamond_hard_plate"
+  }
+}

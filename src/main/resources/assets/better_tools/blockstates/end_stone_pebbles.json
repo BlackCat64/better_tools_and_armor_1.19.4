@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "better_tools:block/end_stone_pebbles"
+    },
+    "facing=east": {
+      "model": "better_tools:block/end_stone_pebbles",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "better_tools:block/end_stone_pebbles",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "better_tools:block/end_stone_pebbles",
+      "y": 270
+    }
+  }
+}

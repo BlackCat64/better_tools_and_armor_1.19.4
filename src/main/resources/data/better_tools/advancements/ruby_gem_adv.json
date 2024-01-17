@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:ruby"
+    },
+    "title": {
+      "translate": "advancements.ruby_gem_adv.title"
+    },
+    "description": {
+      "translate": "advancements.ruby_gem_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ruby_gem_adv": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "better_tools:ruby"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 2,
+    "recipes": [
+      "better_tools:ruby_tools_pickaxe_recipe",
+      "better_tools:ruby_tools_axe_recipe",
+      "better_tools:ruby_tools_sword_recipe",
+      "better_tools:ruby_tools_shovel_recipe",
+      "better_tools:ruby_tools_hoe_recipe",
+      "better_tools:ruby_block_recipe",
+      "better_tools:ruby_dagger_recipe",
+      "better_tools:ruby_ice_recipe"
+    ]
+  },
+  "parent": "better_tools:progression_section"
+}

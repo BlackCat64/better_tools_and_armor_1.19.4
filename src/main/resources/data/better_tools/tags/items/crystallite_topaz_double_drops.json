@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond",
+    "minecraft:emerald",
+    "minecraft:diamond",
+    "minecraft:lapis_lazuli",
+    "better_tools:ruby",
+    "better_tools:sapphire",
+    "better_tools:topaz",
+    "minecraft:quartz",
+    "minecraft:redstone",
+    "minecraft:coal",
+    "minecraft:raw_iron",
+    "minecraft:raw_gold",
+    "minecraft:raw_copper",
+    "minecraft:iron_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:gold_nugget",
+    "better_tools:mixed_essence"
+  ]
+}

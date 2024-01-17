@@ -1,0 +1,71 @@
+{
+  "display": {
+    "background": "better_tools:textures/screens/blackstone_magma.png",
+    "icon": {
+      "item": "better_tools:gold_carrot_helmet"
+    },
+    "title": {
+      "translate": "advancements.effect_armor_section.title"
+    },
+    "description": {
+      "translate": "advancements.effect_armor_section.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "effect_armor_section": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "better_tools:sugar_block_recipe",
+      "better_tools:sugar_boots_recipe",
+      "better_tools:sugar_recipe",
+      "better_tools:iron_sugar_boots_recipe",
+      "better_tools:diamond_sugar_boots_recipe",
+      "better_tools:rabbit_boots_recipe",
+      "better_tools:iron_rabbit_boots_recipe",
+      "better_tools:diamond_rabbit_boots_recipe",
+      "better_tools:phantom_boots_recipe",
+      "better_tools:iron_phantom_boots_recipe",
+      "better_tools:diamond_phantom_boots_recipe",
+      "better_tools:cactus_body_recipe",
+      "better_tools:iron_cactus_body_recipe",
+      "better_tools:diamond_cactus_body_recipe",
+      "better_tools:hearty_body_recipe",
+      "better_tools:iron_hearty_body_recipe",
+      "better_tools:diamond_hearty_body_recipe",
+      "better_tools:ruby_legs_recipe",
+      "better_tools:diamond_ruby_legs_recipe",
+      "better_tools:crystal_legs_recipe",
+      "better_tools:diamond_crystal_legs_recipe",
+      "better_tools:gold_carrot_hat_recipe",
+      "better_tools:iron_gold_carrot_hat_recipe",
+      "better_tools:diamond_gold_carrot_hat_recipe",
+      "better_tools:gold_blackstone_recipe",
+      "better_tools:blackstone_legs_recipe",
+      "better_tools:diamond_blackstone_legs_recipe",
+      "better_tools:crying_obsidian_helmet_recipe",
+      "better_tools:diamond_crying_obsidian_helmet_recipe",
+      "better_tools:glass_helmet_recipe",
+      "better_tools:glass_body_recipe",
+      "better_tools:glass_legs_recipe",
+      "better_tools:glass_boots_recipe",
+      "better_tools:iron_glass_helmet_recipe",
+      "better_tools:iron_glass_chestplate_recipe",
+      "better_tools:iron_glass_leggings_recipe",
+      "better_tools:iron_glass_boots_recipe",
+      "better_tools:diamond_glass_helmet_recipe",
+      "better_tools:diamond_glass_chestplate_recipe",
+      "better_tools:diamond_glass_leggings_recipe",
+      "better_tools:diamond_glass_boots_recipe",
+      "better_tools:magma_body_recipe",
+      "better_tools:diamond_magma_body_recipe"
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:end_titanium_ore"
+    },
+    "title": {
+      "translate": "advancements.end_titanium_adv.title"
+    },
+    "description": {
+      "translate": "advancements.end_titanium_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "end_titanium_adv": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "better_tools:end_titanium_ore"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10,
+    "recipes": [
+      "better_tools:end_titanium_ingot_recipe",
+      "better_tools:end_titanium_block_recipe",
+      "better_tools:end_titanium_sword_smith",
+      "better_tools:end_titanium_pickaxe_smith",
+      "better_tools:end_titanium_axe_smith",
+      "better_tools:end_titanium_shovel_smith",
+      "better_tools:end_titanium_hoe_smith",
+      "better_tools:end_titanium_helmet_smith",
+      "better_tools:end_titanium_chestplate_smith",
+      "better_tools:end_titanium_leggings_smith",
+      "better_tools:end_titanium_boots_smith",
+      "better_tools:end_titanium_dagger_smith"
+    ]
+  },
+  "parent": "better_tools:progression_section"
+}
