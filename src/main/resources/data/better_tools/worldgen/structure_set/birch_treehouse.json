@@ -1,7 +1,7 @@
 {
   "structures": [
     {
-      "structure": "better_tools:oak_treehouse",
+      "structure": "better_tools:birch_treehouse",
       "weight": 1
     }
   ],
@@ -9,6 +9,6 @@
     "type": "minecraft:random_spread",
     "spacing": 25,
     "separation": 10,
-    "salt": 232159987
+    "salt": 568511419
   }
 }

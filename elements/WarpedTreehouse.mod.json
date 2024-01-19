@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "structure",
   "definition": {
-    "structure": "oak_treehouse_2",
+    "structure": "warped_treehouse_2",
     "projection": "rigid",
     "ignoredBlocks": [
       {
@@ -12,18 +12,15 @@
         "value": "Blocks.STRUCTURE_VOID"
       }
     ],
-    "spacing": 25,
-    "separation": 10,
+    "spacing": 1,
+    "separation": 0,
     "restrictionBiomes": [
       {
-        "value": "mutated_forest"
-      },
-      {
-        "value": "forest"
+        "value": "warped_forest"
       }
     ],
     "surfaceDetectionType": "WORLD_SURFACE_WG",
     "terrainAdaptation": "beard_thin",
-    "generationStep": "SURFACE_STRUCTURES"
+    "generationStep": "UNDERGROUND_STRUCTURES"
   }
 }

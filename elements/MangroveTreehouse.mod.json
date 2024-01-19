@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "structure",
   "definition": {
-    "structure": "oak_treehouse_2",
+    "structure": "mangrove_treehouse",
     "projection": "rigid",
     "ignoredBlocks": [
       {
@@ -12,14 +12,11 @@
         "value": "Blocks.STRUCTURE_VOID"
       }
     ],
-    "spacing": 25,
-    "separation": 10,
+    "spacing": 12,
+    "separation": 5,
     "restrictionBiomes": [
       {
-        "value": "mutated_forest"
-      },
-      {
-        "value": "forest"
+        "value": "mangrove_swamp"
       }
     ],
     "surfaceDetectionType": "WORLD_SURFACE_WG",

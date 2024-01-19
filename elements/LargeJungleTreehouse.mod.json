@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "structure",
   "definition": {
-    "structure": "oak_treehouse_2",
+    "structure": "acacia_treehouse_2",
     "projection": "rigid",
     "ignoredBlocks": [
       {
@@ -12,14 +12,11 @@
         "value": "Blocks.STRUCTURE_VOID"
       }
     ],
-    "spacing": 25,
-    "separation": 10,
+    "spacing": 22,
+    "separation": 8,
     "restrictionBiomes": [
       {
-        "value": "mutated_forest"
-      },
-      {
-        "value": "forest"
+        "value": "jungle"
       }
     ],
     "surfaceDetectionType": "WORLD_SURFACE_WG",

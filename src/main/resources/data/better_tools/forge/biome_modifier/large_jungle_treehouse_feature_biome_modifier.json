@@ -1,9 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": [
-    "jungle",
-    "plains"
-  ],
-  "features": "better_tools:large_jungle_treehouse_feature",
-  "step": "surface_structures"
-}
