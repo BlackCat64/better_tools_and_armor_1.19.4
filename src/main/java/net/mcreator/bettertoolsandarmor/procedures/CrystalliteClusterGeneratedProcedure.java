@@ -5,7 +5,7 @@ import net.minecraft.network.chat.Component;
 
 public class CrystalliteClusterGeneratedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (false) {
+		if (true) {
 			if (!world.isClientSide() && world.getServer() != null)
 				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Crystallite cluster at: " + "X = " + x + ", Y = " + y + ", Z = " + z)), false);
 		}

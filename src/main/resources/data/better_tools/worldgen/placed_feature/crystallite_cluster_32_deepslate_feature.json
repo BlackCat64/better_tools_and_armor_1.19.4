@@ -3,7 +3,7 @@
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 3077
+      "chance": 2560
     },
     {
       "type": "minecraft:in_square"
@@ -30,10 +30,7 @@
       "type": "minecraft:block_predicate_filter",
       "predicate": {
         "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:deepslate",
-          "minecraft:tuff"
-        ],
+        "blocks": "#minecraft:deepslate_ore_replaceables",
         "offset": [
           0,
           -1,

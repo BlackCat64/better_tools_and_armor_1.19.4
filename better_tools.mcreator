@@ -26545,7 +26545,8 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/world/features/CrystalliteCluster30FeatureFeature.java"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CrystalliteCluster32Feature",
@@ -26562,7 +26563,8 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/world/features/CrystalliteCluster32FeatureFeature.java"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CrystalliteCluster34Feature",
@@ -26579,7 +26581,8 @@
           "src/main/resources/data/better_tools/forge/biome_modifier/crystallite_cluster_34_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CrystalliteCluster36Feature",
@@ -26596,7 +26599,8 @@
           "src/main/resources/data/better_tools/forge/biome_modifier/crystallite_cluster_36_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "DeepslateRubyOreFeature",
@@ -26630,7 +26634,8 @@
           "src/main/resources/data/better_tools/worldgen/placed_feature/crystallite_cluster_30_deepslate_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CrystalliteCluster32DeepslateFeature",
@@ -26647,7 +26652,8 @@
           "src/main/resources/data/better_tools/forge/biome_modifier/crystallite_cluster_32_deepslate_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CrystalliteCluster34DeepslateFeature",
@@ -26664,7 +26670,8 @@
           "src/main/resources/data/better_tools/worldgen/configured_feature/crystallite_cluster_34_deepslate_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CrystalliteCluster36DeepslateFeature",
@@ -26681,7 +26688,8 @@
           "src/main/resources/data/better_tools/worldgen/placed_feature/crystallite_cluster_36_deepslate_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "WardenStaffProjectile",

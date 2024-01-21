@@ -3,7 +3,7 @@
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 3333
+      "chance": 2720
     },
     {
       "type": "minecraft:in_square"
@@ -30,12 +30,7 @@
       "type": "minecraft:block_predicate_filter",
       "predicate": {
         "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:stone",
-          "minecraft:granite",
-          "minecraft:diorite",
-          "minecraft:andesite"
-        ],
+        "blocks": "#minecraft:stone_ore_replaceables",
         "offset": [
           0,
           -1,
