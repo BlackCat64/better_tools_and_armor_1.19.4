@@ -26412,7 +26412,8 @@
           "src/main/resources/data/better_tools/worldgen/placed_feature/giant_blue_mushroom_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Blue Mushrooms"
     },
     {
       "name": "GiantPurpleMushroomFeature",
@@ -26428,7 +26429,8 @@
           "src/main/resources/data/better_tools/worldgen/placed_feature/giant_purple_mushroom_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Purple Mushrooms"
     },
     {
       "name": "TopazOreFeature",
