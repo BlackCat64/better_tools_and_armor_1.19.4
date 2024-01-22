@@ -17,7 +17,7 @@ public class CrystalliteCluster30DeepslateFeatureFeature extends StructureFeatur
 		int x = context.origin().getX();
 		int y = context.origin().getY();
 		int z = context.origin().getZ();
-		if (!CrystalliteClusterDeepslateGenerationConditionProcedure.execute(y))
+		if (!CrystalliteClusterDeepslateGenerationConditionProcedure.execute(world, x, y, z))
 			return false;
 		return super.place(context);
 	}
