@@ -6,9 +6,9 @@
     "random_mirror": true,
     "ignored_blocks": "minecraft:structure_block",
     "offset": [
-      6,
-      6,
-      6
+      -6,
+      -6,
+      -6
     ]
   }
 }
