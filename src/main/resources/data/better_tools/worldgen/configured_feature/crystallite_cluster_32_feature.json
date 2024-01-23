@@ -2,12 +2,10 @@
   "type": "better_tools:crystallite_cluster_32_feature",
   "config": {
     "structure": "better_tools:crystallite_32",
-    "random_rotation": true,
-    "random_mirror": true,
     "ignored_blocks": "minecraft:structure_block",
     "offset": [
       -6,
-      -6,
+      -2,
       -6
     ]
   }
