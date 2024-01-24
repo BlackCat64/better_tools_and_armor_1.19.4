@@ -2,6 +2,7 @@
 package net.mcreator.bettertoolsandarmor.block;
 
 import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -18,7 +19,7 @@ import java.util.Collections;
 
 public class SugarBlockBlock extends FallingBlock {
 	public SugarBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.SAND).sound(SoundType.SAND).strength(0.4f));
+		super(BlockBehaviour.Properties.of(Material.SAND, MaterialColor.SNOW).sound(SoundType.SAND).strength(0.4f));
 	}
 
 	@Override

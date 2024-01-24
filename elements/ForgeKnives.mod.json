@@ -72,6 +72,21 @@
       },
       {
         "value": "CUSTOM:CrystalliteDaggerNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerPrismarine"
       }
     ],
     "blocks": [],

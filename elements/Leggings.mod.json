@@ -63,6 +63,48 @@
       },
       {
         "value": "CUSTOM:CrystalliteArmorNetherDiamond.legs"
+      },
+      {
+        "value": "CUSTOM:RubyArmor.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalLegs.legs"
+      },
+      {
+        "value": "CUSTOM:BlackstoneLegs.legs"
+      },
+      {
+        "value": "CUSTOM:DiamondRubyLegs.legs"
+      },
+      {
+        "value": "CUSTOM:DiamondCrystalLegs.legs"
+      },
+      {
+        "value": "CUSTOM:DiamondBlackstoneLegs.legs"
+      },
+      {
+        "value": "CUSTOM:GlassArmor.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.legs"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.legs"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSky.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorAmethyst.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.legs"
       }
     ],
     "blocks": [],

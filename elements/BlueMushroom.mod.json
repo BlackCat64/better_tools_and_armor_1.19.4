@@ -91,9 +91,6 @@
     "restrictionBiomes": [
       {
         "value": "mushroom_fields"
-      },
-      {
-        "value": "mushroom_field_shore"
       }
     ],
     "generationType": "Flower",

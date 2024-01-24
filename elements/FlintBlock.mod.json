@@ -65,7 +65,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "STONE",
     "creativePickItem": {
       "value": ""
     },

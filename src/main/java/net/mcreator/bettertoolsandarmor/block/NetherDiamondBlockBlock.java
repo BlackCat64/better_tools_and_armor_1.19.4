@@ -2,6 +2,7 @@
 package net.mcreator.bettertoolsandarmor.block;
 
 import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -20,7 +21,7 @@ import java.util.Collections;
 
 public class NetherDiamondBlockBlock extends Block {
 	public NetherDiamondBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(55f, 1200f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.CRIMSON_NYLIUM).sound(SoundType.METAL).strength(55f, 1200f).requiresCorrectToolForDrops());
 	}
 
 	@Override

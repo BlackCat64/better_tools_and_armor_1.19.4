@@ -1,6 +1,7 @@
 
 package net.mcreator.bettertoolsandarmor.block;
 
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -18,7 +19,7 @@ import java.util.List;
 
 public class FlintBlockBlock extends Block {
 	public FlintBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2.75f, 6.5f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.STONE).sound(SoundType.STONE).strength(2.75f, 6.5f).requiresCorrectToolForDrops());
 	}
 
 	@Override

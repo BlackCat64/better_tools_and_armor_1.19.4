@@ -63,6 +63,45 @@
       },
       {
         "value": "CUSTOM:CrystalliteArmorNetherDiamond.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSky.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorAmethyst.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.helmet"
+      },
+      {
+        "value": "CUSTOM:GlassArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:GoldCarrotArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:IronGoldCarrotHat.helmet"
+      },
+      {
+        "value": "CUSTOM:DiamondGoldCarrotHat.helmet"
+      },
+      {
+        "value": "CUSTOM:CryingObsidianHelmet.helmet"
+      },
+      {
+        "value": "CUSTOM:DiamondCryingObsidianHelmet.helmet"
       }
     ],
     "blocks": [],
