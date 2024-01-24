@@ -27028,6 +27028,54 @@
         ]
       },
       "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "FreezeShatterProcedure",
+      "type": "procedure",
+      "sortid": 1621,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freeze_shatter_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FreezeShatterProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sapphire"
     }
   ],
   "variable_elements": [
@@ -27958,7 +28006,7 @@
       "item.better_tools.crystallite_sword_gold": "Crystallite Sword",
       "item.minecraft.splash_potion.effect.potion_of_decay_2": "Splash Potion of Decay",
       "item.copper_tools_and_armor.copper_pickaxe": "Copper Pickaxe",
-      "death.attack.freeze_shatter_damage": "%1$s was shattered to pieces",
+      "death.attack.freeze_shatter_damage": "%1$s was shattered to pieces by %2$s",
       "block.better_tools.light_polished_nether_diamond_slab": "Light Metallic Nether Diamond Slab",
       "advancements.nether_diamond_armor_adv.title": "Cover me in Nether Diamonds",
       "item.better_tools.guardian_spike": "Guardian Spike",
