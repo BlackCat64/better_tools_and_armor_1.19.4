@@ -742,7 +742,7 @@
   "item.better_tools.crystallite_pickaxe_gold": "Crystallite Pickaxe",
   "item.better_tools.magic_crystal": "§9Magic Crystal",
   "item.better_tools.end_titanium_pickaxe": "Ender Titanium Pickaxe",
-  "death.attack.water_pulse_damage": "%1$s was blasted with a water pulse",
+  "death.attack.water_pulse_damage": "%1$s was blasted with a water pulse from %2$s",
   "item.better_tools.ice_crystal": "§bFrozen Crystal",
   "death.attack.freeze_shatter_damage.player": "%1$s was shattered to pieces whilst trying to escape %2$s",
   "block.better_tools.dark_polished_emerald_wall": "Dark Metallic Emerald Wall",

@@ -20,7 +20,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.GuardianStaffProcedureProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.GuardianStaffWaterPulseProcedure;
 import net.mcreator.bettertoolsandarmor.entity.GuardianStaffProjectileEntity;
 
 import java.util.List;
@@ -98,7 +98,7 @@ public class GuardianStaffItem extends Item {
 							player.getInventory().removeItem(stack);
 					}
 				}
-				GuardianStaffProcedureProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, stack);
+				GuardianStaffWaterPulseProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, stack);
 			}
 		}
 	}
