@@ -1,6 +1,7 @@
 
 package net.mcreator.bettertoolsandarmor.block;
 
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
@@ -22,7 +23,7 @@ import java.util.List;
 
 public class DeepslateRubyOreBlock extends Block {
 	public DeepslateRubyOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE).strength(4.5f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.DEEPSLATE).sound(SoundType.DEEPSLATE).strength(4.5f).requiresCorrectToolForDrops());
 	}
 
 	@Override

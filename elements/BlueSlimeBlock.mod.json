@@ -62,7 +62,10 @@
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
-    "colorOnMap": "DEFAULT",
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
+    "colorOnMap": "DIAMOND",
     "creativePickItem": {
       "value": ""
     },
@@ -83,6 +86,21 @@
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "SLIME"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
     },
     "luminance": 3,
     "unbreakable": false,

@@ -1,6 +1,7 @@
 
 package net.mcreator.bettertoolsandarmor.block;
 
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
@@ -22,7 +23,7 @@ import java.util.List;
 
 public class NetherDiamondOreBlock extends Block {
 	public NetherDiamondOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GILDED_BLACKSTONE).strength(4.5f, 6f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLACK).sound(SoundType.GILDED_BLACKSTONE).strength(4.5f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

@@ -9,6 +9,7 @@ import net.minecraftforge.common.util.ForgeSoundType;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
@@ -32,7 +33,7 @@ import java.util.List;
 
 public class CrystalliteBlockBlock extends Block {
 	public CrystalliteBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.ICE)
+		super(BlockBehaviour.Properties.of(Material.ICE, MaterialColor.ICE)
 				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_break")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_step")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_place")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_shimmer")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_break"))))

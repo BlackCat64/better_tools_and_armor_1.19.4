@@ -4,6 +4,7 @@ package net.mcreator.bettertoolsandarmor.block;
 import org.checkerframework.checker.units.qual.s;
 
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -29,7 +30,7 @@ import java.util.List;
 
 public class PurpleMushroomBlockBlock extends Block {
 	public PurpleMushroomBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0.2f).lightLevel(s -> 4).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_PURPLE).sound(SoundType.WOOD).strength(0.2f).lightLevel(s -> 4).requiresCorrectToolForDrops());
 	}
 
 	@Override

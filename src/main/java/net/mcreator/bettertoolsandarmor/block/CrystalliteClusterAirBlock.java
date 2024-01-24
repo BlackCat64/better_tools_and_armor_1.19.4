@@ -4,6 +4,7 @@ package net.mcreator.bettertoolsandarmor.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
@@ -26,7 +27,7 @@ import java.util.List;
 
 public class CrystalliteClusterAirBlock extends Block {
 	public CrystalliteClusterAirBlock() {
-		super(BlockBehaviour.Properties.of(Material.DECORATION).sound(SoundType.GLASS).strength(1f).noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.DECORATION, MaterialColor.NONE).sound(SoundType.GLASS).strength(1f).noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

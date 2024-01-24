@@ -4,6 +4,7 @@ package net.mcreator.bettertoolsandarmor.block;
 import org.checkerframework.checker.units.qual.s;
 
 import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -20,7 +21,7 @@ import java.util.Collections;
 
 public class EndTitaniumBlockBlock extends Block {
 	public EndTitaniumBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.NETHERITE_BLOCK).strength(60f, 1500f).lightLevel(s -> 4));
+		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_PURPLE).sound(SoundType.NETHERITE_BLOCK).strength(60f, 1500f).lightLevel(s -> 4));
 	}
 
 	@Override

@@ -4,6 +4,7 @@ package net.mcreator.bettertoolsandarmor.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -30,7 +31,7 @@ import java.util.List;
 
 public class ClimbableWallBlock extends Block {
 	public ClimbableWallBlock() {
-		super(BlockBehaviour.Properties.of(Material.AIR).sound(SoundType.LADDER).strength(-1, 3600000).requiresCorrectToolForDrops().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.AIR, MaterialColor.NONE).sound(SoundType.LADDER).strength(-1, 3600000).requiresCorrectToolForDrops().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

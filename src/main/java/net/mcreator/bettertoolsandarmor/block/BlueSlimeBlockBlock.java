@@ -7,6 +7,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -24,7 +25,7 @@ import java.util.Collections;
 
 public class BlueSlimeBlockBlock extends Block {
 	public BlueSlimeBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.DECORATION).sound(SoundType.SLIME_BLOCK).instabreak().lightLevel(s -> 3).friction(0.8f).jumpFactor(2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.DECORATION, MaterialColor.DIAMOND).sound(SoundType.SLIME_BLOCK).instabreak().lightLevel(s -> 3).friction(0.8f).jumpFactor(2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
