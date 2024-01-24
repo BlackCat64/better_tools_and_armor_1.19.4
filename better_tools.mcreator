@@ -23950,46 +23950,6 @@
       "path": "~/Crystallite/Amethyst"
     },
     {
-      "name": "CrystalliteBootsAmethystShockwave",
-      "type": "procedure",
-      "sortid": 1450,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_boots_amethyst_shockwave",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBootsAmethystShockwaveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "distance",
-            "type": "number"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Amethyst"
-    },
-    {
       "name": "MagicDamageTools",
       "type": "tag",
       "sortid": 1451,
@@ -27028,6 +26988,46 @@
         ]
       },
       "path": "~/Crystallite/Prismarine"
+    },
+    {
+      "name": "CrystalliteBootsAmethystShockwaveDamage",
+      "type": "procedure",
+      "sortid": 1620,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_boots_amethyst_shockwave_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBootsAmethystShockwaveDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "distance",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
     }
   ],
   "variable_elements": [
@@ -28056,7 +28056,7 @@
       "gui.better_tools.attributes_viewer.label_crit_multiplier": "Critical Hit",
       "block.better_tools.cut_crystallite_block": "Cut Crystallite Block",
       "item.better_tools.shrunk_music.desc": "Gareth Coker - Toys on a Tear",
-      "death.attack.shockwave_damage": "%1$s was killed by a shockwave",
+      "death.attack.shockwave_damage": "%1$s was killed by a shockwave from %2$s",
       "item.better_tools.crystallite_armor_prismarine_helmet": "Crystallite Helmet",
       "item.better_tools.ruby_shovel": "Ruby Shovel",
       "advancements.diamond_apple_adv.descr": "Eat a Diamond Apple",

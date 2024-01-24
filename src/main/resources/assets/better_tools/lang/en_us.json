@@ -792,7 +792,7 @@
   "gui.better_tools.attributes_viewer.label_crit_multiplier": "Critical Hit",
   "block.better_tools.cut_crystallite_block": "Cut Crystallite Block",
   "item.better_tools.shrunk_music.desc": "Gareth Coker - Toys on a Tear",
-  "death.attack.shockwave_damage": "%1$s was killed by a shockwave",
+  "death.attack.shockwave_damage": "%1$s was killed by a shockwave from %2$s",
   "item.better_tools.crystallite_armor_prismarine_helmet": "Crystallite Helmet",
   "item.better_tools.ruby_shovel": "Ruby Shovel",
   "advancements.diamond_apple_adv.descr": "Eat a Diamond Apple",

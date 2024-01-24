@@ -14,9 +14,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
@@ -30,7 +33,7 @@ import java.util.List;
 import java.util.Comparator;
 
 @Mod.EventBusSubscriber
-public class CrystalliteBootsAmethystShockwaveProcedure {
+public class CrystalliteBootsAmethystShockwaveDamageProcedure {
 	@SubscribeEvent
 	public static void onEntityFall(LivingFallEvent event) {
 		if (event != null && event.getEntity() != null) {
@@ -46,8 +49,6 @@ public class CrystalliteBootsAmethystShockwaveProcedure {
 		if (entity == null)
 			return;
 		double damage = 0;
-		double x_offset = 0;
-		double z_offset = 0;
 		double radius = 0;
 		if (!BetterToolsModVariables.being_damaged_flag) {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_BOOTS.get()) {
@@ -82,6 +83,9 @@ public class CrystalliteBootsAmethystShockwaveProcedure {
 							if (!(entityiterator == entity)) {
 								if (entityiterator instanceof LivingEntity) {
 									if (Math.abs(entityiterator.getY() - entity.getY()) < 1) {
+										entityiterator
+												.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:shockwave_damage"))),
+														entity), (float) damage);
 									}
 								}
 							}
