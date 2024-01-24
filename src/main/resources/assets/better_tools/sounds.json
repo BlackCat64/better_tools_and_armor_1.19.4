@@ -57,6 +57,7 @@
     ]
   },
   "crystallite_break": {
+    "subtitle": "subtitles.crystallite_break",
     "sounds": [
       {
         "name": "better_tools:break1",
@@ -77,6 +78,7 @@
     ]
   },
   "crystallite_place": {
+    "subtitle": "subtitles.crystallite_place",
     "sounds": [
       {
         "name": "better_tools:place1",
@@ -97,6 +99,7 @@
     ]
   },
   "crystallite_step": {
+    "subtitle": "subtitles.crystallite_step",
     "sounds": [
       {
         "name": "better_tools:step1",
@@ -157,6 +160,7 @@
     ]
   },
   "crystallite_shimmer": {
+    "subtitle": "subtitles.crystallite_shimmer",
     "sounds": [
       {
         "name": "better_tools:shimmer",
