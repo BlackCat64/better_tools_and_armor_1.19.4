@@ -13,9 +13,12 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
@@ -25,7 +28,7 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class CrystalliteChestplateSculkProcedureProcedure {
+public class CrystalliteChestplateSculkSonicBoomProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
@@ -40,11 +43,11 @@ public class CrystalliteChestplateSculkProcedureProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
+		double distance = 0;
+		double count = 0;
 		double change_x = 0;
 		double change_y = 0;
 		double change_z = 0;
-		double distance = 0;
-		double count = 0;
 		if (!BetterToolsModVariables.being_damaged_flag) {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()) {
 				if (!(sourceentity instanceof Player)) {
@@ -71,6 +74,7 @@ public class CrystalliteChestplateSculkProcedureProcedure {
 								}
 							}
 							BetterToolsModVariables.being_damaged_flag = true;
+							sourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.SONIC_BOOM), entity), 10);
 							BetterToolsModVariables.being_damaged_flag = false;
 						}
 					}

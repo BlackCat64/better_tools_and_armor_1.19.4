@@ -20,7 +20,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.WardenStaffProcedureProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.WardenStaffSonicBoomProcedure;
 import net.mcreator.bettertoolsandarmor.entity.WardenStaffProjectileEntity;
 
 import java.util.List;
@@ -98,7 +98,7 @@ public class WardenStaffItem extends Item {
 							player.getInventory().removeItem(stack);
 					}
 				}
-				WardenStaffProcedureProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, stack);
+				WardenStaffSonicBoomProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, stack);
 			}
 		}
 	}

@@ -12,10 +12,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
@@ -24,18 +27,15 @@ import net.minecraft.advancements.Advancement;
 
 import java.util.Comparator;
 
-public class WardenStaffProcedureProcedure {
+public class WardenStaffSonicBoomProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
+		double count = 0;
 		double change_x = 0;
 		double change_y = 0;
 		double change_z = 0;
-		double count = 0;
 		count = 1;
-		change_x = 0;
-		change_y = 0;
-		change_z = 0;
 		for (int index0 = 0; index0 < 15; index0++) {
 			count = count + 1;
 			if (!world
@@ -63,6 +63,19 @@ public class WardenStaffProcedureProcedure {
 								(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getY()),
 								(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ())))
 						.findFirst().orElse(null)) == null)) {
+					((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(
+							new Vec3((entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getX()),
+									(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getY()),
+									(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ())),
+							1, 1, 1), e -> true).stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+								}
+							}.compareDistOf(
+									(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getX()),
+									(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getY()),
+									(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ())))
+							.findFirst().orElse(null)).hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.SONIC_BOOM), entity), 10);
 					if (entity instanceof ServerPlayer _player) {
 						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:warden_staff_adv"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -92,6 +105,12 @@ public class WardenStaffProcedureProcedure {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
 				}.compareDistOf((x + count * change_x), (y + 1 + count * change_y), (z + count * change_z))).findFirst().orElse(null)) == null)) {
+					((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3((x + count * change_x), (y + 1 + count * change_y), (z + count * change_z)), 1, 1, 1), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf((x + count * change_x), (y + 1 + count * change_y), (z + count * change_z))).findFirst().orElse(null))
+							.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.SONIC_BOOM), entity), 10);
 					if (entity instanceof ServerPlayer _player) {
 						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:warden_staff_adv"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
