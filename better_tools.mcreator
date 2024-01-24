@@ -26472,7 +26472,8 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/entity/ElectricStaffProjectileEntity.java"
         ]
-      }
+      },
+      "path": "~/Topaz"
     },
     {
       "name": "ElectricStaff",
@@ -26486,7 +26487,8 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/item/ElectricStaffItem.java",
           "src/main/resources/assets/better_tools/models/item/electric_staff.json"
         ]
-      }
+      },
+      "path": "~/Topaz"
     },
     {
       "name": "IceStaffProjectile",
@@ -26499,7 +26501,8 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/entity/IceStaffProjectileEntity.java"
         ]
-      }
+      },
+      "path": "~/Sapphire"
     },
     {
       "name": "IceStaff",
@@ -26513,7 +26516,8 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/item/IceStaffItem.java",
           "src/main/resources/assets/better_tools/models/item/ice_staff.json"
         ]
-      }
+      },
+      "path": "~/Sapphire"
     },
     {
       "name": "FireStaffProjectile",
@@ -26526,7 +26530,8 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/entity/FireStaffProjectileEntity.java"
         ]
-      }
+      },
+      "path": "~/Nether Diamond"
     },
     {
       "name": "FireStaff",
@@ -26540,7 +26545,8 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/item/FireStaffItem.java",
           "src/main/resources/assets/better_tools/models/item/fire_staff.json"
         ]
-      }
+      },
+      "path": "~/Nether Diamond"
     },
     {
       "name": "CrystalliteCluster30Feature",
@@ -26714,7 +26720,8 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/entity/WardenStaffProjectileEntity.java"
         ]
-      }
+      },
+      "path": "~/Crystallite/Sculk"
     },
     {
       "name": "WardenStaff",
@@ -26728,7 +26735,8 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/item/WardenStaffItem.java",
           "src/main/resources/assets/better_tools/models/item/warden_staff.json"
         ]
-      }
+      },
+      "path": "~/Crystallite/Sculk"
     },
     {
       "name": "GuardianStaffProjectile",
@@ -26741,7 +26749,8 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/entity/GuardianStaffProjectileEntity.java"
         ]
-      }
+      },
+      "path": "~/Crystallite/Prismarine"
     },
     {
       "name": "GuardianStaff",
@@ -26755,7 +26764,8 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/item/GuardianStaffItem.java",
           "src/main/resources/assets/better_tools/models/item/guardian_staff.json"
         ]
-      }
+      },
+      "path": "~/Crystallite/Prismarine"
     },
     {
       "name": "EnderTitaniumArmorSaveFromVoid2",
@@ -26928,6 +26938,19 @@
         ]
       },
       "path": "~/Treehouses"
+    },
+    {
+      "name": "KarmaDamage",
+      "type": "damagetype",
+      "sortid": 1613,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "karma_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/damage_type/karma_damage.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -27408,6 +27431,7 @@
       "item.better_tools.tough_crystal": "§7Tough Crystal",
       "item.better_tools.echo_crystal": "§3Echo Crystal",
       "item.minecraft.splash_potion.effect.double_jump_potion_long": "Splash Potion of Double Jump",
+      "death.attack.karma_damage": "%1$s got instant karma from %2$s",
       "item.better_tools.sapphire_shovel": "Sapphire Shovel",
       "advancements.guardian_staff_multikill_adv.title": "Bubble Burst",
       "advancements.electric_staff_pokemon_adv.title": "It\u0027s super effective!",
@@ -27606,6 +27630,7 @@
       "item.minecraft.potion.effect.swift_swim_potion_2": "Potion of Rapidity",
       "item.better_tools.crystallite_axe_amethyst": "Crystallite Axe",
       "advancements.cactus_crystal_adv.descr": "Wear a Cactus Shirt and Crystal Leggings at the same time",
+      "death.attack.karma_damage.player": "%1$s got instant karma whilst trying to escape %2$s",
       "block.better_tools.polished_diamond_block": "Metallic Diamond Block",
       "item.copper_tools_and_armor.shrunk_music": "Toys on a Tear",
       "item.better_tools.crystallite_axe_sapphire": "Crystallite Axe",
@@ -27703,6 +27728,7 @@
       "item.better_tools.crystallite_axe_sky": "Crystallite Axe",
       "item.better_tools.crystallite_axe_diamond": "Crystallite Axe",
       "advancements.ruby_pickaxe_adv.title": "Ruby-fficiency",
+      "death.attack.karma_damage.item": "%1$s got instant karma from %2$s using %3$s",
       "item.better_tools.ruby_sword": "Ruby Sword",
       "enchantment.better_tools.desperation.desc": "Deal a lot more damage the less HP you currently have, but has no effect at high HP",
       "item.better_tools.topaz_sword": "Topaz Sword",
