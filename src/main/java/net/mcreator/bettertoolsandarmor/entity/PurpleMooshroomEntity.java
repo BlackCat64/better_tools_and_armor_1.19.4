@@ -100,7 +100,7 @@ public class PurpleMooshroomEntity extends Monster {
 		Entity sourceentity = damagesource.getEntity();
 		Entity immediatesourceentity = damagesource.getDirectEntity();
 
-		PurpleMooshroomHitProcedureProcedure.execute(sourceentity);
+		PurpleMooshroomHitProcedureProcedure.execute(world, entity, immediatesourceentity);
 		return super.hurt(damagesource, amount);
 	}
 

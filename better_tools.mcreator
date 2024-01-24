@@ -3877,26 +3877,6 @@
       "path": "~/Purple Mushrooms"
     },
     {
-      "name": "KarmaProcedure",
-      "type": "procedure",
-      "sortid": 551,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "karma_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/KarmaProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Purple Mushrooms"
-    },
-    {
       "name": "MagmaBody",
       "type": "armor",
       "sortid": 265,
@@ -11657,8 +11637,16 @@
         ],
         "dependencies": [
           {
-            "name": "sourceentity",
+            "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -26950,7 +26938,92 @@
         "files": [
           "src/main/resources/data/better_tools/damage_type/karma_damage.json"
         ]
-      }
+      },
+      "path": "~/Purple Mushrooms"
+    },
+    {
+      "name": "PoisonMushroomDamage",
+      "type": "damagetype",
+      "sortid": 1614,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_mushroom_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/damage_type/poison_mushroom_damage.json"
+        ]
+      },
+      "path": "~/Purple Mushrooms"
+    },
+    {
+      "name": "WaterPulseDamage",
+      "type": "damagetype",
+      "sortid": 1615,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_pulse_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/damage_type/water_pulse_damage.json"
+        ]
+      },
+      "path": "~/Crystallite/Prismarine"
+    },
+    {
+      "name": "ShockwaveDamage",
+      "type": "damagetype",
+      "sortid": 1616,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shockwave_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/damage_type/shockwave_damage.json"
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "FreezeShatterDamage",
+      "type": "damagetype",
+      "sortid": 1617,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freeze_shatter_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/damage_type/freeze_shatter_damage.json"
+        ]
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "KarmaEffectProcedure",
+      "type": "procedure",
+      "sortid": 1618,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "karma_effect_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/KarmaEffectProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Purple Mushrooms"
     }
   ],
   "variable_elements": [
@@ -27238,7 +27311,6 @@
       "effect.double_jump": "Double Jump",
       "gui.better_tools.attributes_viewer.label_attribute": "Attribute",
       "item.better_tools.crystallite_armor_sapphire_boots": "Crystallite Boots",
-      "death.attack.guardian_staff": "%1$s was killed by a water pulse",
       "item.minecraft.lingering_potion.effect.criticality_potion": "Lingering Potion of Criticality",
       "item.better_tools.crystallite_sword_lapis": "Crystallite Sword",
       "advancements.all_effect_armor_adv.descr": "Obtain one of every type of base level Effect Armor",
@@ -27257,6 +27329,7 @@
       "block.better_tools.light_polished_gold_block": "Light Polished Gold Block",
       "item.better_tools.crystallite_sword_sapphire": "Crystallite Sword",
       "block.better_tools.dark_polished_copper_trapdoor": "Dark Polished Copper Trapdoor",
+      "death.attack.water_pulse_damage.player": "%1$s was blasted with a water pulse whilst trying to escape %2$s",
       "item.better_tools.nether_diamond_boots": "Nether Diamond Boots",
       "item.better_tools.crystallite_hoe_ruby": "Crystallite Hoe",
       "item.minecraft.potion.effect.potion_of_decay_long": "Potion of Decay",
@@ -27286,7 +27359,9 @@
       "subtitles.rick_roll": "",
       "block.better_tools.polished_gold_stairs": "Polished Gold Stairs",
       "item.better_tools.crystallite_pickaxe_lapis": "Crystallite Pickaxe",
+      "death.attack.freeze_shatter_damage.item": "%1$s was shattered to pieces by %2$s using %3$s",
       "block.better_tools.polished_diamond_stairs": "Metallic Diamond Stairs",
+      "death.attack.poison_mushroom_damage": "%1$s was poisoned by a mushroom",
       "attribute.better_tools.critical_hit_multiplier": "Critical Hit Multiplier",
       "advancements.end_titanium_armor_adv.descr": "Wear a full set of Ender Titanium armor",
       "item.better_tools.block_dance.desc": "Gareth Coker - Dance of the Blocks",
@@ -27308,8 +27383,6 @@
       "effect.better_tools.double_jump.description": "Allows for one extra jump in mid-air per level",
       "item.better_tools.crystallite_armor_sapphire_chestplate": "Crystallite Chestplate",
       "item.better_tools.flint_pickaxe": "Flint Pickaxe",
-      "death.attack.guardian_staff.player": "%1$s was killed by a water pulse whilst fighting %2$s",
-      "death.attack.karma.player": "%1$s got instant karma whilst fighting %2$s",
       "item.better_tools.crystallite_armor_gold_leggings": "Crystallite Leggings",
       "item.better_tools.crystallite_hoe_sculk": "Crystallite Hoe",
       "item.better_tools.obsidian_stick": "Obsidian Stick",
@@ -27375,7 +27448,6 @@
       "item.better_tools.stone_dagger": "Stone Dagger",
       "item.better_tools.sapphire": "Sapphire",
       "item.better_tools.crystallite_armor_emerald_helmet": "Crystallite Helmet",
-      "death.attack.karma": "%1$s got instant karma",
       "item.better_tools.crystallite_armor_topaz_boots": "Crystallite Boots",
       "item.better_tools.crystallite_armor_sculk_leggings": "Crystallite Leggings",
       "item.better_tools.crystallite_hoe_iron": "Crystallite Hoe",
@@ -27407,7 +27479,6 @@
       "gui.better_tools.attributes_viewer.label_001": "00",
       "gui.better_tools.attributes_viewer.label_000": "attack_damage_mod",
       "block.copper_tools_and_armor.nether_diamond_block": "Nether Diamond Block",
-      "death.attack.poison_mushroom.player": "%1$s was poisoned by a mushroom whilst fighting %2$s",
       "item.minecraft.potion.effect.potion_of_decay": "Potion of Decay",
       "gui.better_tools.attributes_viewer.label_value": "Value",
       "effect.karma_potion": "Karma",
@@ -27462,6 +27533,7 @@
       "advancements.nether_diamond_adv.title": "Diamonds! (Fire Edition)",
       "block.better_tools.light_polished_lapis_wall": "Light Metallic Lapis Lazuli Wall",
       "item.better_tools.crystallite_armor_sky_leggings": "Crystallite Leggings",
+      "death.attack.poison_mushroom_damage.player": "%1$s was poisoned by a mushroom whilst trying to escape %2$s",
       "item.better_tools.crystallite_hoe": "Crystallite Hoe",
       "advancements.nether_diamond_tools_adv.title": "Fiery Arsenal",
       "item.better_tools.diamond_magma_chestplate": "Magma Chestplate",
@@ -27540,6 +27612,7 @@
       "item.better_tools.crystallite_shovel_lapis": "Crystallite Shovel",
       "item.better_tools.rick_roll_disc.desc": "Rick Astley - Never Gonna Give You Up",
       "item.better_tools.iron_cactus_chestplate": "Cactus Shirt",
+      "death.attack.poison_mushroom_damage.item": "%1$s was poisoned by a mushroom whilst fighting %2$s using %3$s",
       "item.better_tools.crystallite_sword_sculk": "Crystallite Sword",
       "item.better_tools.sapphire_axe": "Sapphire Axe",
       "block.better_tools.dark_polished_copper_block": "Dark Polished Copper Block",
@@ -27644,6 +27717,7 @@
       "block.better_tools.light_polished_copper_slab": "Polished Copper Slab",
       "advancements.nether_diamond_adv.descr": "Obtain a Nether Diamond",
       "advancements.night_phantom_adv.title": "Night Phantom",
+      "death.attack.water_pulse_damage.item": "%1$s was blasted with a water pulse from %2$s\u0027s %3$s",
       "item.better_tools.crystallite_pickaxe_nether_diamond": "Crystallite Pickaxe",
       "gui.better_tools.attributes_viewer.label_0000": "knockback_resistance_mod",
       "block.better_tools.polished_gold_block": "Polished Gold Block",
@@ -27713,7 +27787,6 @@
       "item.better_tools.flint_shovel": "Flint Shovel",
       "block.better_tools.end_titanium_ore": "Ender Titanium Ore",
       "item.better_tools.crystallite_sword_emerald": "Crystallite Sword",
-      "death.attack.shockwave.player": "%1$s was killed by a shockwave whilst fighting %2$s",
       "block.better_tools.dark_polished_emerald_stairs": "Dark Metallic Emerald Stairs",
       "item.better_tools.glass_boots": "Glass Boots",
       "block.better_tools.polished_amethyst_trapdoor": "Metallic Amethyst Trapdoor",
@@ -27881,6 +27954,7 @@
       "item.better_tools.crystallite_sword_gold": "Crystallite Sword",
       "item.minecraft.splash_potion.effect.potion_of_decay_2": "Splash Potion of Decay",
       "item.copper_tools_and_armor.copper_pickaxe": "Copper Pickaxe",
+      "death.attack.freeze_shatter_damage": "%1$s was shattered to pieces",
       "block.better_tools.light_polished_nether_diamond_slab": "Light Metallic Nether Diamond Slab",
       "advancements.nether_diamond_armor_adv.title": "Cover me in Nether Diamonds",
       "item.better_tools.guardian_spike": "Guardian Spike",
@@ -27896,6 +27970,7 @@
       "subtitles.master_builders": "",
       "advancements.topaz_adv.title": "Human Lightning Rod",
       "item.better_tools.crystallite_armor_ruby_boots": "Crystallite Boots",
+      "death.attack.shockwave_damage.player": "%1$s was killed by a shockwave whilst trying to escape %2$s",
       "itemGroup.tabtools_and_armor_tab": "BT+A - Tools and Armor Sets",
       "item.better_tools.crystallite_armor_nether_diamond_helmet": "Crystallite Helmet",
       "item.better_tools.crystallite_axe_ruby": "Crystallite Axe",
@@ -27904,6 +27979,7 @@
       "block.better_tools.light_polished_emerald_stairs": "Metallic Emerald Stairs",
       "item.better_tools.crystallite_armor_sky_boots": "Crystallite Boots",
       "item.better_tools.ice_effect": "Ice Effect",
+      "death.attack.shockwave_damage.item": "%1$s was killed by a shockwave from %2$s using %3$s",
       "block.better_tools.polished_topaz_stairs": "Metallic Topaz Stairs",
       "item.better_tools.crystallite_dagger_sculk": "Crystallite Dagger",
       "item_group.better_tools.better_tools_and_armor_misc": "Better Tools And Armor - Misc.",
@@ -27919,7 +27995,6 @@
       "item.better_tools.ruby_hoe": "Ruby Hoe",
       "advancements.overkill_adv.title": "Overkill",
       "block.better_tools.dark_polished_copper_slab": "Dark Polished Copper Slab",
-      "death.attack.poison_mushroom": "%1$s was poisoned by a mushroom",
       "item.better_tools.crystallite_armor_nether_diamond_leggings": "Crystallite Leggings",
       "item.better_tools.diamond_rabbit_boots": "Rabbit Boots",
       "item.better_tools.block_dance": "Music Disc",
@@ -27927,7 +28002,9 @@
       "item.better_tools.crystallite_pickaxe_gold": "Crystallite Pickaxe",
       "item.better_tools.magic_crystal": "§9Magic Crystal",
       "item.better_tools.end_titanium_pickaxe": "Ender Titanium Pickaxe",
+      "death.attack.water_pulse_damage": "%1$s was blasted with a water pulse",
       "item.better_tools.ice_crystal": "§bFrozen Crystal",
+      "death.attack.freeze_shatter_damage.player": "%1$s was shattered to pieces whilst trying to escape %2$s",
       "block.better_tools.dark_polished_emerald_wall": "Dark Metallic Emerald Wall",
       "item.better_tools.crystallite_hoe_prismarine": "Crystallite Hoe",
       "item.better_tools.glass_leggings": "Glass Leggings",
@@ -27971,11 +28048,11 @@
       "enchantment.better_tools.karma_curse": "Curse of Karma",
       "effect.better_tools.swift_swim": "Swift Swim",
       "item.minecraft.potion.effect.criticality_potion_2": "Potion of Criticality",
-      "death.attack.shockwave": "%1$s was killed by a shockwave",
       "itemGroup.tabblocks_tab": "BT+A - Building Blocks",
       "gui.better_tools.attributes_viewer.label_crit_multiplier": "Critical Hit",
       "block.better_tools.cut_crystallite_block": "Cut Crystallite Block",
       "item.better_tools.shrunk_music.desc": "Gareth Coker - Toys on a Tear",
+      "death.attack.shockwave_damage": "%1$s was killed by a shockwave",
       "item.better_tools.crystallite_armor_prismarine_helmet": "Crystallite Helmet",
       "item.better_tools.ruby_shovel": "Ruby Shovel",
       "advancements.diamond_apple_adv.descr": "Eat a Diamond Apple",
