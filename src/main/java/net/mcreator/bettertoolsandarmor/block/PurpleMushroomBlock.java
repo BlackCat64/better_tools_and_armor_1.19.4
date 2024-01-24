@@ -94,7 +94,7 @@ public class PurpleMushroomBlock extends FlowerBlock implements BonemealableBloc
 	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
-		PurpleMushroomProcedureProcedure.execute(entity);
+		PurpleMushroomProcedureProcedure.execute(world, entity);
 	}
 
 	@Override

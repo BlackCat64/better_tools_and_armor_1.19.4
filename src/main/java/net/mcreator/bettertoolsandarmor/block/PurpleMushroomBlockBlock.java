@@ -74,6 +74,6 @@ public class PurpleMushroomBlockBlock extends Block {
 	@Override
 	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
 		super.stepOn(world, pos, blockstate, entity);
-		PurpleMushroomProcedureProcedure.execute(entity);
+		PurpleMushroomProcedureProcedure.execute(world, entity);
 	}
 }
