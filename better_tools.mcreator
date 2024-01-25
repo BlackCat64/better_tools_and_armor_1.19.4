@@ -23836,38 +23836,6 @@
       "path": "~/Crystallite/Lapis"
     },
     {
-      "name": "CrystalliteSwordLapisMagicDamage",
-      "type": "procedure",
-      "sortid": 1452,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_sword_lapis_magic_damage",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordLapisMagicDamageProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "amount",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Lapis"
-    },
-    {
       "name": "GuardianCrystal",
       "type": "item",
       "sortid": 109,
@@ -27036,6 +27004,42 @@
         ]
       },
       "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "CrystalliteSwordLapisMagicProcedure",
+      "type": "procedure",
+      "sortid": 1625,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_lapis_magic_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordLapisMagicProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Lapis"
     }
   ],
   "variable_elements": [
