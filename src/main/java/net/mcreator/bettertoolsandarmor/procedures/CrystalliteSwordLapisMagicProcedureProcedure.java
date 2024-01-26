@@ -17,7 +17,6 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
@@ -32,28 +31,25 @@ public class CrystalliteSwordLapisMagicProcedureProcedure {
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		Entity entity = event.getEntity();
 		if (event != null && entity != null) {
-			execute(event, entity.getLevel(), event.getSource(), entity, event.getSource().getEntity(), event.getAmount());
+			execute(event, entity.getLevel(), entity, event.getSource().getDirectEntity(), event.getSource().getEntity(), event.getAmount());
 		}
 	}
 
-	public static void execute(LevelAccessor world, DamageSource damagesource, Entity entity, Entity sourceentity, double amount) {
-		execute(null, world, damagesource, entity, sourceentity, amount);
+	public static void execute(LevelAccessor world, Entity entity, Entity immediatesourceentity, Entity sourceentity, double amount) {
+		execute(null, world, entity, immediatesourceentity, sourceentity, amount);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, DamageSource damagesource, Entity entity, Entity sourceentity, double amount) {
-		if (entity == null || sourceentity == null)
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, Entity immediatesourceentity, Entity sourceentity, double amount) {
+		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
-		DamageSource magic_damage = null;
 		if (!BetterToolsModVariables.being_damaged_flag) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:magic_damage_tools")))) {
+			if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:magic_damage_tools")))) {
+				BetterToolsModVariables.being_damaged_flag = true;
+				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.INDIRECT_MAGIC), immediatesourceentity, immediatesourceentity), (float) amount);
+				BetterToolsModVariables.being_damaged_flag = false;
 				if (event != null && event.isCancelable()) {
 					event.setCanceled(true);
 				}
-				BetterToolsModVariables.being_damaged_flag = true;
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC), ((damagesource).getDirectEntity()), ((damagesource).getEntity())), (float) amount);
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + amount)), false);
-				BetterToolsModVariables.being_damaged_flag = false;
 				if ((sourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).critical_hit) {
 					{
 						boolean _setval = false;

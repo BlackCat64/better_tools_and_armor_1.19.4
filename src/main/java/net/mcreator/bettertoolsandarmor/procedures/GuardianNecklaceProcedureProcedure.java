@@ -13,9 +13,12 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
@@ -30,8 +33,9 @@ import javax.annotation.Nullable;
 public class GuardianNecklaceProcedureProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
-		if (event != null && event.getEntity() != null) {
-			execute(event, event.getEntity().level, event.getEntity(), event.getSource().getEntity());
+		Entity entity = event.getEntity();
+		if (event != null && entity != null) {
+			execute(event, entity.getLevel(), entity, event.getSource().getEntity());
 		}
 	}
 
@@ -53,6 +57,8 @@ public class GuardianNecklaceProcedureProcedure {
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.GUARDIAN_STAFF_BEAM.get()), (sourceentity.getX()), (sourceentity.getY() + 1), (sourceentity.getZ()), 8, 0.3, 1, 0.3, 0.05);
 					}
+					sourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:water_pulse_damage"))), entity),
+							(float) damage);
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.NAUTILUS, (sourceentity.getX()), (sourceentity.getY() + 1), (sourceentity.getZ()), 8, 0.3, 1, 0.3, 0.05);
 					if (world instanceof Level _level) {

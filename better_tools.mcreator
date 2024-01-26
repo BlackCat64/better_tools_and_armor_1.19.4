@@ -27018,11 +27018,11 @@
         ],
         "dependencies": [
           {
-            "name": "damagesource",
-            "type": "damagesource"
+            "name": "entity",
+            "type": "entity"
           },
           {
-            "name": "entity",
+            "name": "immediatesourceentity",
             "type": "entity"
           },
           {
