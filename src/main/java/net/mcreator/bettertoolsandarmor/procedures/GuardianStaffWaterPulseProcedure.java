@@ -10,7 +10,10 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageType;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.tags.TagKey;
+import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -19,13 +22,16 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.Holder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModParticleTypes;
 
+import java.util.stream.Stream;
 import java.util.stream.Collectors;
+import java.util.Set;
 import java.util.List;
 import java.util.Comparator;
 
@@ -36,6 +42,7 @@ public class GuardianStaffWaterPulseProcedure {
 		double kills = 0;
 		double damage = 0;
 		double range = 0;
+		DamageSource damage_through_armor = null;
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.guardian.attack")), SoundSource.PLAYERS, 7, (float) 1.5);
@@ -61,9 +68,18 @@ public class GuardianStaffWaterPulseProcedure {
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof LivingEntity) {
 					if (!(entityiterator == entity)) {
-						entityiterator.hurt(
-								new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:water_pulse_damage"))), entity),
-								(float) damage);
+						damage_through_armor = new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:water_pulse_damage"))),
+								entity);
+						{
+							DamageSource _damageSource = damage_through_armor;
+							if (_damageSource != null) {
+								Holder.Reference<DamageType> _reference = (Holder.Reference<DamageType>) damage_through_armor.typeHolder();
+								Stream<TagKey<DamageType>> _stream = Stream.concat(_reference.tags(), Stream.of(DamageTypeTags.BYPASSES_ARMOR));
+								Set<TagKey<DamageType>> _set = _stream.collect(Collectors.toSet());
+								_reference.bindTags(_set);
+							}
+						}
+						entityiterator.hurt(damage_through_armor, (float) damage);
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.NAUTILUS, (entityiterator.getX()), (entityiterator.getY() + 1), (entityiterator.getZ()), 8, 0.4, 1, 0.4, 0.025);
 						if (entity instanceof ServerPlayer _player) {
