@@ -28,6 +28,12 @@
     "enableMeleeDamage": false,
     "addSlot": false,
     "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§7When worn:",
+        "§9+1 Karma Damage to attackers"
+      ]
+    },
     "hasGlow": false,
     "customProperties": {},
     "states": [],

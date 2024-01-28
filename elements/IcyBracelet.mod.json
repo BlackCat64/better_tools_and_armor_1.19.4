@@ -28,6 +28,12 @@
     "enableMeleeDamage": false,
     "addSlot": false,
     "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§7When worn:",
+        "§9Melee attacks may freeze the target"
+      ]
+    },
     "hasGlow": false,
     "customProperties": {},
     "states": [],

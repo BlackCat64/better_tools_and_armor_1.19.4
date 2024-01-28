@@ -28,6 +28,13 @@
     "enableMeleeDamage": false,
     "addSlot": true,
     "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§7When worn:",
+        "§9Extinguishes fire after 3s",
+        "§cCooldown: 15s"
+      ]
+    },
     "hasGlow": false,
     "customProperties": {},
     "states": [],

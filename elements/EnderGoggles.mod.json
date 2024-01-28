@@ -28,6 +28,12 @@
     "enableMeleeDamage": false,
     "addSlot": false,
     "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§7When worn:",
+        "§9Looking at Endermen will not anger them"
+      ]
+    },
     "hasGlow": false,
     "customProperties": {},
     "states": [],

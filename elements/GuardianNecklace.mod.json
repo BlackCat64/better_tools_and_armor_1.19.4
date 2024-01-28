@@ -28,6 +28,12 @@
     "enableMeleeDamage": false,
     "addSlot": false,
     "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§7When worn:",
+        "§9Deal 3 damage to attackers when wet"
+      ]
+    },
     "hasGlow": false,
     "customProperties": {},
     "states": [],

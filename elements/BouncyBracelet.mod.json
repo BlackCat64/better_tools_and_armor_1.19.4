@@ -28,6 +28,12 @@
     "enableMeleeDamage": false,
     "addSlot": false,
     "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§7When worn:",
+        "§9+2 Attack Knockback"
+      ]
+    },
     "hasGlow": false,
     "customProperties": {},
     "states": [],
