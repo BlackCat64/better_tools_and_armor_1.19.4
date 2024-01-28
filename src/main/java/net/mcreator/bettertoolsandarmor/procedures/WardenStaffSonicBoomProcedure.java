@@ -50,7 +50,7 @@ public class WardenStaffSonicBoomProcedure {
 			if (!world.getBlockState(BlockPos.containing(look_x, look_y, look_z)).canOcclude()) {
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.SONIC_BOOM, look_x, look_y, look_z, 1, 0.01, 0.01, 0.01, 0.01);
-				entity_to_hurt = (Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(look_x, look_y, look_z), 1.5, 1.5, 1.5), e -> true).stream().sorted(new Object() {
+				entity_to_hurt = (Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(look_x, look_y, look_z), 1.25, 1.25, 1.25), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
@@ -79,7 +79,7 @@ public class WardenStaffSonicBoomProcedure {
 				count = count + 1;
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.SONIC_BOOM, (x + count * change_x), (y + 1 + count * change_y), (z + count * change_z), 1, 0.01, 0.01, 0.01, 0.01);
-				entity_to_hurt = (Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3((x + count * change_x), (y + 1 + count * change_y), (z + count * change_z)), 1.5, 1.5, 1.5), e -> true).stream().sorted(new Object() {
+				entity_to_hurt = (Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3((x + count * change_x), (y + 1 + count * change_y), (z + count * change_z)), 1.25, 1.25, 1.25), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}

@@ -19759,26 +19759,6 @@
       "path": "~/Crystallite/Sculk"
     },
     {
-      "name": "WardenStaffNoProjectilesProcedure",
-      "type": "procedure",
-      "sortid": 1264,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "warden_staff_no_projectiles_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/WardenStaffNoProjectilesProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "immediatesourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Sculk"
-    },
-    {
       "name": "WardenStaffRecipe",
       "type": "recipe",
       "sortid": 1265,
@@ -26442,20 +26422,6 @@
       "path": "~/Crystallite"
     },
     {
-      "name": "WardenStaffProjectile",
-      "type": "projectile",
-      "sortid": 1599,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "warden_staff_projectile",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/entity/WardenStaffProjectileEntity.java"
-        ]
-      },
-      "path": "~/Crystallite/Sculk"
-    },
-    {
       "name": "WardenStaff",
       "type": "item",
       "sortid": 1594,
@@ -26469,20 +26435,6 @@
         ]
       },
       "path": "~/Crystallite/Sculk"
-    },
-    {
-      "name": "GuardianStaffProjectile",
-      "type": "projectile",
-      "sortid": 1600,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "guardian_staff_projectile",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/entity/GuardianStaffProjectileEntity.java"
-        ]
-      },
-      "path": "~/Crystallite/Prismarine"
     },
     {
       "name": "GuardianStaff",

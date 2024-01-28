@@ -38,7 +38,10 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "enableRanged": true,
+    "onStoppedUsing": {
+      "name": "GuardianStaffWaterPulse"
+    },
+    "enableRanged": false,
     "shootConstantly": false,
     "projectile": {
       "value": "CUSTOM:GuardianStaffProjectile"

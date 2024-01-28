@@ -21,7 +21,5 @@ public class BetterToolsModEntityRenderers {
 		event.registerEntityRenderer(BetterToolsModEntities.ICE_STAFF_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(BetterToolsModEntities.ELECTRIC_STAFF_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(BetterToolsModEntities.FIRE_STAFF_PROJECTILE.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(BetterToolsModEntities.WARDEN_STAFF_PROJECTILE.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(BetterToolsModEntities.GUARDIAN_STAFF_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

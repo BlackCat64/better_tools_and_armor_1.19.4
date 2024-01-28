@@ -12,6 +12,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageType;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.sounds.SoundSource;
@@ -53,7 +54,13 @@ public class GuardianStaffWaterPulseProcedure {
 		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 200);
-			(entity instanceof LivingEntity _entUseItem6 ? _entUseItem6.getUseItem() : ItemStack.EMPTY).setDamageValue((int) ((entity instanceof LivingEntity _entUseItem4 ? _entUseItem4.getUseItem() : ItemStack.EMPTY).getDamageValue() - 1));
+			{
+				ItemStack _ist = itemstack;
+				if (_ist.hurt(1, RandomSource.create(), null)) {
+					_ist.shrink(1);
+					_ist.setDamageValue(0);
+				}
+			}
 		}
 		if (entity.isInWaterRainOrBubble()) {
 			range = 10;

@@ -16,10 +16,8 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.bettertoolsandarmor.entity.WardenStaffProjectileEntity;
 import net.mcreator.bettertoolsandarmor.entity.PurpleMooshroomEntity;
 import net.mcreator.bettertoolsandarmor.entity.IceStaffProjectileEntity;
-import net.mcreator.bettertoolsandarmor.entity.GuardianStaffProjectileEntity;
 import net.mcreator.bettertoolsandarmor.entity.FireStaffProjectileEntity;
 import net.mcreator.bettertoolsandarmor.entity.ElectricStaffProjectileEntity;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
@@ -38,12 +36,6 @@ public class BetterToolsModEntities {
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<FireStaffProjectileEntity>> FIRE_STAFF_PROJECTILE = register("projectile_fire_staff_projectile", EntityType.Builder.<FireStaffProjectileEntity>of(FireStaffProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(FireStaffProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<WardenStaffProjectileEntity>> WARDEN_STAFF_PROJECTILE = register("projectile_warden_staff_projectile",
-			EntityType.Builder.<WardenStaffProjectileEntity>of(WardenStaffProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(WardenStaffProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<GuardianStaffProjectileEntity>> GUARDIAN_STAFF_PROJECTILE = register("projectile_guardian_staff_projectile",
-			EntityType.Builder.<GuardianStaffProjectileEntity>of(GuardianStaffProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(GuardianStaffProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
