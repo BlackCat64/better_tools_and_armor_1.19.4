@@ -32,51 +32,31 @@ public class WardenStaffSonicBoomProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
+		Entity entity_to_hurt = null;
 		double count = 0;
 		double change_x = 0;
 		double change_y = 0;
 		double change_z = 0;
+		double look_x = 0;
+		double look_y = 0;
+		double look_z = 0;
+		double dist_to_wall = 0;
 		count = 1;
 		for (int index0 = 0; index0 < 15; index0++) {
 			count = count + 1;
-			if (!world
-					.getBlockState(new BlockPos(
-							entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getX(),
-							entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getY(),
-							entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ()))
-					.canOcclude()) {
+			look_x = entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getX();
+			look_y = entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getY();
+			look_z = entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ();
+			if (!world.getBlockState(BlockPos.containing(look_x, look_y, look_z)).canOcclude()) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.SONIC_BOOM,
-							(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getX()),
-							(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getY()),
-							(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ()), 1, 0.01,
-							0.01, 0.01, 0.01);
-				if (!(((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(
-						new Vec3((entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getX()),
-								(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getY()),
-								(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ())),
-						1, 1, 1), e -> true).stream().sorted(new Object() {
-							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-							}
-						}.compareDistOf(
-								(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getX()),
-								(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getY()),
-								(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ())))
-						.findFirst().orElse(null)) == null)) {
-					((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(
-							new Vec3((entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getX()),
-									(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getY()),
-									(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ())),
-							1, 1, 1), e -> true).stream().sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-								}
-							}.compareDistOf(
-									(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getX()),
-									(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getY()),
-									(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ())))
-							.findFirst().orElse(null)).hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.SONIC_BOOM), entity), 10);
+					_level.sendParticles(ParticleTypes.SONIC_BOOM, look_x, look_y, look_z, 1, 0.01, 0.01, 0.01, 0.01);
+				entity_to_hurt = (Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(look_x, look_y, look_z), 1.5, 1.5, 1.5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(look_x, look_y, look_z)).findFirst().orElse(null);
+				if (!(entity_to_hurt == null || entity_to_hurt == entity)) {
+					entity_to_hurt.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.SONIC_BOOM), entity), 10);
 					if (entity instanceof ServerPlayer _player) {
 						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:warden_staff_adv"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -87,12 +67,10 @@ public class WardenStaffSonicBoomProcedure {
 					}
 				}
 			} else {
-				change_x = (entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getX() - x)
-						/ count;
-				change_y = (entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getY() - (y + 1))
-						/ count;
-				change_z = (entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(count)), ClipContext.Block.VISUAL, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ() - z)
-						/ count;
+				dist_to_wall = Math.sqrt(Math.pow(look_x - x, 2) + Math.pow(look_y - (y + 1), 2) + Math.pow(look_z - z, 2));
+				change_x = (look_x - x) / dist_to_wall;
+				change_y = (look_y - (y + 1)) / dist_to_wall;
+				change_z = (look_z - z) / dist_to_wall;
 				break;
 			}
 		}
@@ -101,17 +79,13 @@ public class WardenStaffSonicBoomProcedure {
 				count = count + 1;
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.SONIC_BOOM, (x + count * change_x), (y + 1 + count * change_y), (z + count * change_z), 1, 0.01, 0.01, 0.01, 0.01);
-				if (!(((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3((x + count * change_x), (y + 1 + count * change_y), (z + count * change_z)), 1, 1, 1), e -> true).stream().sorted(new Object() {
+				entity_to_hurt = (Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3((x + count * change_x), (y + 1 + count * change_y), (z + count * change_z)), 1.5, 1.5, 1.5), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf((x + count * change_x), (y + 1 + count * change_y), (z + count * change_z))).findFirst().orElse(null)) == null)) {
-					((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3((x + count * change_x), (y + 1 + count * change_y), (z + count * change_z)), 1, 1, 1), e -> true).stream().sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-						}
-					}.compareDistOf((x + count * change_x), (y + 1 + count * change_y), (z + count * change_z))).findFirst().orElse(null))
-							.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.SONIC_BOOM), entity), 10);
+				}.compareDistOf((x + count * change_x), (y + 1 + count * change_y), (z + count * change_z))).findFirst().orElse(null);
+				if (!(entity_to_hurt == null || entity_to_hurt == entity)) {
+					entity_to_hurt.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.SONIC_BOOM), entity), 10);
 					if (entity instanceof ServerPlayer _player) {
 						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:warden_staff_adv"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
