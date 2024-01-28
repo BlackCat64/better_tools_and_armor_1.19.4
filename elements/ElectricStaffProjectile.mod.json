@@ -3,7 +3,7 @@
   "_type": "projectile",
   "definition": {
     "projectileItem": {
-      "value": "CUSTOM:ElectricEffect"
+      "value": "CUSTOM:ElectricStaff"
     },
     "showParticles": false,
     "actionSound": {

@@ -38,13 +38,13 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "enableRanged": true,
+    "onStoppedUsing": {
+      "name": "WardenStaffSonicBoom"
+    },
+    "enableRanged": false,
     "shootConstantly": false,
     "projectile": {
       "value": "CUSTOM:WardenStaffProjectile"
-    },
-    "onRangedItemUsed": {
-      "name": "WardenStaffSonicBoom"
     },
     "isFood": false,
     "nutritionalValue": 0,

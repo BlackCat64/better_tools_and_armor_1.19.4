@@ -26,7 +26,7 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModEntities;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class FireStaffProjectileEntity extends AbstractArrow implements ItemSupplier {
-	public static final ItemStack PROJECTILE_ITEM = new ItemStack(BetterToolsModItems.FLAME_EFFECT.get());
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(BetterToolsModItems.FIRE_STAFF.get());
 
 	public FireStaffProjectileEntity(PlayMessages.SpawnEntity packet, Level world) {
 		super(BetterToolsModEntities.FIRE_STAFF_PROJECTILE.get(), world);

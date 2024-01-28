@@ -27040,6 +27040,25 @@
         ]
       },
       "path": "~/Crystallite/Lapis"
+    },
+    {
+      "name": "StaffSaveDurabilityProcedure",
+      "type": "procedure",
+      "sortid": 1626,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staff_save_durability_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/StaffSaveDurabilityProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [

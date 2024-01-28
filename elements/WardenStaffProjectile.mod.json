@@ -3,7 +3,7 @@
   "_type": "projectile",
   "definition": {
     "projectileItem": {
-      "value": "CUSTOM:ClimbableWall"
+      "value": "CUSTOM:WardenStaff"
     },
     "showParticles": false,
     "actionSound": {

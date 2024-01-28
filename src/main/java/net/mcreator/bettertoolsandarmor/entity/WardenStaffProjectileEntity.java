@@ -17,12 +17,12 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.bettertoolsandarmor.procedures.WardenStaffNoProjectilesProcedureProcedure;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEntities;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModBlocks;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class WardenStaffProjectileEntity extends AbstractArrow implements ItemSupplier {
-	public static final ItemStack PROJECTILE_ITEM = new ItemStack(BetterToolsModBlocks.CLIMBABLE_WALL.get());
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(BetterToolsModItems.WARDEN_STAFF.get());
 
 	public WardenStaffProjectileEntity(PlayMessages.SpawnEntity packet, Level world) {
 		super(BetterToolsModEntities.WARDEN_STAFF_PROJECTILE.get(), world);

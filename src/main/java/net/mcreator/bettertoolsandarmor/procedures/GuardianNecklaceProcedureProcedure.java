@@ -21,7 +21,6 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleTypes;
@@ -67,8 +66,6 @@ public class GuardianNecklaceProcedureProcedure {
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.GUARDIAN_STAFF_BEAM.get()), (sourceentity.getX()), (sourceentity.getY() + 1), (sourceentity.getZ()), 8, 0.3, 1, 0.3, 0.05);
 					}
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("executed"), false);
 					damage_through_armor = new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:water_pulse_damage"))), entity);
 					{
 						DamageSource _damageSource = damage_through_armor;
@@ -91,13 +88,7 @@ public class GuardianNecklaceProcedureProcedure {
 					}
 					BetterToolsModVariables.being_damaged_flag = false;
 				}
-			} else {
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("not wearing charm!"), false);
 			}
-		} else {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("being damaged!"), false);
 		}
 	}
 }

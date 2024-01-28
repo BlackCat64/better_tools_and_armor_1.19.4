@@ -20,6 +20,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.bettertoolsandarmor.procedures.StaffSaveDurabilityProcedureProcedure;
 import net.mcreator.bettertoolsandarmor.entity.ElectricStaffProjectileEntity;
 
 import java.util.List;
@@ -96,6 +97,7 @@ public class ElectricStaffItem extends Item {
 							player.getInventory().removeItem(stack);
 					}
 				}
+				StaffSaveDurabilityProcedureProcedure.execute(entity);
 			}
 		}
 	}

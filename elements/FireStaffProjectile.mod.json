@@ -3,7 +3,7 @@
   "_type": "projectile",
   "definition": {
     "projectileItem": {
-      "value": "CUSTOM:FlameEffect"
+      "value": "CUSTOM:FireStaff"
     },
     "showParticles": false,
     "actionSound": {

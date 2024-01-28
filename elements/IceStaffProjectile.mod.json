@@ -3,7 +3,7 @@
   "_type": "projectile",
   "definition": {
     "projectileItem": {
-      "value": "CUSTOM:IceEffect"
+      "value": "CUSTOM:IceStaff"
     },
     "showParticles": false,
     "actionSound": {
