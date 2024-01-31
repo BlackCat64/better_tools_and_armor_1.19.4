@@ -8,6 +8,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.EntityHitResult;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -20,6 +21,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.bettertoolsandarmor.procedures.FireStaffProjectileParticlesProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.FireStaffProjectileMissesProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.FireStaffProcedureProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEntities;
@@ -73,14 +76,21 @@ public class FireStaffProjectileEntity extends AbstractArrow implements ItemSupp
 	}
 
 	@Override
+	public void onHitBlock(BlockHitResult blockHitResult) {
+		super.onHitBlock(blockHitResult);
+		FireStaffProjectileMissesProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+	}
+
+	@Override
 	public void tick() {
 		super.tick();
+		FireStaffProjectileParticlesProcedure.execute(this.level, this);
 		if (this.inGround)
 			this.discard();
 	}
 
 	public static FireStaffProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 1f, 1, 0);
+		return shoot(world, entity, source, 1f, 0.2, 0);
 	}
 
 	public static FireStaffProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
@@ -102,7 +112,7 @@ public class FireStaffProjectileEntity extends AbstractArrow implements ItemSupp
 		double dz = target.getZ() - entity.getZ();
 		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(1);
+		entityarrow.setBaseDamage(0.2);
 		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);

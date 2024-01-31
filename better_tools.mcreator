@@ -26985,6 +26985,174 @@
         ]
       },
       "path": "~/Staffs"
+    },
+    {
+      "name": "FireStaffProjectileParticles",
+      "type": "procedure",
+      "sortid": 1627,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_staff_projectile_particles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FireStaffProjectileParticlesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Fire"
+    },
+    {
+      "name": "FireStaffProjectileMisses",
+      "type": "procedure",
+      "sortid": 1628,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_staff_projectile_misses",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FireStaffProjectileMissesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Fire"
+    },
+    {
+      "name": "IceStaffProjectileParticles",
+      "type": "procedure",
+      "sortid": 1629,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_staff_projectile_particles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IceStaffProjectileParticlesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "IceStaffProjectileMisses",
+      "type": "procedure",
+      "sortid": 1630,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_staff_projectile_misses",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IceStaffProjectileMissesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "LightningStaffProjectileParticles",
+      "type": "procedure",
+      "sortid": 1631,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_staff_projectile_particles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/LightningStaffProjectileParticlesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Lightning"
+    },
+    {
+      "name": "LightningStaffProjectileMisses",
+      "type": "procedure",
+      "sortid": 1632,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_staff_projectile_misses",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/LightningStaffProjectileMissesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Lightning"
     }
   ],
   "variable_elements": [

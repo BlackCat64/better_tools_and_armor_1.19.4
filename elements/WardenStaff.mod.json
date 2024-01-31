@@ -36,6 +36,7 @@
     "glowCondition": {
       "fixedValue": true
     },
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onStoppedUsing": {
@@ -44,7 +45,7 @@
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {
-      "value": "CUSTOM:WardenStaffProjectile"
+      "value": "CUSTOM:ElectricStaffProjectile"
     },
     "isFood": false,
     "nutritionalValue": 0,
