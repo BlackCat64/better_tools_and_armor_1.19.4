@@ -27153,6 +27153,116 @@
         ]
       },
       "path": "~/Staffs/Lightning"
+    },
+    {
+      "name": "FireStaffDispensed",
+      "type": "procedure",
+      "sortid": 1633,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_staff_dispensed",
+      "metadata": {
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FireStaffDispensedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "success",
+            "type": "logic"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Fire"
+    },
+    {
+      "name": "FireStaffInDispenser",
+      "type": "itemextension",
+      "sortid": 1634,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_staff_in_dispenser",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/extension/FireStaffInDispenserItemExtension.java"
+        ]
+      },
+      "path": "~/Staffs/Fire"
+    },
+    {
+      "name": "FireStaffProjectileFromDispenserHits",
+      "type": "procedure",
+      "sortid": 1635,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_staff_projectile_from_dispenser_hits",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FireStaffProjectileFromDispenserHitsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Fire"
+    },
+    {
+      "name": "FireStaffDispenserProjectile",
+      "type": "projectile",
+      "sortid": 1636,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_staff_dispenser_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/entity/FireStaffDispenserProjectileEntity.java",
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/renderer/FireStaffDispenserProjectileRenderer.java"
+        ]
+      },
+      "path": "~/Staffs/Fire"
     }
   ],
   "variable_elements": [
