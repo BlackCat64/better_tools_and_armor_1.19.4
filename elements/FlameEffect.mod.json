@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 0,
     "texture": "flame_effect",
-    "customModelName": "Normal",
+    "customModelName": "Ranged item",
     "customProperties": {},
     "states": [],
     "name": "Flame Effect",
@@ -29,14 +29,23 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:ElectricStaffProjectile"
+    },
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

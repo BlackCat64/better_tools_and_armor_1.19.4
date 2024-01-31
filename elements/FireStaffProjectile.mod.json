@@ -13,8 +13,8 @@
     "power": 1.0,
     "damage": 1.0,
     "knockback": 0,
-    "entityModel": "Default",
-    "customModelTexture": "",
+    "entityModel": "Modelfire_staff_projectile",
+    "customModelTexture": "flame_effect.png",
     "onHitsEntity": {
       "name": "FireStaffProcedure"
     }

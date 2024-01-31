@@ -26240,6 +26240,7 @@
       "registry_name": "fire_staff_projectile",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/renderer/FireStaffProjectileRenderer.java",
           "src/main/java/net/mcreator/bettertoolsandarmor/entity/FireStaffProjectileEntity.java"
         ]
       },
