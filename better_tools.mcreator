@@ -27263,6 +27263,116 @@
         ]
       },
       "path": "~/Staffs/Fire"
+    },
+    {
+      "name": "IceStaffInDispenser",
+      "type": "itemextension",
+      "sortid": 1637,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_staff_in_dispenser",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/extension/IceStaffInDispenserItemExtension.java"
+        ]
+      },
+      "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "IceStaffDispensed",
+      "type": "procedure",
+      "sortid": 1638,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_staff_dispensed",
+      "metadata": {
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IceStaffDispensedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "success",
+            "type": "logic"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "IceStaffProjectileFromDispenserHits",
+      "type": "procedure",
+      "sortid": 1639,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_staff_projectile_from_dispenser_hits",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IceStaffProjectileFromDispenserHitsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "IceStaffProjectileFromDispenser",
+      "type": "projectile",
+      "sortid": 1640,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_staff_projectile_from_dispenser",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/entity/IceStaffProjectileFromDispenserEntity.java",
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/renderer/IceStaffProjectileFromDispenserRenderer.java"
+        ]
+      },
+      "path": "~/Staffs/Ice"
     }
   ],
   "variable_elements": [
