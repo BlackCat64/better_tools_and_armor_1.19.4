@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.bettertoolsandarmor.entity.PurpleMooshroomEntity;
+import net.mcreator.bettertoolsandarmor.entity.LightningStaffDispenserProjectileEntity;
 import net.mcreator.bettertoolsandarmor.entity.IceStaffProjectileFromDispenserEntity;
 import net.mcreator.bettertoolsandarmor.entity.IceStaffProjectileEntity;
 import net.mcreator.bettertoolsandarmor.entity.FireStaffProjectileEntity;
@@ -43,6 +44,9 @@ public class BetterToolsModEntities {
 					.setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<IceStaffProjectileFromDispenserEntity>> ICE_STAFF_PROJECTILE_FROM_DISPENSER = register("projectile_ice_staff_projectile_from_dispenser",
 			EntityType.Builder.<IceStaffProjectileFromDispenserEntity>of(IceStaffProjectileFromDispenserEntity::new, MobCategory.MISC).setCustomClientFactory(IceStaffProjectileFromDispenserEntity::new).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LightningStaffDispenserProjectileEntity>> LIGHTNING_STAFF_DISPENSER_PROJECTILE = register("projectile_lightning_staff_dispenser_projectile",
+			EntityType.Builder.<LightningStaffDispenserProjectileEntity>of(LightningStaffDispenserProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(LightningStaffDispenserProjectileEntity::new).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

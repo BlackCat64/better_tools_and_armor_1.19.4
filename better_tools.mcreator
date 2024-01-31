@@ -27373,6 +27373,112 @@
         ]
       },
       "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "LightningStaffDispensed",
+      "type": "procedure",
+      "sortid": 1641,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_staff_dispensed",
+      "metadata": {
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/LightningStaffDispensedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "success",
+            "type": "logic"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Lightning"
+    },
+    {
+      "name": "LightningStaffInDispenser",
+      "type": "itemextension",
+      "sortid": 1642,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_staff_in_dispenser",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/extension/LightningStaffInDispenserItemExtension.java"
+        ]
+      },
+      "path": "~/Staffs/Lightning"
+    },
+    {
+      "name": "LightningStaffDispenserProjectile",
+      "type": "projectile",
+      "sortid": 1644,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_staff_dispenser_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/renderer/LightningStaffDispenserProjectileRenderer.java",
+          "src/main/java/net/mcreator/bettertoolsandarmor/entity/LightningStaffDispenserProjectileEntity.java"
+        ]
+      },
+      "path": "~/Staffs/Lightning"
+    },
+    {
+      "name": "LightningStaffDispenserProjectileHits",
+      "type": "procedure",
+      "sortid": 1643,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_staff_dispenser_projectile_hits",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/LightningStaffDispenserProjectileHitsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Lightning"
     }
   ],
   "variable_elements": [

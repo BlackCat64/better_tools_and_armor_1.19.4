@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.bettertoolsandarmor.client.renderer.PurpleMooshroomRenderer;
+import net.mcreator.bettertoolsandarmor.client.renderer.LightningStaffDispenserProjectileRenderer;
 import net.mcreator.bettertoolsandarmor.client.renderer.IceStaffProjectileRenderer;
 import net.mcreator.bettertoolsandarmor.client.renderer.IceStaffProjectileFromDispenserRenderer;
 import net.mcreator.bettertoolsandarmor.client.renderer.FireStaffProjectileRenderer;
@@ -26,5 +27,6 @@ public class BetterToolsModEntityRenderers {
 		event.registerEntityRenderer(BetterToolsModEntities.FIRE_STAFF_PROJECTILE.get(), FireStaffProjectileRenderer::new);
 		event.registerEntityRenderer(BetterToolsModEntities.FIRE_STAFF_DISPENSER_PROJECTILE.get(), FireStaffDispenserProjectileRenderer::new);
 		event.registerEntityRenderer(BetterToolsModEntities.ICE_STAFF_PROJECTILE_FROM_DISPENSER.get(), IceStaffProjectileFromDispenserRenderer::new);
+		event.registerEntityRenderer(BetterToolsModEntities.LIGHTNING_STAFF_DISPENSER_PROJECTILE.get(), LightningStaffDispenserProjectileRenderer::new);
 	}
 }
