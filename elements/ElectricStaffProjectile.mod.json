@@ -13,8 +13,8 @@
     "power": 1.0,
     "damage": 1.0,
     "knockback": 0,
-    "entityModel": "Default",
-    "customModelTexture": "",
+    "entityModel": "Modellightning_staff_projectile",
+    "customModelTexture": "zap_effect.png",
     "onHitsEntity": {
       "name": "ElectricStaffProcedure"
     }
