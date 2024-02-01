@@ -24,6 +24,9 @@
     "damageVsEntity": 3.0,
     "usageCount": 1171,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:NetherDiamond"
