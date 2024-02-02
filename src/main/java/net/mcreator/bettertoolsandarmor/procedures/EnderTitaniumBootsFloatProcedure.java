@@ -40,7 +40,7 @@ public class EnderTitaniumBootsFloatProcedure {
 			if (world.isEmptyBlock(BlockPos.containing(x, y - 0.1, z)) && entity.getDeltaMovement().y() < 0.5) {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_BOOTS.get()) {
 					if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getMaxDamage()
-							- (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getDamageValue() >= 20) {
+							- (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getDamageValue() >= 11) {
 						if (!(entity instanceof LivingEntity _livEnt9 && _livEnt9.hasEffect(MobEffects.SLOW_FALLING))
 								&& (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).slow_falling_cooldown == false) {
 							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
