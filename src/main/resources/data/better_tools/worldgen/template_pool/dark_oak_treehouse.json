@@ -6,22 +6,10 @@
       "weight": 1,
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "better_tools:dark_oak_treehouse_2",
+        "location": "better_tools:dark_oak_treehouse",
         "projection": "rigid",
         "processors": {
-          "processors": [
-            {
-              "processor_type": "minecraft:block_ignore",
-              "blocks": [
-                {
-                  "Name": "minecraft:structure_block"
-                },
-                {
-                  "Name": "minecraft:structure_void"
-                }
-              ]
-            }
-          ]
+          "processors": []
         }
       }
     }

@@ -2,16 +2,9 @@
   "_fv": 57,
   "_type": "structure",
   "definition": {
-    "structure": "dark_oak_treehouse_2",
+    "structure": "dark_oak_treehouse",
     "projection": "rigid",
-    "ignoredBlocks": [
-      {
-        "value": "Blocks.STRUCTURE_BLOCK"
-      },
-      {
-        "value": "Blocks.STRUCTURE_VOID"
-      }
-    ],
+    "ignoredBlocks": [],
     "spacing": 18,
     "separation": 7,
     "restrictionBiomes": [

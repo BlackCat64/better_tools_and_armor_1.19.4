@@ -4,14 +4,7 @@
   "definition": {
     "structure": "mangrove_treehouse",
     "projection": "rigid",
-    "ignoredBlocks": [
-      {
-        "value": "Blocks.STRUCTURE_BLOCK"
-      },
-      {
-        "value": "Blocks.STRUCTURE_VOID"
-      }
-    ],
+    "ignoredBlocks": [],
     "spacing": 12,
     "separation": 5,
     "restrictionBiomes": [

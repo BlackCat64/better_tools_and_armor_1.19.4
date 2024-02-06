@@ -2,16 +2,9 @@
   "_fv": 57,
   "_type": "structure",
   "definition": {
-    "structure": "small_jungle_treehouse_2",
+    "structure": "small_jungle_treehouse",
     "projection": "rigid",
-    "ignoredBlocks": [
-      {
-        "value": "Blocks.STRUCTURE_BLOCK"
-      },
-      {
-        "value": "Blocks.STRUCTURE_VOID"
-      }
-    ],
+    "ignoredBlocks": [],
     "spacing": 28,
     "separation": 12,
     "restrictionBiomes": [

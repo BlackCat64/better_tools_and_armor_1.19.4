@@ -2,16 +2,9 @@
   "_fv": 57,
   "_type": "structure",
   "definition": {
-    "structure": "large_spruce_treehouse_2",
+    "structure": "large_spruce_treehouse",
     "projection": "rigid",
-    "ignoredBlocks": [
-      {
-        "value": "Blocks.STRUCTURE_BLOCK"
-      },
-      {
-        "value": "Blocks.STRUCTURE_VOID"
-      }
-    ],
+    "ignoredBlocks": [],
     "spacing": 25,
     "separation": 10,
     "restrictionBiomes": [
