@@ -27,4 +27,10 @@ description="Adds new ores, tools, armor, music discs, enchantments, food, potio
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
+[[dependencies.better_tools]]
+    modId="jei"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

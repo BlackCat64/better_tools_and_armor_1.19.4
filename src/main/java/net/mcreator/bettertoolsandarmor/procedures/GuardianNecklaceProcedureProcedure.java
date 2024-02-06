@@ -33,9 +33,8 @@ import javax.annotation.Nullable;
 public class GuardianNecklaceProcedureProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
-		Entity entity = event.getEntity();
-		if (event != null && entity != null) {
-			execute(event, entity.getLevel(), entity, event.getSource().getEntity());
+		if (event != null && event.getEntity() != null) {
+			execute(event, event.getEntity().level, event.getEntity(), event.getSource().getEntity());
 		}
 	}
 
@@ -47,7 +46,6 @@ public class GuardianNecklaceProcedureProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		double damage = 0;
-		DamageSource damage_through_armor = null;
 		if (!BetterToolsModVariables.being_damaged_flag) {
 			if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.GUARDIAN_NECKLACE.get(), lv).isPresent() : false) {
 				if (entity.isInWaterRainOrBubble()) {

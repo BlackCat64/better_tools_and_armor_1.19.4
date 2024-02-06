@@ -37,7 +37,6 @@ public class GuardianStaffWaterPulseProcedure {
 		double kills = 0;
 		double damage = 0;
 		double range = 0;
-		DamageSource damage_through_armor = null;
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.guardian.attack")), SoundSource.PLAYERS, 7, (float) 1.5);

@@ -27,3 +27,25 @@ minecraft {
 }
 
 
+repositories {
+  maven {
+    name = "Progwml6's maven"
+    url = "https://dvs1.progwml6.com/files/maven/"
+  }
+  maven {
+    name = "Jared's maven"
+    url = "https://maven.blamejared.com/"
+  }
+  maven {
+    name = "ModMaven"
+    url = "https://modmaven.dev"
+  }
+}
+
+dependencies {
+    compileOnly(fg.deobf("mezz.jei:jei-1.19.4-common-api:13.1.0.16"))
+    compileOnly(fg.deobf("mezz.jei:jei-1.19.4-forge-api:13.1.0.16"))
+    runtimeOnly(fg.deobf("mezz.jei:jei-1.19.4-forge:13.1.0.16"))
+}
+
+
