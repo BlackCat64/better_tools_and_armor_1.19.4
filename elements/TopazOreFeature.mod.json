@@ -5,7 +5,7 @@
     "generationStep": "UNDERGROUND_ORES",
     "restrictionBiomes": [
       {
-        "value": "#is_desert"
+        "value": "#forge:is_desert"
       }
     ],
     "generateCondition": {
