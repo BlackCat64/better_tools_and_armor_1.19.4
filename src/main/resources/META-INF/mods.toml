@@ -20,6 +20,18 @@ description="Adds new ores, tools, armor, music discs, enchantments, food, potio
     side="BOTH"
 
 
+[[dependencies.better_tools]]
+    modId="curios"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.better_tools]]
+    modId="jei"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.better_tools]]
     modId="curios_api"
