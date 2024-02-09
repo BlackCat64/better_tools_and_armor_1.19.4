@@ -72,6 +72,24 @@
     "better_tools:crystallite_axe_sculk",
     "better_tools:crystallite_shovel_sculk",
     "better_tools:crystallite_hoe_sculk",
-    "better_tools:crystallite_dagger_sculk"
+    "better_tools:crystallite_dagger_sculk",
+    "better_tools:crystallite_sword_sky",
+    "better_tools:crystallite_pickaxe_sky",
+    "better_tools:crystallite_axe_sky",
+    "better_tools:crystallite_shovel_sky",
+    "better_tools:crystallite_hoe_sky",
+    "better_tools:crystallite_dagger_sky",
+    "better_tools:crystallite_sword_amethyst",
+    "better_tools:crystallite_pickaxe_amethyst",
+    "better_tools:crystallite_axe_amethyst",
+    "better_tools:crystallite_shovel_amethyst",
+    "better_tools:crystallite_hoe_amethyst",
+    "better_tools:crystallite_dagger_amethyst",
+    "better_tools:crystallite_sword_prismarine",
+    "better_tools:crystallite_pickaxe_prismarine",
+    "better_tools:crystallite_axe_prismarine",
+    "better_tools:crystallite_shovel_prismarine",
+    "better_tools:crystallite_hoe_prismarine",
+    "better_tools:crystallite_dagger_prismarine"
   ]
 }

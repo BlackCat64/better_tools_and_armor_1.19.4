@@ -147,6 +147,42 @@
       },
       {
         "value": "CUSTOM:CrystalliteArmorSculk.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSky.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSky.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSky.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSky.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorAmethyst.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorAmethyst.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorAmethyst.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorAmethyst.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.boots"
       }
     ],
     "blocks": [],

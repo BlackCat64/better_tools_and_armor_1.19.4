@@ -219,6 +219,60 @@
       },
       {
         "value": "CUSTOM:CrystalliteDaggerSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordSky"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordPrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxePrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxePrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelPrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoePrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerPrismarine"
       }
     ],
     "blocks": [],
