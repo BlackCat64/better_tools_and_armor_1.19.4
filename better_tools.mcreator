@@ -27493,6 +27493,49 @@
         ]
       },
       "path": "~/Tags"
+    },
+    {
+      "name": "JewelleryTable",
+      "type": "block",
+      "sortid": 1646,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jewellery_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/jewellery_table.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/block/JewelleryTableBlock.java",
+          "src/main/resources/assets/better_tools/models/block/jewellery_table.json",
+          "src/main/resources/assets/better_tools/blockstates/jewellery_table.json"
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "Jeweller",
+      "type": "villagerprofession",
+      "sortid": 1647,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jeweller",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/textures/entity/villager/profession/jeweller.png.mcmeta"
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "JewellerTrades",
+      "type": "villagertrade",
+      "sortid": 1648,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jeweller_trades",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite"
     }
   ],
   "variable_elements": [
@@ -27745,6 +27788,7 @@
       "item.copper_tools_and_armor.master_builder": "Master Builder",
       "item.better_tools.crystallite_dagger_amethyst": "Crystallite Dagger",
       "item.better_tools.battle_axe": "Battle Axe",
+      "block.better_tools.jewellery_table": "Jewellery Table",
       "item.minecraft.lingering_potion.effect.potion_of_decay": "Lingering Potion of Decay",
       "item.better_tools.crystallite_dagger_gold": "Crystallite Dagger",
       "item.better_tools.crystallite_shovel": "Crystallite Shovel",
@@ -27799,6 +27843,7 @@
       "block.better_tools.light_polished_gold_block": "Light Polished Gold Block",
       "item.better_tools.crystallite_sword_sapphire": "Crystallite Sword",
       "block.better_tools.dark_polished_copper_trapdoor": "Dark Polished Copper Trapdoor",
+      "entity.minecraft.villager.better_tools.jeweller": "Jeweller",
       "death.attack.water_pulse_damage.player": "%1$s was blasted with a water pulse whilst trying to escape %2$s",
       "item.better_tools.nether_diamond_boots": "Nether Diamond Boots",
       "item.better_tools.crystallite_hoe_ruby": "Crystallite Hoe",

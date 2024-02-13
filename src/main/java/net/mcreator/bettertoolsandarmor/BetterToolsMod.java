@@ -30,6 +30,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.bettertoolsandarmor.world.features.StructureFeature;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModVillagerProfessions;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModSounds;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModPotions;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModParticleTypes;
@@ -71,7 +72,7 @@ public class BetterToolsMod {
 		BetterToolsModMenus.REGISTRY.register(bus);
 		BetterToolsModFeatures.REGISTRY.register(bus);
 		StructureFeature.REGISTRY.register(bus);
-
+		BetterToolsModVillagerProfessions.PROFESSIONS.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

@@ -738,6 +738,7 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> FIRE_STAFF = REGISTRY.register("fire_staff", () -> new FireStaffItem());
 	public static final RegistryObject<Item> WARDEN_STAFF = REGISTRY.register("warden_staff", () -> new WardenStaffItem());
 	public static final RegistryObject<Item> GUARDIAN_STAFF = REGISTRY.register("guardian_staff", () -> new GuardianStaffItem());
+	public static final RegistryObject<Item> JEWELLERY_TABLE = block(BetterToolsModBlocks.JEWELLERY_TABLE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

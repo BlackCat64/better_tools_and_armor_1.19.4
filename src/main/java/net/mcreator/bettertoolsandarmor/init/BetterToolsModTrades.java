@@ -50,5 +50,10 @@ public class BetterToolsModTrades {
 
 					new ItemStack(BetterToolsModItems.DIAMOND_DAGGER.get()), 3, 25, 0.2f));
 		}
+		if (event.getType() == BetterToolsModVillagerProfessions.JEWELLER.get()) {
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(BetterToolsModItems.RUBY.get(), 3),
+
+					new ItemStack(Items.EMERALD), 10, 5, 0.05f));
+		}
 	}
 }

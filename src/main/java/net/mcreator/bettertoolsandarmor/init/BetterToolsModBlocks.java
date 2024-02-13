@@ -97,6 +97,7 @@ import net.mcreator.bettertoolsandarmor.block.LightPolishedAmethystTrapdoorBlock
 import net.mcreator.bettertoolsandarmor.block.LightPolishedAmethystStairsBlock;
 import net.mcreator.bettertoolsandarmor.block.LightPolishedAmethystSlabBlock;
 import net.mcreator.bettertoolsandarmor.block.LightPolishedAmethystBlockBlock;
+import net.mcreator.bettertoolsandarmor.block.JewelleryTableBlock;
 import net.mcreator.bettertoolsandarmor.block.FourLeafCloverBlock;
 import net.mcreator.bettertoolsandarmor.block.FlintBlockwoodBlock;
 import net.mcreator.bettertoolsandarmor.block.FlintBlockBlock;
@@ -272,4 +273,5 @@ public class BetterToolsModBlocks {
 	public static final RegistryObject<Block> FLINT_BLOCKWOOD = REGISTRY.register("flint_blockwood", () -> new FlintBlockwoodBlock());
 	public static final RegistryObject<Block> CRYSTALLITE_CLUSTER_AIR = REGISTRY.register("crystallite_cluster_air", () -> new CrystalliteClusterAirBlock());
 	public static final RegistryObject<Block> CLIMBABLE_WALL = REGISTRY.register("climbable_wall", () -> new ClimbableWallBlock());
+	public static final RegistryObject<Block> JEWELLERY_TABLE = REGISTRY.register("jewellery_table", () -> new JewelleryTableBlock());
 }

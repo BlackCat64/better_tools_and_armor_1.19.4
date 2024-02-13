@@ -387,6 +387,7 @@ public class BetterToolsModTabs {
 					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_CHESTPLATE.get());
 					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_LEGGINGS.get());
 					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_BOOTS.get());
+					tabData.accept(BetterToolsModBlocks.JEWELLERY_TABLE.get().asItem());
 				})
 
 		);
