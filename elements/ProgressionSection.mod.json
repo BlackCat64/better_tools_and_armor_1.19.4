@@ -262,7 +262,8 @@
       "EndTitaniumScrapSmelt",
       "EndTitaniumScrapBlast",
       "EndStonePebblesRecipe",
-      "EndStonePebblesReverseRecipe"
+      "EndStonePebblesReverseRecipe",
+      "JewelleryTableRecipe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 0,

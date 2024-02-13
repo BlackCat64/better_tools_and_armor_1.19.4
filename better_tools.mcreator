@@ -27536,6 +27536,20 @@
         "files": []
       },
       "path": "~/Crystallite"
+    },
+    {
+      "name": "JewelleryTableRecipe",
+      "type": "recipe",
+      "sortid": 1649,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jewellery_table_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/jewellery_table_recipe.json"
+        ]
+      },
+      "path": "~/Crystallite"
     }
   ],
   "variable_elements": [

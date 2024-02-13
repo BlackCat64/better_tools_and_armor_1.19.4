@@ -271,7 +271,8 @@
       "better_tools:end_titanium_scrap_smelt",
       "better_tools:end_titanium_scrap_blast",
       "better_tools:end_stone_pebbles_recipe",
-      "better_tools:end_stone_recipe"
+      "better_tools:end_stone_recipe",
+      "better_tools:jewellery_table_recipe"
     ]
   }
 }
