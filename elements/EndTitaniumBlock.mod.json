@@ -44,7 +44,7 @@
     "creativeTab": {
       "value": "CUSTOM:ToolsAndArmorTab"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -100,7 +100,7 @@
     },
     "luminance": 4,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 4,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

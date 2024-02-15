@@ -21,7 +21,7 @@ import java.util.Collections;
 
 public class NetherDiamondBlockBlock extends Block {
 	public NetherDiamondBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.CRIMSON_NYLIUM).sound(SoundType.METAL).strength(55f, 1200f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.CRIMSON_NYLIUM).sound(SoundType.METAL).strength(6f, 5f).requiresCorrectToolForDrops());
 	}
 
 	@Override
@@ -37,7 +37,7 @@ public class NetherDiamondBlockBlock extends Block {
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
 		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
-			return tieredItem.getTier().getLevel() >= 1;
+			return tieredItem.getTier().getLevel() >= 2;
 		return false;
 	}
 
