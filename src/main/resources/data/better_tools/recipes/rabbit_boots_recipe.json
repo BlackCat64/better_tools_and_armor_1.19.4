@@ -18,7 +18,7 @@
       "item": "minecraft:blaze_powder"
     },
     "d": {
-      "tag": "better_tools:boots"
+      "tag": "forge:armors/boots"
     }
   },
   "result": {

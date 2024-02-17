@@ -12,7 +12,7 @@
       "item": "minecraft:golden_carrot"
     },
     "b": {
-      "tag": "better_tools:helmets"
+      "tag": "forge:armors/helmets"
     },
     "c": {
       "item": "minecraft:blaze_powder"

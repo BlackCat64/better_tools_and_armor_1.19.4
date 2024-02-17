@@ -12,7 +12,7 @@
       "item": "minecraft:glistering_melon_slice"
     },
     "b": {
-      "tag": "better_tools:chestplates"
+      "tag": "forge:armors/chestplates"
     },
     "c": {
       "item": "minecraft:nether_wart"
