@@ -155,6 +155,7 @@ public class BetterToolsModBlocks {
 	public static final RegistryObject<Block> SAPPHIRE_BLOCK = REGISTRY.register("sapphire_block", () -> new SapphireBlockBlock());
 	public static final RegistryObject<Block> TOPAZ_ORE = REGISTRY.register("topaz_ore", () -> new TopazOreBlock());
 	public static final RegistryObject<Block> TOPAZ_BLOCK = REGISTRY.register("topaz_block", () -> new TopazBlockBlock());
+	public static final RegistryObject<Block> JEWELLERY_TABLE = REGISTRY.register("jewellery_table", () -> new JewelleryTableBlock());
 	public static final RegistryObject<Block> CRYSTALLITE_BLOCK = REGISTRY.register("crystallite_block", () -> new CrystalliteBlockBlock());
 	public static final RegistryObject<Block> CUT_CRYSTALLITE_BLOCK = REGISTRY.register("cut_crystallite_block", () -> new CutCrystalliteBlockBlock());
 	public static final RegistryObject<Block> SUGAR_BLOCK = REGISTRY.register("sugar_block", () -> new SugarBlockBlock());
@@ -273,5 +274,4 @@ public class BetterToolsModBlocks {
 	public static final RegistryObject<Block> FLINT_BLOCKWOOD = REGISTRY.register("flint_blockwood", () -> new FlintBlockwoodBlock());
 	public static final RegistryObject<Block> CRYSTALLITE_CLUSTER_AIR = REGISTRY.register("crystallite_cluster_air", () -> new CrystalliteClusterAirBlock());
 	public static final RegistryObject<Block> CLIMBABLE_WALL = REGISTRY.register("climbable_wall", () -> new ClimbableWallBlock());
-	public static final RegistryObject<Block> JEWELLERY_TABLE = REGISTRY.register("jewellery_table", () -> new JewelleryTableBlock());
 }

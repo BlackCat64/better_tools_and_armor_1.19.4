@@ -22,8 +22,8 @@ public class BetterToolsModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(BetterToolsModEntities.PURPLE_MOOSHROOM.get(), PurpleMooshroomRenderer::new);
-		event.registerEntityRenderer(BetterToolsModEntities.ICE_STAFF_PROJECTILE.get(), IceStaffProjectileRenderer::new);
 		event.registerEntityRenderer(BetterToolsModEntities.ELECTRIC_STAFF_PROJECTILE.get(), ElectricStaffProjectileRenderer::new);
+		event.registerEntityRenderer(BetterToolsModEntities.ICE_STAFF_PROJECTILE.get(), IceStaffProjectileRenderer::new);
 		event.registerEntityRenderer(BetterToolsModEntities.FIRE_STAFF_PROJECTILE.get(), FireStaffProjectileRenderer::new);
 		event.registerEntityRenderer(BetterToolsModEntities.FIRE_STAFF_DISPENSER_PROJECTILE.get(), FireStaffDispenserProjectileRenderer::new);
 		event.registerEntityRenderer(BetterToolsModEntities.ICE_STAFF_PROJECTILE_FROM_DISPENSER.get(), IceStaffProjectileFromDispenserRenderer::new);

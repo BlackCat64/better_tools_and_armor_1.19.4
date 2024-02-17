@@ -32,11 +32,11 @@ public class BetterToolsModEntities {
 			EntityType.Builder.<PurpleMooshroomEntity>of(PurpleMooshroomEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PurpleMooshroomEntity::new)
 
 					.sized(0.9f, 1.4f));
-	public static final RegistryObject<EntityType<IceStaffProjectileEntity>> ICE_STAFF_PROJECTILE = register("projectile_ice_staff_projectile", EntityType.Builder.<IceStaffProjectileEntity>of(IceStaffProjectileEntity::new, MobCategory.MISC)
-			.setCustomClientFactory(IceStaffProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<ElectricStaffProjectileEntity>> ELECTRIC_STAFF_PROJECTILE = register("projectile_electric_staff_projectile",
 			EntityType.Builder.<ElectricStaffProjectileEntity>of(ElectricStaffProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(ElectricStaffProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<IceStaffProjectileEntity>> ICE_STAFF_PROJECTILE = register("projectile_ice_staff_projectile", EntityType.Builder.<IceStaffProjectileEntity>of(IceStaffProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(IceStaffProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<FireStaffProjectileEntity>> FIRE_STAFF_PROJECTILE = register("projectile_fire_staff_projectile", EntityType.Builder.<FireStaffProjectileEntity>of(FireStaffProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(FireStaffProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<FireStaffDispenserProjectileEntity>> FIRE_STAFF_DISPENSER_PROJECTILE = register("projectile_fire_staff_dispenser_projectile",

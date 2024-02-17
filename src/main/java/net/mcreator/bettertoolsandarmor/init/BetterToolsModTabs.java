@@ -188,6 +188,7 @@ public class BetterToolsModTabs {
 		);
 		event.registerCreativeModeTab(new ResourceLocation("better_tools", "crystallite_tab"),
 				builder -> builder.title(Component.translatable("item_group.better_tools.crystallite_tab")).icon(() -> new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get())).displayItems((parameters, tabData) -> {
+					tabData.accept(BetterToolsModBlocks.JEWELLERY_TABLE.get().asItem());
 					tabData.accept(BetterToolsModItems.CRYSTALLITE_SHARDS.get());
 					tabData.accept(BetterToolsModItems.CRYSTALLITE_GEM.get());
 					tabData.accept(BetterToolsModItems.CRYSTALLITE_CHARM_BASE.get());
@@ -387,7 +388,6 @@ public class BetterToolsModTabs {
 					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_CHESTPLATE.get());
 					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_LEGGINGS.get());
 					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_BOOTS.get());
-					tabData.accept(BetterToolsModBlocks.JEWELLERY_TABLE.get().asItem());
 				})
 
 		);

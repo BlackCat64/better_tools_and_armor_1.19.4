@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Fully Buffed",
-    "achievementDescription": "Have 4 crystallite charms equipped at the same time",
+    "achievementDescription": "Have 4 Crystallite Charms equipped at the same time",
     "achievementIcon": {
       "value": "CUSTOM:DiamondHardPlate"
     },

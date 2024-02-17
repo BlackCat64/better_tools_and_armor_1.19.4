@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "How Charming!",
-    "achievementDescription": "Equip a crystallite charm",
+    "achievementDescription": "Equip a Crystallite Charm",
     "achievementIcon": {
       "value": "CUSTOM:CrystalliteCharmBase"
     },
