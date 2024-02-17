@@ -16,7 +16,7 @@
     "creativeTab": {
       "value": "CUSTOM:EffectArmorTab"
     },
-    "armorTextureFile": "reinforced_sugar_",
+    "armorTextureFile": "sugar_",
     "helmetName": "Iron Sugar Boots Helmet",
     "bodyName": "Iron Sugar Boots Body",
     "leggingsName": "Iron Sugar Boots Leggings",
@@ -63,6 +63,18 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 12,
     "damageValueHelmet": 2,
     "damageValueBody": 5,

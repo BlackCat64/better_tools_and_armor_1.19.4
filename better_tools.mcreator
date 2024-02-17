@@ -27550,6 +27550,62 @@
         ]
       },
       "path": "~/Crystallite"
+    },
+    {
+      "name": "ForgeArmorHelmets",
+      "type": "tag",
+      "sortid": 1650,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_armor_helmets",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/armors/helmets.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "ForgeArmorChestplates",
+      "type": "tag",
+      "sortid": 1651,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_armor_chestplates",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/armors/chestplates.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "ForgeArmorLeggings",
+      "type": "tag",
+      "sortid": 1652,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_armor_leggings",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/armors/leggings.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "ForgeArmorBoots",
+      "type": "tag",
+      "sortid": 1653,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_armor_boots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/armors/boots.json"
+        ]
+      },
+      "path": "~/Tags"
     }
   ],
   "variable_elements": [

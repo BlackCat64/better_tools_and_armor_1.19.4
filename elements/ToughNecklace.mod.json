@@ -8,8 +8,8 @@
     "name": "§7Tough Necklace",
     "rarity": "COMMON",
     "slotType": "NECKLACE",
-    "baubleModel": "Default",
-    "baubleModelTexture": "",
+    "baubleModel": "Modeltough_necklace",
+    "baubleModelTexture": "tough_necklace_model.png",
     "creativeTab": {
       "value": "CUSTOM:CrystalliteTab"
     },
@@ -50,8 +50,8 @@
     "isFood": false,
     "friendlyPigs": false,
     "enderMask": false,
-    "rotateModel": false,
-    "translateModel": false,
+    "rotateModel": true,
+    "translateModel": true,
     "nutritionalValue": 4,
     "saturation": 0.3,
     "eatResultItem": {
