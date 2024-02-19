@@ -27606,6 +27606,302 @@
         ]
       },
       "path": "~/Tags"
+    },
+    {
+      "name": "CrystalliteSwordHoney",
+      "type": "tool",
+      "sortid": 1580,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_honey",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_sword_honey.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordHoneyItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystallitePickaxeHoney",
+      "type": "tool",
+      "sortid": 1581,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_pickaxe_honey",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_pickaxe_honey.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystallitePickaxeHoneyItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteAxeHoney",
+      "type": "tool",
+      "sortid": 1582,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_axe_honey",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_axe_honey.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteAxeHoneyItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteShovelHoney",
+      "type": "tool",
+      "sortid": 1583,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_shovel_honey",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteShovelHoneyItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_shovel_honey.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteHoeHoney",
+      "type": "tool",
+      "sortid": 1584,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_hoe_honey",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteHoeHoneyItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_hoe_honey.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteDaggerHoney",
+      "type": "tool",
+      "sortid": 1585,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_dagger_honey",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerHoneyItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_honey.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteArmorHoney",
+      "type": "armor",
+      "sortid": 1586,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_armor_honey",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_honey_leggings.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_honey_helmet.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_honey_boots.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_honey_chestplate.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteArmorHoneyItem.java"
+        ],
+        "eh": true,
+        "eb": true,
+        "ec": true,
+        "el": true
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "HiveCrystal",
+      "type": "item",
+      "sortid": 1587,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hive_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/hive_crystal.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/HiveCrystalItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "HiveCrystalRecipe",
+      "type": "recipe",
+      "sortid": 1588,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hive_crystal_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/hive_crystal_recipe.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteSwordHoneyRecipe",
+      "type": "recipe",
+      "sortid": 1589,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_honey_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/crystallite_sword_honey_recipe.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystallitePickaxeHoneyRecipe",
+      "type": "recipe",
+      "sortid": 1590,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_pickaxe_honey_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/crystallite_pickaxe_honey_recipe.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteAxeHoneyRecipe",
+      "type": "recipe",
+      "sortid": 1591,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_axe_honey_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/crystallite_axe_honey_recipe.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteShovelHoneyRecipe",
+      "type": "recipe",
+      "sortid": 1592,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_shovel_honey_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/crystallite_shovel_honey_recipe.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteHoeHoneyRecipe",
+      "type": "recipe",
+      "sortid": 1593,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_hoe_honey_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/crystallite_hoe_honey_recipe.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteDaggerHoneyRecipe",
+      "type": "recipe",
+      "sortid": 1594,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_dagger_honey_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/crystallite_dagger_honey_recipe.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteHelmetHoneyRecipe",
+      "type": "recipe",
+      "sortid": 1595,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_helmet_honey_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/crystallite_helmet_honey_recipe.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteChestplateHoneyRecipe",
+      "type": "recipe",
+      "sortid": 1596,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_chestplate_honey_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/crystallite_chestplate_honey_recipe.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteLeggingsHoneyRecipe",
+      "type": "recipe",
+      "sortid": 1597,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_leggings_honey_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/crystallite_leggings_honey_recipe.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteBootsHoneyRecipe",
+      "type": "recipe",
+      "sortid": 1598,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_boots_honey_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/crystallite_boots_honey_recipe.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CuringCharm",
+      "type": "curiosbauble",
+      "sortid": 1599,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curing_charm",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/curing_charm.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CuringCharmItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
     }
   ],
   "variable_elements": [
@@ -27845,6 +28141,7 @@
       "item.better_tools.ruby": "Ruby",
       "block.better_tools.light_polished_coal_trapdoor": "Light Metallic Coal Trapdoor",
       "item.better_tools.flint_hoe": "Flint Hoe",
+      "item.better_tools.curing_charm": "§6Curing Charm",
       "advancements.crystallite_tool_upgrade_adv.title": "Crystal Tool Smith",
       "item.better_tools.poison_charm": "§5Poison Charm",
       "block.better_tools.light_polished_coal_block": "Light Metallic Coal Block",
@@ -27865,6 +28162,7 @@
       "block.better_tools.light_polished_lapis_trapdoor": "Light Metallic Lapis Lazuli Trapdoor",
       "item.better_tools.crystallite_armor_redstone_helmet": "Crystallite Helmet",
       "item.better_tools.end_titanium_axe": "Ender Titanium Axe",
+      "item.better_tools.crystallite_axe_honey": "Crystallite Axe",
       "enchantment.better_tools.life_aura.desc": "Deal more damage the more HP you currently have, but deal less damage at low HP",
       "item.better_tools.nether_diamond_chestplate": "Nether Diamond Chestplate",
       "block.better_tools.sugar_block": "Sugar Block",
@@ -27978,6 +28276,7 @@
       "subtitles.crystallite_shimmer": "Mysterious sparkle",
       "block.better_tools.dark_polished_iron_stairs": "Dark Polished Iron Stairs",
       "item.better_tools.end_titanium_hoe": "Ender Titanium Hoe",
+      "item.better_tools.hive_crystal": "§6Hive Crystal",
       "block.better_tools.polished_topaz_block": "Metallic Topaz Block",
       "item.better_tools.sky_crystal": "§fSky Crystal",
       "item.minecraft.lingering_potion.effect.potion_of_decay_long": "Lingering Potion of Decay",
@@ -28039,6 +28338,7 @@
       "block.better_tools.random_ore": "Mixed Ore",
       "death.attack.freeze_shatter": "%1$s was shattered to pieces",
       "item.better_tools.crystallite_armor_gold_boots": "Crystallite Boots",
+      "item.better_tools.crystallite_sword_honey": "Crystallite Sword",
       "item.better_tools.crystallite_armor_prismarine_chestplate": "Crystallite Chestplate",
       "item.better_tools.crystallite_armor_lapis_boots": "Crystallite Boots",
       "block.better_tools.polished_diamond_trapdoor": "Metallic Diamond Trapdoor",
@@ -28059,6 +28359,7 @@
       "gui.better_tools.attributes_viewer.label_006": "00",
       "gui.better_tools.attributes_viewer.label_005": "00",
       "gui.better_tools.attributes_viewer.label_004": "00",
+      "item.better_tools.crystallite_armor_honey_boots": "Crystallite Boots",
       "gui.better_tools.attributes_viewer.label_003": "00",
       "gui.better_tools.attributes_viewer.label_002": "00",
       "gui.better_tools.attributes_viewer.label_001": "00",
@@ -28070,6 +28371,7 @@
       "item.better_tools.crystallite_armor_netherite_chestplate": "Crystallite Chestplate",
       "item.better_tools.crystallite_armor_prismarine_boots": "Crystallite Boots",
       "item.better_tools.crystallite_armor_iron_leggings": "Crystallite Leggings",
+      "item.better_tools.crystallite_hoe_honey": "Crystallite Hoe",
       "item.better_tools.sapphire_pickaxe": "Sapphire Pickaxe",
       "item.better_tools.iron_phantom_boots": "Phantom Boots",
       "advancements.all_crystallite_tools_adv.descr": "Craft a full set of Crystallite tools",
@@ -28084,9 +28386,11 @@
       "advancements.guardian_staff_adv.descr": "Hit a mob with the water pulse from a Guardian Staff",
       "item.better_tools.sapphire_sword": "Sapphire Sword",
       "item.better_tools.crystallite_shovel_diamond": "Crystallite Shovel",
+      "item.better_tools.crystallite_shovel_honey": "Crystallite Shovel",
       "item.better_tools.nether_diamond_dagger": "Nether Diamond Dagger",
       "item.better_tools.tough_crystal": "§7Tough Crystal",
       "item.better_tools.echo_crystal": "§3Echo Crystal",
+      "item.better_tools.crystallite_armor_honey_chestplate": "Crystallite Chestplate",
       "item.minecraft.splash_potion.effect.double_jump_potion_long": "Splash Potion of Double Jump",
       "death.attack.karma_damage": "%1$s got instant karma from %2$s",
       "item.better_tools.sapphire_shovel": "Sapphire Shovel",
@@ -28100,6 +28404,7 @@
       "item.better_tools.magma_chestplate": "Magma Chestplate",
       "item.better_tools.heart_charm": "§cHeart Charm",
       "item.better_tools.netherite_dagger": "Netherite Dagger",
+      "item.better_tools.crystallite_armor_honey_helmet": "Crystallite Helmet",
       "item.copper_tools_and_armor.nether_diamond_pickaxe": "Nether Diamond Pickaxe",
       "advancements.end_titanium_armor_adv.title": "One with the End",
       "item.better_tools.crystallite_shovel_ruby": "Crystallite Shovel",
@@ -28217,6 +28522,7 @@
       "block.better_tools.polished_redstone_stairs": "Metallic Redstone Stairs",
       "item.better_tools.music_disc_blank": "Blank Record",
       "advancements.flint_tools_adv.title": "True Caveman",
+      "item.better_tools.crystallite_pickaxe_honey": "Crystallite Pickaxe",
       "item.better_tools.crystallite_sword_topaz": "Crystallite Sword",
       "advancements.fire_staff_pokemon_adv.title": "It\u0027s not very effective...",
       "entity.better_tools.projectile_electric_staff_projectile": "Lightning Staff",
@@ -28393,6 +28699,7 @@
       "item.better_tools.ruby_sword": "Ruby Sword",
       "enchantment.better_tools.desperation.desc": "Deal a lot more damage the less HP you currently have, but has no effect at high HP",
       "item.better_tools.topaz_sword": "Topaz Sword",
+      "item.better_tools.crystallite_armor_honey_leggings": "Crystallite Leggings",
       "enchantment.better_tools.experience_ench": "Experienced",
       "block.better_tools.dark_polished_iron_wall": "Dark Polished Iron Wall",
       "item.better_tools.sapphire_hoe": "Sapphire Hoe",
@@ -28413,6 +28720,7 @@
       "item.minecraft.lingering_potion.effect.karma_potion_2": "Lingering Potion of Karma",
       "item.better_tools.topaz_boots": "Topaz Boots",
       "block.better_tools.light_polished_amethyst_wall": "Light Metallic Amethyst Wall",
+      "item.better_tools.crystallite_dagger_honey": "Crystallite Dagger",
       "item.copper_tools_and_armor.golden_potato": "Golden Potato",
       "item.better_tools.crystallite_armor_sky_chestplate": "Crystallite Chestplate",
       "item.better_tools.crystallite_hoe_sky": "Crystallite Hoe",
@@ -28830,6 +29138,10 @@
           {
             "name": "Misc. Charms",
             "children": []
+          },
+          {
+            "name": "Honey",
+            "children": []
           }
         ]
       },
@@ -28976,7 +29288,7 @@
   "workspaceSettings": {
     "modid": "better_tools",
     "modName": "Better Tools and Armor",
-    "version": "10.3.1",
+    "version": "10.4",
     "description": "Adds new ores, tools, armor, music discs, enchantments, food, potion effects and much more!",
     "author": "BlackCatGamer64, MCreator",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/better-tools-and-armor",

@@ -388,6 +388,18 @@ public class BetterToolsModTabs {
 					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_CHESTPLATE.get());
 					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_LEGGINGS.get());
 					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_BOOTS.get());
+					tabData.accept(BetterToolsModItems.CRYSTALLITE_SWORD_HONEY.get());
+					tabData.accept(BetterToolsModItems.CRYSTALLITE_PICKAXE_HONEY.get());
+					tabData.accept(BetterToolsModItems.CRYSTALLITE_AXE_HONEY.get());
+					tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_HONEY.get());
+					tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_HONEY.get());
+					tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_HONEY.get());
+					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_HELMET.get());
+					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_CHESTPLATE.get());
+					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_LEGGINGS.get());
+					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_BOOTS.get());
+					tabData.accept(BetterToolsModItems.HIVE_CRYSTAL.get());
+					tabData.accept(BetterToolsModItems.CURING_CHARM.get());
 				})
 
 		);
