@@ -11,6 +11,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
@@ -81,6 +82,11 @@ public abstract class CrystalliteArmorGoldItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_gold__layer_1.png";
 		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return true;
+		}
 	}
 
 	public static class Chestplate extends CrystalliteArmorGoldItem {
@@ -97,6 +103,11 @@ public abstract class CrystalliteArmorGoldItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_gold__layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return true;
 		}
 	}
 
@@ -115,6 +126,11 @@ public abstract class CrystalliteArmorGoldItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_gold__layer_2.png";
 		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return true;
+		}
 	}
 
 	public static class Boots extends CrystalliteArmorGoldItem {
@@ -131,6 +147,11 @@ public abstract class CrystalliteArmorGoldItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_gold__layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return true;
 		}
 	}
 }
