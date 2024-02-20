@@ -88,6 +88,7 @@ public class BetterToolsModVariables {
 				clone.fall_time = original.fall_time;
 				clone.crystallite_amethyst_absorption_timer = original.crystallite_amethyst_absorption_timer;
 				clone.flaming_circlet_cooldown = original.flaming_circlet_cooldown;
+				clone.time_since_last_attacked = original.time_since_last_attacked;
 			}
 		}
 	}
@@ -142,6 +143,7 @@ public class BetterToolsModVariables {
 		public String knockback_resistance = "\"\"";
 		public String knockback_resistance_modifier = "\"\"";
 		public double flaming_circlet_cooldown = 0;
+		public double time_since_last_attacked = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -169,6 +171,7 @@ public class BetterToolsModVariables {
 			nbt.putString("knockback_resistance", knockback_resistance);
 			nbt.putString("knockback_resistance_modifier", knockback_resistance_modifier);
 			nbt.putDouble("flaming_circlet_cooldown", flaming_circlet_cooldown);
+			nbt.putDouble("time_since_last_attacked", time_since_last_attacked);
 			return nbt;
 		}
 
@@ -193,6 +196,7 @@ public class BetterToolsModVariables {
 			knockback_resistance = nbt.getString("knockback_resistance");
 			knockback_resistance_modifier = nbt.getString("knockback_resistance_modifier");
 			flaming_circlet_cooldown = nbt.getDouble("flaming_circlet_cooldown");
+			time_since_last_attacked = nbt.getDouble("time_since_last_attacked");
 		}
 	}
 
@@ -236,6 +240,7 @@ public class BetterToolsModVariables {
 					variables.knockback_resistance = message.data.knockback_resistance;
 					variables.knockback_resistance_modifier = message.data.knockback_resistance_modifier;
 					variables.flaming_circlet_cooldown = message.data.flaming_circlet_cooldown;
+					variables.time_since_last_attacked = message.data.time_since_last_attacked;
 				}
 			});
 			context.setPacketHandled(true);

@@ -27902,6 +27902,84 @@
         ]
       },
       "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteSwordHoneyProcedure",
+      "type": "procedure",
+      "sortid": 1600,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_honey_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordHoneyProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "ComboWeaponsReset",
+      "type": "procedure",
+      "sortid": 1601,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combo_weapons_reset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ComboWeaponsResetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "ComboWeapons",
+      "type": "tag",
+      "sortid": 1602,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combo_weapons",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/tags/items/combo_weapons.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "ComboWeaponsTooltip",
+      "type": "procedure",
+      "sortid": 1603,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combo_weapons_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ComboWeaponsTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Honey"
     }
   ],
   "variable_elements": [
@@ -28021,6 +28099,12 @@
     },
     {
       "name": "flaming_circlet_cooldown",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "time_since_last_attacked",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
