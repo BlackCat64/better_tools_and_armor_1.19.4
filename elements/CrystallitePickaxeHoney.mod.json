@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "tool",
   "definition": {
-    "toolType": "MultiTool",
+    "toolType": "Pickaxe",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "crystallite_pickaxe_honey",

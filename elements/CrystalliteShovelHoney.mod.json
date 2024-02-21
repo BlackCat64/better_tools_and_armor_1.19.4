@@ -11,7 +11,7 @@
     "name": "Crystallite Shovel",
     "specialInformation": {
       "fixedValue": [
-        "§6Swarm - Mining the same block many times in a row causes it to break instantly"
+        "§6Hive Mind - Harvest Honeycomb from Beehives without angering nearby bees"
       ]
     },
     "creativeTab": {

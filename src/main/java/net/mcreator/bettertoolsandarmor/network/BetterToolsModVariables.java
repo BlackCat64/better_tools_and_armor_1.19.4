@@ -15,13 +15,17 @@ import net.minecraftforge.common.capabilities.CapabilityToken;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.Capability;
 
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.Tag;
+import net.minecraft.nbt.NbtUtils;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 import net.minecraft.client.Minecraft;
 
@@ -89,6 +93,9 @@ public class BetterToolsModVariables {
 				clone.crystallite_amethyst_absorption_timer = original.crystallite_amethyst_absorption_timer;
 				clone.flaming_circlet_cooldown = original.flaming_circlet_cooldown;
 				clone.time_since_last_attacked = original.time_since_last_attacked;
+				clone.time_since_last_mined = original.time_since_last_mined;
+				clone.last_mined_block = original.last_mined_block;
+				clone.block_mining_combo = original.block_mining_combo;
 			}
 		}
 	}
@@ -144,6 +151,9 @@ public class BetterToolsModVariables {
 		public String knockback_resistance_modifier = "\"\"";
 		public double flaming_circlet_cooldown = 0;
 		public double time_since_last_attacked = 0;
+		public double time_since_last_mined = 0;
+		public BlockState last_mined_block = Blocks.AIR.defaultBlockState();
+		public double block_mining_combo = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -172,6 +182,9 @@ public class BetterToolsModVariables {
 			nbt.putString("knockback_resistance_modifier", knockback_resistance_modifier);
 			nbt.putDouble("flaming_circlet_cooldown", flaming_circlet_cooldown);
 			nbt.putDouble("time_since_last_attacked", time_since_last_attacked);
+			nbt.putDouble("time_since_last_mined", time_since_last_mined);
+			nbt.put("last_mined_block", NbtUtils.writeBlockState(last_mined_block));
+			nbt.putDouble("block_mining_combo", block_mining_combo);
 			return nbt;
 		}
 
@@ -197,6 +210,9 @@ public class BetterToolsModVariables {
 			knockback_resistance_modifier = nbt.getString("knockback_resistance_modifier");
 			flaming_circlet_cooldown = nbt.getDouble("flaming_circlet_cooldown");
 			time_since_last_attacked = nbt.getDouble("time_since_last_attacked");
+			time_since_last_mined = nbt.getDouble("time_since_last_mined");
+			last_mined_block = NbtUtils.readBlockState(BuiltInRegistries.BLOCK.asLookup(), nbt.getCompound("last_mined_block"));
+			block_mining_combo = nbt.getDouble("block_mining_combo");
 		}
 	}
 
@@ -241,6 +257,9 @@ public class BetterToolsModVariables {
 					variables.knockback_resistance_modifier = message.data.knockback_resistance_modifier;
 					variables.flaming_circlet_cooldown = message.data.flaming_circlet_cooldown;
 					variables.time_since_last_attacked = message.data.time_since_last_attacked;
+					variables.time_since_last_mined = message.data.time_since_last_mined;
+					variables.last_mined_block = message.data.last_mined_block;
+					variables.block_mining_combo = message.data.block_mining_combo;
 				}
 			});
 			context.setPacketHandled(true);

@@ -47,6 +47,6 @@ public class CrystalliteShovelHoneyItem extends ShovelItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A76Swarm - Mining the same block many times in a row causes it to break instantly"));
+		list.add(Component.literal("\u00A76Hive Mind - Harvest Honeycomb from Beehives without angering nearby bees"));
 	}
 }
