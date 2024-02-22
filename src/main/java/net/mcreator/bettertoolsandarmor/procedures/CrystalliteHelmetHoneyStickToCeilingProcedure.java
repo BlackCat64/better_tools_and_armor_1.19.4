@@ -47,19 +47,23 @@ public class CrystalliteHelmetHoneyStickToCeilingProcedure {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_HELMET.get()) {
 				if (entity.getDeltaMovement().y() >= 0) {
 					if (world.getBlockState(BlockPos.containing(x, y + 2, z)).canOcclude()) {
+						if (!(((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get()).getModifier(UUID.fromString("df433bbf-6612-471a-8caf-44e463ed594e")) != null)) {
+							if (world instanceof Level _level) {
+								if (!_level.isClientSide()) {
+									_level.playSound(null, BlockPos.containing(x, y + 2, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.honey_block.place")), SoundSource.PLAYERS, (float) 0.75, 1);
+								} else {
+									_level.playLocalSound(x, (y + 2), z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.honey_block.place")), SoundSource.PLAYERS, (float) 0.75, 1, false);
+								}
+							}
+						}
 						if (!(((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get())
 								.hasModifier((new AttributeModifier(UUID.fromString("df433bbf-6612-471a-8caf-44e463ed594e"), "stick_to_ceiling", (-1.5), AttributeModifier.Operation.MULTIPLY_TOTAL)))))
 							((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get())
 									.addTransientModifier((new AttributeModifier(UUID.fromString("df433bbf-6612-471a-8caf-44e463ed594e"), "stick_to_ceiling", (-1.5), AttributeModifier.Operation.MULTIPLY_TOTAL)));
-						if (world instanceof Level _level) {
-							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y + 2, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.honey_block.place")), SoundSource.PLAYERS, 1, 1);
-							} else {
-								_level.playLocalSound(x, (y + 2), z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.honey_block.place")), SoundSource.PLAYERS, 1, 1, false);
-							}
+						if (world.dayTime() % 10 == 0) {
+							if (world instanceof ServerLevel _level)
+								_level.sendParticles(ParticleTypes.FALLING_HONEY, x, (y + 2), z, 1, 0.5, 0.5, 0.5, 0.025);
 						}
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.LANDING_HONEY, x, (y + 2), z, 5, 0.5, 0.5, 0.5, 0.025);
 					} else {
 						((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get()).removeModifier(UUID.fromString("df433bbf-6612-471a-8caf-44e463ed594e"));
 					}
