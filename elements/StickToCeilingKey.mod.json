@@ -3,7 +3,13 @@
   "_type": "keybind",
   "definition": {
     "triggerKey": "SPACE",
-    "keyBindingName": "Stick to Ceiling using Crystallite Helmet (Honey upgrade)",
-    "keyBindingCategoryKey": "misc"
+    "keyBindingName": "BT+A - Stick to Ceiling",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "StickToCeilingKeyDown"
+    },
+    "onKeyReleased": {
+      "name": "StickToCeilingKeyUp"
+    }
   }
 }

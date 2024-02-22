@@ -28114,6 +28114,82 @@
         ]
       },
       "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteHelmetHoneyStickToCeiling",
+      "type": "procedure",
+      "sortid": 1610,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_helmet_honey_stick_to_ceiling",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteHelmetHoneyStickToCeilingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "StickToCeilingKeyDown",
+      "type": "procedure",
+      "sortid": 1611,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stick_to_ceiling_key_down",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/StickToCeilingKeyDownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "StickToCeilingKeyUp",
+      "type": "procedure",
+      "sortid": 1612,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stick_to_ceiling_key_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/StickToCeilingKeyUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Honey"
     }
   ],
   "variable_elements": [
@@ -28260,6 +28336,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "stick_to_ceiling",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -28987,7 +29069,7 @@
       "block.better_tools.blue_slime_block": "Blue Slime Block",
       "item.better_tools.iron_dagger": "Iron Dagger",
       "entity.better_tools.purple_mooshroom": "Purple Mooshroom",
-      "key.better_tools.stick_to_ceiling_key": "Stick to Ceiling using Crystallite Helmet (Honey upgrade)",
+      "key.better_tools.stick_to_ceiling_key": "BT+A - Stick to Ceiling",
       "block.better_tools.dark_polished_emerald_slab": "Dark Metallic Emerald Slab",
       "advancements.all_crystallite_tools_adv.title": "Complete Crystallite Catalogue",
       "item.better_tools.flint_dagger": "Flint Dagger",

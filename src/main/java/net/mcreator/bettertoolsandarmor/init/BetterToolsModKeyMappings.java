@@ -15,6 +15,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
+import net.mcreator.bettertoolsandarmor.network.StickToCeilingKeyMessage;
 import net.mcreator.bettertoolsandarmor.network.FloatKeyMessage;
 import net.mcreator.bettertoolsandarmor.network.DoubleJumpKeyMessage;
 import net.mcreator.bettertoolsandarmor.network.AttributesViewerOpenMessage;
@@ -61,7 +62,25 @@ public class BetterToolsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping STICK_TO_CEILING_KEY = new KeyMapping("key.better_tools.stick_to_ceiling_key", GLFW.GLFW_KEY_SPACE, "key.categories.misc");
+	public static final KeyMapping STICK_TO_CEILING_KEY = new KeyMapping("key.better_tools.stick_to_ceiling_key", GLFW.GLFW_KEY_SPACE, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				BetterToolsMod.PACKET_HANDLER.sendToServer(new StickToCeilingKeyMessage(0, 0));
+				StickToCeilingKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				STICK_TO_CEILING_KEY_LASTPRESS = System.currentTimeMillis();
+			} else if (isDownOld != isDown && !isDown) {
+				int dt = (int) (System.currentTimeMillis() - STICK_TO_CEILING_KEY_LASTPRESS);
+				BetterToolsMod.PACKET_HANDLER.sendToServer(new StickToCeilingKeyMessage(1, dt));
+				StickToCeilingKeyMessage.pressAction(Minecraft.getInstance().player, 1, dt);
+			}
+			isDownOld = isDown;
+		}
+	};
+	private static long STICK_TO_CEILING_KEY_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
@@ -79,6 +98,7 @@ public class BetterToolsModKeyMappings {
 				DOUBLE_JUMP_KEY.consumeClick();
 				FLOAT_KEY.consumeClick();
 				ATTRIBUTES_VIEWER_OPEN.consumeClick();
+				STICK_TO_CEILING_KEY.consumeClick();
 			}
 		}
 	}
