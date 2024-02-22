@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Cover me in Nether Diamonds",
-    "achievementDescription": "Wear a full set of Nether Diamonds armor",
+    "achievementDescription": "Wear a full set of Nether Diamond armor",
     "achievementIcon": {
       "value": "CUSTOM:NetherDiamondArmor.body"
     },

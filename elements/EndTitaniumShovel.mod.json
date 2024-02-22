@@ -11,7 +11,7 @@
     "name": "Ender Titanium Shovel",
     "specialInformation": {
       "fixedValue": [
-        "§5Mines End Stone just like Dirt"
+        "§5Mines End Stone instantly"
       ]
     },
     "creativeTab": {
@@ -124,6 +124,9 @@
         "value": "Blocks.CONCRETE_POWDER#15"
       }
     ],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:EndTitaniumIngot"

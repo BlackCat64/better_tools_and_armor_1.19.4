@@ -46,6 +46,6 @@ public class EndTitaniumShovelItem extends ShovelItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A75Mines End Stone just like Dirt"));
+		list.add(Component.literal("\u00A75Mines End Stone instantly"));
 	}
 }

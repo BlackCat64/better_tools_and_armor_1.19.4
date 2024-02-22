@@ -60,7 +60,7 @@ public class CrystalliteHelmetHoneyStickToCeilingProcedure {
 								.hasModifier((new AttributeModifier(UUID.fromString("df433bbf-6612-471a-8caf-44e463ed594e"), "stick_to_ceiling", (-1.5), AttributeModifier.Operation.MULTIPLY_TOTAL)))))
 							((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get())
 									.addTransientModifier((new AttributeModifier(UUID.fromString("df433bbf-6612-471a-8caf-44e463ed594e"), "stick_to_ceiling", (-1.5), AttributeModifier.Operation.MULTIPLY_TOTAL)));
-						if (world.dayTime() % 10 == 0) {
+						if (world.dayTime() % 5 == 0) {
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles(ParticleTypes.FALLING_HONEY, x, (y + 2), z, 1, 0.5, 0.5, 0.5, 0.025);
 						}
