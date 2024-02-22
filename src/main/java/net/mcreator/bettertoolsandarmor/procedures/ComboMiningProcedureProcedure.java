@@ -6,13 +6,11 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.level.BlockEvent;
 
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 
@@ -22,14 +20,14 @@ import javax.annotation.Nullable;
 public class ComboMiningProcedureProcedure {
 	@SubscribeEvent
 	public static void onBlockBreak(BlockEvent.BreakEvent event) {
-		execute(event, event.getLevel(), event.getState(), event.getPlayer());
+		execute(event, event.getState(), event.getPlayer());
 	}
 
-	public static void execute(LevelAccessor world, BlockState blockstate, Entity entity) {
-		execute(null, world, blockstate, entity);
+	public static void execute(BlockState blockstate, Entity entity) {
+		execute(null, blockstate, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, BlockState blockstate, Entity entity) {
+	private static void execute(@Nullable Event event, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:combo_mining_tools")))) {
@@ -83,8 +81,5 @@ public class ComboMiningProcedureProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		if (!world.isClientSide() && world.getServer() != null)
-			world.getServer().getPlayerList()
-					.broadcastSystemMessage(Component.literal(("Combo: " + (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).block_mining_combo)), false);
 	}
 }

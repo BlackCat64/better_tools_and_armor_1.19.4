@@ -5,10 +5,7 @@
     "type": "Items",
     "items": [
       {
-        "value": "CUSTOM:CrystallitePickaxeHoney"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeHoney"
+        "value": "CUSTOM:CrystalliteShovelHoney"
       },
       {
         "value": "CUSTOM:CrystalliteHoeHoney"
@@ -19,7 +16,7 @@
     "entities": [],
     "biomes": [],
     "damageTypes": [],
-    "name": "combo_mining_tools",
+    "name": "safe_honey_harvesters",
     "namespace": "mod"
   }
 }

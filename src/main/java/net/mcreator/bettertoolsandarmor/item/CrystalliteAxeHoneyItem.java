@@ -48,5 +48,6 @@ public class CrystalliteAxeHoneyItem extends AxeItem {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("\u00A76Swarm - Consecutive hits deal more damage"));
+		list.add(Component.literal("\u00A76- Mining the same block many times in a row causes it to break instantly"));
 	}
 }
