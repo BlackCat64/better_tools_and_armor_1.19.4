@@ -61,12 +61,14 @@ public class BetterToolsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping STICK_TO_CEILING_KEY = new KeyMapping("key.better_tools.stick_to_ceiling_key", GLFW.GLFW_KEY_SPACE, "key.categories.misc");
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(DOUBLE_JUMP_KEY);
 		event.register(FLOAT_KEY);
 		event.register(ATTRIBUTES_VIEWER_OPEN);
+		event.register(STICK_TO_CEILING_KEY);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
