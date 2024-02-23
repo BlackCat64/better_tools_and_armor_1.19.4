@@ -62,5 +62,12 @@ public class ComboWeaponsResetProcedure {
 				});
 			}
 		}
+		{
+			double _setval = (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_last_jumped + 1;
+			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.time_since_last_jumped = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 	}
 }

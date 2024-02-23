@@ -28234,6 +28234,26 @@
         ]
       },
       "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteBootsHoneyComboJump",
+      "type": "procedure",
+      "sortid": 1615,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_boots_honey_combo_jump",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBootsHoneyComboJumpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Honey"
     }
   ],
   "variable_elements": [
@@ -28389,6 +28409,12 @@
     },
     {
       "name": "crystallite_honey_absorption_timer",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "time_since_last_jumped",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
