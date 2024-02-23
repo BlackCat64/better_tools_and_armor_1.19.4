@@ -97,7 +97,7 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A76Curing - Heals all negative effects after 10s"));
+			list.add(Component.literal("\u00A76Hive Heart - Lose half your Max Health, but gain Absorption Health which slowly regenerates"));
 		}
 
 		@Override
@@ -141,7 +141,7 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A7aCombo Jump - Jump repeatedly for increased jump height"));
+			list.add(Component.literal("\u00A76Combo Jump - Jump repeatedly for increased jump height"));
 		}
 
 		@Override

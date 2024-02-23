@@ -25,7 +25,7 @@
     },
     "bodySpecialInformation": {
       "fixedValue": [
-        "§6Curing - Heals all negative effects after 10s"
+        "§6Hive Heart - Lose half your Max Health, but gain Absorption Health which slowly regenerates"
       ]
     },
     "leggingsSpecialInformation": {
@@ -35,7 +35,7 @@
     },
     "bootsSpecialInformation": {
       "fixedValue": [
-        "§aCombo Jump - Jump repeatedly for increased jump height"
+        "§6Combo Jump - Jump repeatedly for increased jump height"
       ]
     },
     "helmetModelName": "Default",

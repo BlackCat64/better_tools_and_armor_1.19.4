@@ -97,6 +97,7 @@ public class BetterToolsModVariables {
 				clone.last_mined_block = original.last_mined_block;
 				clone.block_mining_combo = original.block_mining_combo;
 				clone.stick_to_ceiling = original.stick_to_ceiling;
+				clone.crystallite_honey_absorption_timer = original.crystallite_honey_absorption_timer;
 			}
 		}
 	}
@@ -156,6 +157,7 @@ public class BetterToolsModVariables {
 		public BlockState last_mined_block = Blocks.AIR.defaultBlockState();
 		public double block_mining_combo = 0;
 		public boolean stick_to_ceiling = false;
+		public double crystallite_honey_absorption_timer = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -188,6 +190,7 @@ public class BetterToolsModVariables {
 			nbt.put("last_mined_block", NbtUtils.writeBlockState(last_mined_block));
 			nbt.putDouble("block_mining_combo", block_mining_combo);
 			nbt.putBoolean("stick_to_ceiling", stick_to_ceiling);
+			nbt.putDouble("crystallite_honey_absorption_timer", crystallite_honey_absorption_timer);
 			return nbt;
 		}
 
@@ -217,6 +220,7 @@ public class BetterToolsModVariables {
 			last_mined_block = NbtUtils.readBlockState(BuiltInRegistries.BLOCK.asLookup(), nbt.getCompound("last_mined_block"));
 			block_mining_combo = nbt.getDouble("block_mining_combo");
 			stick_to_ceiling = nbt.getBoolean("stick_to_ceiling");
+			crystallite_honey_absorption_timer = nbt.getDouble("crystallite_honey_absorption_timer");
 		}
 	}
 
@@ -265,6 +269,7 @@ public class BetterToolsModVariables {
 					variables.last_mined_block = message.data.last_mined_block;
 					variables.block_mining_combo = message.data.block_mining_combo;
 					variables.stick_to_ceiling = message.data.stick_to_ceiling;
+					variables.crystallite_honey_absorption_timer = message.data.crystallite_honey_absorption_timer;
 				}
 			});
 			context.setPacketHandled(true);
