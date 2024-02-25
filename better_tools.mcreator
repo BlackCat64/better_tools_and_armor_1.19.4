@@ -28338,6 +28338,26 @@
         ]
       },
       "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CuringCharmProcedure",
+      "type": "procedure",
+      "sortid": 1619,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curing_charm_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CuringCharmProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Honey"
     }
   ],
   "variable_elements": [
