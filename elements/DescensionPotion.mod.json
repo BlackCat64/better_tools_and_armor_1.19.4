@@ -28,7 +28,8 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§9Descend through the floor"
+        "§9Descend through the floor",
+        "§cUse with caution!"
       ]
     },
     "glowCondition": {
@@ -37,6 +38,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "DescensionPotionProcedure"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {

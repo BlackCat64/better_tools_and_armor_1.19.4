@@ -28462,6 +28462,42 @@
         ]
       },
       "path": "~/Consumables"
+    },
+    {
+      "name": "DescensionPotionProcedure",
+      "type": "procedure",
+      "sortid": 1628,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "descension_potion_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DescensionPotionProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Consumables"
     }
   ],
   "variable_elements": [
