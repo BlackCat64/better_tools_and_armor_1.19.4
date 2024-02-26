@@ -153,7 +153,7 @@ public abstract class EndTitaniumArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A75Press \u00A7b[Left Shift] in mid-air for 5s Slow Falling"));
+			list.add(Component.literal("\u00A75Press \u00A7b[Left Shift] \u00A75in mid-air for 5s Slow Falling"));
 			list.add(Component.literal("\u00A7cDurability Cost: 10"));
 			list.add(Component.literal("\u00A7cCooldown: 20s"));
 		}

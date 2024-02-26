@@ -41,7 +41,7 @@
     },
     "bootsSpecialInformation": {
       "fixedValue": [
-        "§5Press §b[Left Shift] in mid-air for 5s Slow Falling",
+        "§5Press §b[Left Shift] §5in mid-air for 5s Slow Falling",
         "§cDurability Cost: 10",
         "§cCooldown: 20s"
       ]
