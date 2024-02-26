@@ -28426,6 +28426,42 @@
         ]
       },
       "path": "~/Consumables"
+    },
+    {
+      "name": "AscensionPotionProcedure",
+      "type": "procedure",
+      "sortid": 1627,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ascension_potion_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/AscensionPotionProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Consumables"
     }
   ],
   "variable_elements": [

@@ -17,6 +17,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.bettertoolsandarmor.procedures.AscensionPotionProcedureProcedure;
+
 import java.util.List;
 
 public class AscensionPotionItem extends Item {
@@ -65,6 +67,10 @@ public class AscensionPotionItem extends Item {
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
 		ItemStack retval = new ItemStack(Items.GLASS_BOTTLE);
 		super.finishUsingItem(itemstack, world, entity);
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		AscensionPotionProcedureProcedure.execute(world, x, y, z, entity);
 		if (itemstack.isEmpty()) {
 			return retval;
 		} else {

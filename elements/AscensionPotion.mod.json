@@ -37,6 +37,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "AscensionPotionProcedure"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {
