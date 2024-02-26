@@ -75,7 +75,7 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A76Sticky - Can stick to ceilings by holding [Space]"));
+			list.add(Component.literal("\u00A76Sticky - Can stick to ceilings by holding \u00A7b[SPACE]"));
 		}
 
 		@Override
