@@ -27,8 +27,8 @@ public class DescensionPotionProcedureProcedure {
 		double y_iterator = 0;
 		if (entity.isOnGround()) {
 			y_iterator = y - 3;
-			while (!(world.getBlockState(BlockPos.containing(x, y_iterator - 1, z)).canOcclude() && !world.getBlockState(BlockPos.containing(x, y_iterator, z)).canOcclude()
-					&& !world.getBlockState(BlockPos.containing(x, y_iterator + 1, z)).canOcclude()) && y_iterator >= -64) {
+			while (!(!world.getBlockState(BlockPos.containing(x, y_iterator, z)).canOcclude() && !world.getBlockState(BlockPos.containing(x, y_iterator + 1, z)).canOcclude()
+					&& world.getBlockState(BlockPos.containing(x, y_iterator + 2, z)).canOcclude()) && y_iterator >= -64) {
 				y_iterator = y_iterator - 1;
 			}
 			if (y_iterator >= -64) {
@@ -53,13 +53,6 @@ public class DescensionPotionProcedureProcedure {
 								_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "title @s actionbar \"\u00A7cNo location to descend to\"");
 					}
 				}
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.pling")), SoundSource.NEUTRAL, 1, (float) 0.5);
-					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.pling")), SoundSource.NEUTRAL, 1, (float) 0.5, false);
-					}
-				}
 				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 					BetterToolsMod.queueServerWork(1, () -> {
 						if (entity instanceof Player _player) {
@@ -80,13 +73,6 @@ public class DescensionPotionProcedureProcedure {
 				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
 					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
 							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "title @s actionbar \"\u00A7cCannot descend while in mid-air\"");
-				}
-			}
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.pling")), SoundSource.PLAYERS, 1, (float) 0.5);
-				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.pling")), SoundSource.PLAYERS, 1, (float) 0.5, false);
 				}
 			}
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {

@@ -53,13 +53,6 @@ public class AscensionPotionProcedureProcedure {
 								_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "title @s actionbar \"\u00A7cNo location to ascend to\"");
 					}
 				}
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.pling")), SoundSource.NEUTRAL, 1, (float) 0.5);
-					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.pling")), SoundSource.NEUTRAL, 1, (float) 0.5, false);
-					}
-				}
 				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 					BetterToolsMod.queueServerWork(1, () -> {
 						if (entity instanceof Player _player) {
@@ -80,13 +73,6 @@ public class AscensionPotionProcedureProcedure {
 				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
 					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
 							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "title @s actionbar \"\u00A7cCannot ascend while in mid-air\"");
-				}
-			}
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.pling")), SoundSource.PLAYERS, 1, (float) 0.5);
-				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.pling")), SoundSource.PLAYERS, 1, (float) 0.5, false);
 				}
 			}
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
