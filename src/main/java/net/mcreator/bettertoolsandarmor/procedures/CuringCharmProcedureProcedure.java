@@ -33,7 +33,7 @@ public class CuringCharmProcedureProcedure {
 		if (entity == null)
 			return;
 		double shorten_time = 0;
-		shorten_time = 100;
+		shorten_time = 200;
 		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.CURING_CHARM.get(), lv).isPresent() : false) {
 			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.BLINDNESS) ? _livEnt.getEffect(MobEffects.BLINDNESS).getDuration() : 0) <= shorten_time) {
 				if (entity instanceof LivingEntity _entity)
@@ -73,12 +73,12 @@ public class CuringCharmProcedureProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(MobEffects.WEAKNESS);
 			}
-			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WITHER) ? _livEnt.getEffect(MobEffects.WITHER).getDuration() : 0) <= shorten_time
+			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WITHER) ? _livEnt.getEffect(MobEffects.WITHER).getDuration() : 0) <= (shorten_time / 2)
 					* ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WITHER) ? _livEnt.getEffect(MobEffects.WITHER).getAmplifier() : 0) + 1)) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(MobEffects.WITHER);
 			}
-			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(BetterToolsModMobEffects.FROZEN.get()) ? _livEnt.getEffect(BetterToolsModMobEffects.FROZEN.get()).getDuration() : 0) <= shorten_time) {
+			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(BetterToolsModMobEffects.FROZEN.get()) ? _livEnt.getEffect(BetterToolsModMobEffects.FROZEN.get()).getDuration() : 0) <= shorten_time / 2) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(BetterToolsModMobEffects.FROZEN.get());
 			}

@@ -24,7 +24,8 @@ public class CuringCharmItem extends Item implements ICurioItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A79Cleanses all negative effects after 10s"));
+		list.add(Component.literal("\u00A77When worn:"));
+		list.add(Component.literal("\u00A79Shortens the duration of negative effects"));
 	}
 
 	@Override

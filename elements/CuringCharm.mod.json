@@ -30,7 +30,8 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§9Cleanses all negative effects after 10s"
+        "§7When worn:",
+        "§9Shortens the duration of negative effects"
       ]
     },
     "hasGlow": false,
