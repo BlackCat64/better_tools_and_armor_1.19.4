@@ -19,7 +19,7 @@ public class DoubleJumpMobEffect extends MobEffect {
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		DoubleJumpProcedureProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		DoubleJumpProcedureProcedure.execute(entity);
 	}
 
 	@Override
