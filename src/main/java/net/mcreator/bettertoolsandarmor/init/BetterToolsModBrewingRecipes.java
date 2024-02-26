@@ -120,6 +120,13 @@ public class BetterToolsModBrewingRecipes implements IModPlugin {
 		PotionUtils.setPotion(potion, BetterToolsModPotions.POTION_OF_DECAY_2.get());
 		PotionUtils.setPotion(potion2, BetterToolsModPotions.POTION_OF_DECAY.get());
 		brewingRecipes.add(factory.createBrewingRecipe(List.of(new ItemStack(Items.REDSTONE)), potion.copy(), potion2.copy()));
+		PotionUtils.setPotion(potion, Potions.LEAPING);
+		brewingRecipes.add(factory.createBrewingRecipe(List.of(new ItemStack(Items.ENDER_PEARL)), potion.copy(), new ItemStack(BetterToolsModItems.ASCENSION_POTION.get())));
+		brewingRecipes.add(factory.createBrewingRecipe(List.of(new ItemStack(Items.FERMENTED_SPIDER_EYE)), new ItemStack(BetterToolsModItems.ASCENSION_POTION.get()), new ItemStack(BetterToolsModItems.DESCENSION_POTION.get())));
+		PotionUtils.setPotion(potion, Potions.LONG_LEAPING);
+		brewingRecipes.add(factory.createBrewingRecipe(List.of(new ItemStack(Items.ENDER_PEARL)), potion.copy(), new ItemStack(BetterToolsModItems.ASCENSION_POTION.get())));
+		PotionUtils.setPotion(potion, Potions.STRONG_LEAPING);
+		brewingRecipes.add(factory.createBrewingRecipe(List.of(new ItemStack(Items.ENDER_PEARL)), potion.copy(), new ItemStack(BetterToolsModItems.ASCENSION_POTION.get())));
 		registration.addRecipes(RecipeTypes.BREWING, brewingRecipes);
 	}
 }

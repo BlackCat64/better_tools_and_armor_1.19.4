@@ -28340,6 +28340,92 @@
         ]
       },
       "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "AscensionPotion",
+      "type": "item",
+      "sortid": 1621,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ascension_potion",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/ascension_potion.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/AscensionPotionItem.java"
+        ]
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "AscensionPotionRecipe",
+      "type": "recipe",
+      "sortid": 1622,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ascension_potion_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/recipes/brewing/AscensionPotionRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "DescensionPotion",
+      "type": "item",
+      "sortid": 1623,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "descension_potion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/DescensionPotionItem.java",
+          "src/main/resources/assets/better_tools/models/item/descension_potion.json"
+        ]
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "DescensionPotionRecipe",
+      "type": "recipe",
+      "sortid": 1624,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "descension_potion_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/recipes/brewing/DescensionPotionRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "AscensionPotionRecipeLong",
+      "type": "recipe",
+      "sortid": 1625,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ascension_potion_recipe_long",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/recipes/brewing/AscensionPotionRecipeLongBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "AscensionPotionRecipeUsing2",
+      "type": "recipe",
+      "sortid": 1626,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ascension_potion_recipe_using_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/recipes/brewing/AscensionPotionRecipeUsing2BrewingRecipe.java"
+        ]
+      },
+      "path": "~/Consumables"
     }
   ],
   "variable_elements": [
@@ -28689,6 +28775,7 @@
       "item.better_tools.crystallite_armor_emerald_boots": "Crystallite Boots",
       "item.better_tools.nether_diamond_hoe": "Nether Diamond Hoe",
       "block.better_tools.light_polished_gold_block": "Light Polished Gold Block",
+      "item.better_tools.ascension_potion": "Potion of Ascension",
       "item.better_tools.crystallite_sword_sapphire": "Crystallite Sword",
       "block.better_tools.dark_polished_copper_trapdoor": "Dark Polished Copper Trapdoor",
       "entity.minecraft.villager.better_tools.jeweller": "Jeweller",
@@ -29076,6 +29163,7 @@
       "item.better_tools.crystallite_shards": "Crystallite Shards",
       "item.minecraft.potion.effect.swift_swim_potion_2": "Potion of Rapidity",
       "item.better_tools.crystallite_axe_amethyst": "Crystallite Axe",
+      "item.better_tools.descension_potion": "Potion of Descension",
       "advancements.cactus_crystal_adv.descr": "Wear a Cactus Shirt and Crystal Leggings at the same time",
       "death.attack.karma_damage.player": "%1$s got instant karma whilst trying to escape %2$s",
       "block.better_tools.polished_diamond_block": "Metallic Diamond Block",

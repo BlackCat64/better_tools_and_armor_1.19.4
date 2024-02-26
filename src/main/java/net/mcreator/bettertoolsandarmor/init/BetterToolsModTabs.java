@@ -51,6 +51,8 @@ public class BetterToolsModTabs {
 					tabData.accept(BetterToolsModItems.GUARDIAN_SPIKE.get());
 					tabData.accept(BetterToolsModItems.APPLE_JUICE.get());
 					tabData.accept(BetterToolsModItems.BERRY_SMOOTHIE.get());
+					tabData.accept(BetterToolsModItems.ASCENSION_POTION.get());
+					tabData.accept(BetterToolsModItems.DESCENSION_POTION.get());
 				})
 
 		);

@@ -146,6 +146,7 @@ import net.mcreator.bettertoolsandarmor.item.DiamondCryingObsidianHelmetItem;
 import net.mcreator.bettertoolsandarmor.item.DiamondCactusBodyItem;
 import net.mcreator.bettertoolsandarmor.item.DiamondBlackstoneLegsItem;
 import net.mcreator.bettertoolsandarmor.item.DiamondAppleItem;
+import net.mcreator.bettertoolsandarmor.item.DescensionPotionItem;
 import net.mcreator.bettertoolsandarmor.item.CuringCharmItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteSwordTopazItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteSwordSkyItem;
@@ -281,6 +282,7 @@ import net.mcreator.bettertoolsandarmor.item.BlackstoneLegsItem;
 import net.mcreator.bettertoolsandarmor.item.BerrySmoothieItem;
 import net.mcreator.bettertoolsandarmor.item.BerryPieItem;
 import net.mcreator.bettertoolsandarmor.item.BattleAxeItem;
+import net.mcreator.bettertoolsandarmor.item.AscensionPotionItem;
 import net.mcreator.bettertoolsandarmor.item.AppleJuiceItem;
 import net.mcreator.bettertoolsandarmor.item.AmogusItem;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
@@ -760,6 +762,8 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> CRYSTALLITE_ARMOR_HONEY_BOOTS = REGISTRY.register("crystallite_armor_honey_boots", () -> new CrystalliteArmorHoneyItem.Boots());
 	public static final RegistryObject<Item> HIVE_CRYSTAL = REGISTRY.register("hive_crystal", () -> new HiveCrystalItem());
 	public static final RegistryObject<Item> CURING_CHARM = REGISTRY.register("curing_charm", () -> new CuringCharmItem());
+	public static final RegistryObject<Item> ASCENSION_POTION = REGISTRY.register("ascension_potion", () -> new AscensionPotionItem());
+	public static final RegistryObject<Item> DESCENSION_POTION = REGISTRY.register("descension_potion", () -> new DescensionPotionItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
