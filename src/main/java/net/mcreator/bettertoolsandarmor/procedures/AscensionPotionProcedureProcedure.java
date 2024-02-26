@@ -15,6 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 public class AscensionPotionProcedureProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -23,8 +24,8 @@ public class AscensionPotionProcedureProcedure {
 		double y_iterator = 0;
 		if (entity.isOnGround()) {
 			y_iterator = y + 2;
-			while (world.getBlockState(BlockPos.containing(x, y_iterator - 1, z)).canOcclude() && !world.getBlockState(BlockPos.containing(x, y_iterator, z)).canOcclude() && !world.getBlockState(BlockPos.containing(x, y_iterator + 1, z)).canOcclude()
-					&& y_iterator <= 320) {
+			while (!(world.getBlockState(BlockPos.containing(x, y_iterator - 1, z)).canOcclude() && !world.getBlockState(BlockPos.containing(x, y_iterator, z)).canOcclude()
+					&& !world.getBlockState(BlockPos.containing(x, y_iterator + 1, z)).canOcclude()) && y_iterator <= 320) {
 				y_iterator = y_iterator + 1;
 			}
 			if (y_iterator <= 320) {
@@ -42,39 +43,47 @@ public class AscensionPotionProcedureProcedure {
 					}
 				}
 			} else {
-				if (entity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Items.GLASS_BOTTLE);
-					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-				}
-				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(BetterToolsModItems.ASCENSION_POTION.get());
-					_setstack.setCount(1);
-					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.pling")), SoundSource.PLAYERS, 1, (float) 0.5);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.pling")), SoundSource.NEUTRAL, 1, (float) 0.5);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.pling")), SoundSource.PLAYERS, 1, (float) 0.5, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.pling")), SoundSource.NEUTRAL, 1, (float) 0.5, false);
 					}
+				}
+				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+					BetterToolsMod.queueServerWork(1, () -> {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(Items.GLASS_BOTTLE);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(BetterToolsModItems.ASCENSION_POTION.get());
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
+					});
 				}
 			}
 		} else {
-			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(Items.GLASS_BOTTLE);
-				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-			}
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(BetterToolsModItems.ASCENSION_POTION.get());
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.pling")), SoundSource.PLAYERS, 1, (float) 0.5);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.pling")), SoundSource.PLAYERS, 1, (float) 0.5, false);
 				}
+			}
+			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+				BetterToolsMod.queueServerWork(1, () -> {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(Items.GLASS_BOTTLE);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(BetterToolsModItems.ASCENSION_POTION.get());
+						_setstack.setCount(1);
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+					}
+				});
 			}
 		}
 	}
