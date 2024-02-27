@@ -8108,6 +8108,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
@@ -28508,20 +28512,6 @@
         ]
       },
       "path": "~/Crystallite/Iron"
-    },
-    {
-      "name": "IncreasedSweepingDamageWeapons",
-      "type": "tag",
-      "sortid": 1631,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "increased_sweeping_damage_weapons",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/items/increased_sweeping_damage_weapons.json"
-        ]
-      },
-      "path": "~/Crystallite/Gold"
     },
     {
       "name": "DamageThroughArmorWeapons",

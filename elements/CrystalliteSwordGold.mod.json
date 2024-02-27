@@ -40,6 +40,9 @@
     ],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onItemInInventoryTick": {
+      "name": "CrystalliteGoldSweepingEdge"
+    }
   }
 }
