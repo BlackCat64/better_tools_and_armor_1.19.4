@@ -10,19 +10,10 @@
     "biomes": [],
     "damageTypes": [
       {
-        "value": "CUSTOM:KarmaDamage"
-      },
-      {
-        "value": "CUSTOM:PoisonMushroomDamage"
-      },
-      {
-        "value": "CUSTOM:WaterPulseDamage"
-      },
-      {
         "value": "CUSTOM:MagicWeaponDamage"
       }
     ],
-    "name": "bypasses_armor",
+    "name": "bypasses_cooldown",
     "namespace": "minecraft"
   }
 }
