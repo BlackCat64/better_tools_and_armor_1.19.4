@@ -42,7 +42,7 @@ public class CrystalliteSwordLapisMagicProcedureProcedure {
 		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
 		if (!BetterToolsModVariables.being_damaged_flag) {
-			if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:magic_damage_tools")))) {
+			if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:damage_through_armor_weapons")))) {
 				BetterToolsModVariables.being_damaged_flag = true;
 				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.INDIRECT_MAGIC), immediatesourceentity, immediatesourceentity), (float) amount);
 				BetterToolsModVariables.being_damaged_flag = false;

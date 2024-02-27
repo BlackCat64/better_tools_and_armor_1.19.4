@@ -19,7 +19,7 @@
     "entities": [],
     "biomes": [],
     "damageTypes": [],
-    "name": "magic_damage_tools",
+    "name": "damage_through_armor_weapons",
     "namespace": "mod"
   }
 }

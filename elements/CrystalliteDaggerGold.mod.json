@@ -24,6 +24,9 @@
     "damageVsEntity": 5.0,
     "usageCount": 1350,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"
@@ -37,9 +40,6 @@
     ],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onItemInInventoryTick": {
-      "name": "CrystalliteGoldSweepingEdge"
-    }
+    "damageOnCrafting": false
   }
 }

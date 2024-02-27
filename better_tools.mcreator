@@ -8108,10 +8108,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           }
         ]
       },
@@ -23740,20 +23736,6 @@
       "path": "~/Crystallite/Amethyst"
     },
     {
-      "name": "MagicDamageTools",
-      "type": "tag",
-      "sortid": 1409,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magic_damage_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/magic_damage_tools.json"
-        ]
-      },
-      "path": "~/Crystallite/Lapis"
-    },
-    {
       "name": "GuardianCrystal",
       "type": "item",
       "sortid": 111,
@@ -28526,6 +28508,34 @@
         ]
       },
       "path": "~/Crystallite/Iron"
+    },
+    {
+      "name": "IncreasedSweepingDamageWeapons",
+      "type": "tag",
+      "sortid": 1631,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increased_sweeping_damage_weapons",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/increased_sweeping_damage_weapons.json"
+        ]
+      },
+      "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "DamageThroughArmorWeapons",
+      "type": "tag",
+      "sortid": 1632,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_through_armor_weapons",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/tags/items/damage_through_armor_weapons.json"
+        ]
+      },
+      "path": "~/Crystallite/Lapis"
     }
   ],
   "variable_elements": [

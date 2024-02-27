@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerGold"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "increased_sweeping_damage_weapons",
+    "namespace": "minecraft"
+  }
+}
