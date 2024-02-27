@@ -1,7 +1,6 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.TooltipFlag;
@@ -9,11 +8,8 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
 
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteIronMagneticProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
@@ -45,13 +41,6 @@ public class CrystalliteShovelIronItem extends ShovelItem {
 				return Ingredient.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get()));
 			}
 		}, 1, -3f, new Item.Properties().fireResistant());
-	}
-
-	@Override
-	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
-		boolean retval = super.mineBlock(itemstack, world, blockstate, pos, entity);
-		CrystalliteIronMagneticProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
-		return retval;
 	}
 
 	@Override
