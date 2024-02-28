@@ -8,8 +8,8 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 
 import javax.annotation.Nullable;
 
@@ -29,9 +29,7 @@ public class CrystalliteRedstoneHealProcedure {
 	private static void execute(@Nullable Event event, Entity sourceentity) {
 		if (sourceentity == null)
 			return;
-		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_SWORD_REDSTONE.get()
-				|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_AXE_REDSTONE.get()
-				|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_DAGGER_REDSTONE.get()) {
+		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:leeching_weapons")))) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 0.3 * (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
 				if (sourceentity instanceof LivingEntity _entity)
 					_entity.setHealth((float) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 2));

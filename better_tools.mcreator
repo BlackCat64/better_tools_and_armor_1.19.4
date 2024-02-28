@@ -28550,6 +28550,34 @@
         ]
       },
       "path": "~/Tags"
+    },
+    {
+      "name": "LeechingWeapons",
+      "type": "tag",
+      "sortid": 1636,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leeching_weapons",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/tags/items/leeching_weapons.json"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "WrenchTools",
+      "type": "tag",
+      "sortid": 1637,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wrench_tools",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/tags/items/block_rotating_tools.json"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
     }
   ],
   "variable_elements": [

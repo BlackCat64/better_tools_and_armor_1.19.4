@@ -8,10 +8,10 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.Screen;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -32,7 +32,7 @@ public class CrystalliteRedstoneSwordTooltipProcedure {
 	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
 		if (tooltip == null)
 			return;
-		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_SWORD_REDSTONE.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_AXE_REDSTONE.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_DAGGER_REDSTONE.get()) {
+		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:leeching_weapons")))) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77Weapon Effects:"));
 				tooltip.add(Component.literal("\u00A791 HP healed on every kill"));
