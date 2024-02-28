@@ -8,12 +8,8 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteNetherDiamondExtinguishProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
@@ -45,13 +41,6 @@ public class CrystalliteShovelNetherDiamondItem extends ShovelItem {
 				return Ingredient.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get()), new ItemStack(BetterToolsModItems.NETHER_DIAMOND.get()));
 			}
 		}, 1, -3f, new Item.Properties().fireResistant());
-	}
-
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		CrystalliteNetherDiamondExtinguishProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
-		return ar;
 	}
 
 	@Override

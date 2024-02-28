@@ -10258,10 +10258,6 @@
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -18816,6 +18812,10 @@
         "dependencies": [
           {
             "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
             "type": "entity"
           }
         ]
@@ -28610,6 +28610,34 @@
         ]
       },
       "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "ExtinguishingTools",
+      "type": "tag",
+      "sortid": 1640,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extinguishing_tools",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/tags/items/extinguishing_tools.json"
+        ]
+      },
+      "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "PoisonBarbedWeapons",
+      "type": "tag",
+      "sortid": 1641,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_barbed_weapons",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/tags/items/poison_barbed_weapons.json"
+        ]
+      },
+      "path": "~/Crystallite/Emerald"
     }
   ],
   "variable_elements": [

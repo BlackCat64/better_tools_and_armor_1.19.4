@@ -26,6 +26,9 @@
     "damageVsEntity": 2.5,
     "usageCount": 1800,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"
@@ -39,9 +42,6 @@
     ],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onRightClickedInAir": {
-      "name": "CrystalliteNetherDiamondExtinguish"
-    }
+    "damageOnCrafting": false
   }
 }
