@@ -23430,10 +23430,6 @@
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -23468,10 +23464,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           },
           {
             "name": "x",
@@ -23523,10 +23515,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           },
           {
             "name": "x",
@@ -28652,6 +28640,48 @@
         ]
       },
       "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "EcholocationWeapons",
+      "type": "tag",
+      "sortid": 1644,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echolocation_weapons",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/tags/items/echolocation_weapons.json"
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "OreLocatingTools",
+      "type": "tag",
+      "sortid": 1645,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_locating_tools",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/tags/items/ore_locating_tools.json"
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "ChestLocatingTools",
+      "type": "tag",
+      "sortid": 1646,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chest_locating_tools",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/tags/items/chest_locating_tools.json"
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
     }
   ],
   "variable_elements": [

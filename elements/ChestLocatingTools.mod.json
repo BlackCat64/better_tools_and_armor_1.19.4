@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteAxeAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeAmethyst"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "chest_locating_tools",
+    "namespace": "mod"
+  }
+}
