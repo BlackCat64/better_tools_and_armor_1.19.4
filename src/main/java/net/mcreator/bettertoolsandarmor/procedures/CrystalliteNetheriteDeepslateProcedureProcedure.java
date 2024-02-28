@@ -54,16 +54,18 @@ public class CrystalliteNetheriteDeepslateProcedureProcedure {
 		}.checkGamemode(entity))) {
 			if (blockstate.is(BlockTags.create(new ResourceLocation("forge:stone")))
 					&& EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_EFFICIENCY, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
-				{
-					BlockPos _pos = BlockPos.containing(x, y, z);
-					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
-					world.destroyBlock(_pos, false);
-				}
-				{
-					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-					if (_ist.hurt(1, RandomSource.create(), null)) {
-						_ist.shrink(1);
-						_ist.setDamageValue(0);
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(Enchantments.BLOCK_EFFICIENCY) >= 5) {
+					{
+						BlockPos _pos = BlockPos.containing(x, y, z);
+						Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
+						world.destroyBlock(_pos, false);
+					}
+					{
+						ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						if (_ist.hurt(1, RandomSource.create(), null)) {
+							_ist.shrink(1);
+							_ist.setDamageValue(0);
+						}
 					}
 				}
 			}
