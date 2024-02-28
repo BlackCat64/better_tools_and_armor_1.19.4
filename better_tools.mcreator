@@ -28582,6 +28582,34 @@
         ]
       },
       "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "DeepMiningTools",
+      "type": "tag",
+      "sortid": 1638,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_mining_tools",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/tags/items/deep_mining_tools.json"
+        ]
+      },
+      "path": "~/Crystallite/Netherite"
+    },
+    {
+      "name": "SmeltingTouchTools",
+      "type": "tag",
+      "sortid": 1639,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelting_touch_tools",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/tags/items/smelting_touch_tools.json"
+        ]
+      },
+      "path": "~/Crystallite/Nether Diamond"
     }
   ],
   "variable_elements": [

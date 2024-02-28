@@ -19,13 +19,13 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.SimpleContainer;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
@@ -61,8 +61,7 @@ public class SmeltingTouchProcedureProcedure {
 		}.checkGamemode(entity))) {
 			if (blockstate.is(BlockTags.create(new ResourceLocation("forge:ores")))) {
 				if (EnchantmentHelper.getItemEnchantmentLevel(BetterToolsModEnchantments.SMELTING_TOUCH.get(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0
-						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_PICKAXE_NETHER_DIAMOND.get()) {
-					StopItemsProcedureProcedure.execute(world, (x + 0.5), (y + 0.5), (z + 0.5));
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:smelting_touch_tools")))) {
 					BetterToolsMod.queueServerWork(2, () -> {
 						if (world instanceof Level _level9 && _level9.getRecipeManager()
 								.getRecipeFor(RecipeType.SMELTING, new SimpleContainer((((Entity) world.getEntitiesOfClass(ItemEntity.class, AABB.ofSize(new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), 1, 1, 1), e -> true).stream().sorted(new Object() {
@@ -105,7 +104,6 @@ public class SmeltingTouchProcedureProcedure {
 									}
 								}
 							}
-							StopItemsProcedureProcedure.execute(world, (x + 0.5), (y + 0.5), (z + 0.5));
 						}
 					});
 				}
