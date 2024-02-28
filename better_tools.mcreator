@@ -11744,6 +11744,10 @@
         ],
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },

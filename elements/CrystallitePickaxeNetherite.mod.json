@@ -11,7 +11,7 @@
     "name": "Crystallite Pickaxe",
     "specialInformation": {
       "fixedValue": [
-        "§8Deep Miner - Mines deepslate instantly with Efficiency V"
+        "§8Deep Miner - Mines all stone instantly when enchanted with Efficiency"
       ]
     },
     "creativeTab": {
@@ -24,6 +24,9 @@
     "damageVsEntity": 9.0,
     "usageCount": 2250,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"

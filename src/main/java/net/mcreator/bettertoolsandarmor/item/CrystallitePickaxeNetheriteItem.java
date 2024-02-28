@@ -47,6 +47,6 @@ public class CrystallitePickaxeNetheriteItem extends PickaxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A78Deep Miner - Mines deepslate instantly with Efficiency V"));
+		list.add(Component.literal("\u00A78Deep Miner - Mines all stone instantly when enchanted with Efficiency"));
 	}
 }
