@@ -11,7 +11,7 @@
     "name": "Crystallite Shovel",
     "specialInformation": {
       "fixedValue": [
-        "§cWrench - Right-click to rotate blocks"
+        "§cWrench - Right-click while crouching to rotate blocks"
       ]
     },
     "creativeTab": {
@@ -24,6 +24,9 @@
     "damageVsEntity": 7.5,
     "usageCount": 1800,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"
@@ -37,9 +40,6 @@
     ],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onRightClickedOnBlock": {
-      "name": "CrystalliteRedstoneWrench"
-    }
+    "damageOnCrafting": false
   }
 }

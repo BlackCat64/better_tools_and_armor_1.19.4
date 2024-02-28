@@ -11,7 +11,8 @@
     "name": "Crystallite Axe",
     "specialInformation": {
       "fixedValue": [
-        "§cLeech - Kills heal you a little"
+        "§cLeech - Kills heal you a little",
+        "§cWrench - Right-click while crouching to rotate blocks"
       ]
     },
     "creativeTab": {
@@ -24,6 +25,9 @@
     "damageVsEntity": 10.5,
     "usageCount": 1800,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"

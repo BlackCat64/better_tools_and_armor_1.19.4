@@ -48,5 +48,6 @@ public class CrystalliteAxeRedstoneItem extends AxeItem {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("\u00A7cLeech - Kills heal you a little"));
+		list.add(Component.literal("\u00A7cWrench - Right-click while crouching to rotate blocks"));
 	}
 }
