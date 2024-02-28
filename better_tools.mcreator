@@ -28638,6 +28638,20 @@
         ]
       },
       "path": "~/Crystallite/Sky"
+    },
+    {
+      "name": "CanBeMinedSilently",
+      "type": "tag",
+      "sortid": 1643,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "can_be_mined_silently",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/tags/blocks/can_drop_when_mined_silently.json"
+        ]
+      },
+      "path": "~/Crystallite/Sculk"
     }
   ],
   "variable_elements": [

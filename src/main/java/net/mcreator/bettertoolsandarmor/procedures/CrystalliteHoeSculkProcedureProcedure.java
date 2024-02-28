@@ -45,7 +45,7 @@ public class CrystalliteHoeSculkProcedureProcedure {
 				event.setCanceled(true);
 			}
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-			if (blockstate.is(BlockTags.create(new ResourceLocation("minecraft:mineable/hoe")))) {
+			if (blockstate.is(BlockTags.create(new ResourceLocation("better_tools:can_drop_when_mined_silently")))) {
 				if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = (new ItemStack(blockstate.getBlock()));
