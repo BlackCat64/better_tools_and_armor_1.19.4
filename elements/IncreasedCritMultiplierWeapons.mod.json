@@ -19,7 +19,7 @@
     "entities": [],
     "biomes": [],
     "damageTypes": [],
-    "name": "increased_crit_damage_tools",
+    "name": "increased_crit_multiplier_weapons",
     "namespace": "mod"
   }
 }

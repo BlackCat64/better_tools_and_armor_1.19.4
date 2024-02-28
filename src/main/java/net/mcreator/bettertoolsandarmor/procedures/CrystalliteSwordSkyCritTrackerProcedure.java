@@ -6,11 +6,8 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.CriticalHitEvent;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
@@ -40,8 +37,7 @@ public class CrystalliteSwordSkyCritTrackerProcedure {
 					capability.syncPlayerVariables(sourceentity);
 				});
 			}
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:increased_crit_damage_tools")))
-					|| ((LivingEntity) sourceentity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).getValue() != 1.5) {
+			if (((LivingEntity) sourceentity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).getValue() != 1.5) {
 				if (event != null && event.hasResult()) {
 					event.setResult(Event.Result.DENY);
 				}

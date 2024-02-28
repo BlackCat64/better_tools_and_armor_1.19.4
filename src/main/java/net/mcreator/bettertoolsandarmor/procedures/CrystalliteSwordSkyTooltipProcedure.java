@@ -32,7 +32,7 @@ public class CrystalliteSwordSkyTooltipProcedure {
 	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
 		if (tooltip == null)
 			return;
-		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:increased_crit_damage_tools")))) {
+		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:increased_crit_multiplier_weapons")))) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77Weapon Effects:"));
 				tooltip.add(Component.literal("\u00A79+0.5 Critical Hit Multiplier"));

@@ -22649,20 +22649,6 @@
       "path": "~/Critical Hit Multiplier"
     },
     {
-      "name": "IncreasedCritDamageTools",
-      "type": "tag",
-      "sortid": 1362,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "increased_crit_damage_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/increased_crit_damage_tools.json"
-        ]
-      },
-      "path": "~/Crystallite/Sky"
-    },
-    {
       "name": "AirAffinityTools",
       "type": "tag",
       "sortid": 1363,
@@ -28638,6 +28624,20 @@
         ]
       },
       "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "IncreasedCritMultiplierWeapons",
+      "type": "tag",
+      "sortid": 1642,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increased_crit_multiplier_weapons",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/tags/items/increased_crit_multiplier_weapons.json"
+        ]
+      },
+      "path": "~/Crystallite/Sky"
     }
   ],
   "variable_elements": [
