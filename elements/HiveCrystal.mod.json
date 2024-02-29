@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "§6Hive Crystal",
+    "name": "Hive Crystal",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:CrystalliteTab"
@@ -27,7 +27,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§7Element: §6Honey"
+      ]
     },
     "glowCondition": {
       "fixedValue": false
