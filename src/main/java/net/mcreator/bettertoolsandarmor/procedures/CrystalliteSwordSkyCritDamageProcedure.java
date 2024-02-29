@@ -28,8 +28,9 @@ import javax.annotation.Nullable;
 public class CrystalliteSwordSkyCritDamageProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
-		if (event != null && event.getEntity() != null) {
-			execute(event, event.getEntity().level, event.getEntity(), event.getSource().getDirectEntity(), event.getAmount());
+		Entity entity = event.getEntity();
+		if (event != null && entity != null) {
+			execute(event, entity.getLevel(), entity, event.getSource().getDirectEntity(), event.getAmount());
 		}
 	}
 
