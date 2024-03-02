@@ -26,5 +26,8 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 				new ItemStack(BetterToolsModItems.SKY_CRYSTAL.get()), new ItemStack(BetterToolsModItems.NATURE_CRYSTAL.get()), new ItemStack(BetterToolsModItems.ECHO_CRYSTAL.get()), new ItemStack(BetterToolsModItems.EARTH_CRYSTAL.get()),
 				new ItemStack(BetterToolsModItems.GUARDIAN_CRYSTAL.get()), new ItemStack(BetterToolsModItems.HIVE_CRYSTAL.get()), new ItemStack(BetterToolsModItems.FIRE_CRYSTAL.get()), new ItemStack(BetterToolsModItems.ICE_CRYSTAL.get()),
 				new ItemStack(BetterToolsModItems.ELECTRIC_CRYSTAL.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.elemental_crystals_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_CHARM_BASE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_charm_base_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.CRYSTALLITE_BLOCK.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get()),
+				new ItemStack(BetterToolsModBlocks.CUT_CRYSTALLITE_BLOCK.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.obtaining_crystallite_info"));
 	}
 }

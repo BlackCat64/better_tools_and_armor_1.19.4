@@ -6145,62 +6145,6 @@
       "path": "~/Nether Diamond"
     },
     {
-      "name": "Helmets",
-      "type": "tag",
-      "sortid": 647,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "helmets",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/helmets.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "Chestplates",
-      "type": "tag",
-      "sortid": 648,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chestplates",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/chestplates.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "Leggings",
-      "type": "tag",
-      "sortid": 649,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "leggings",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/leggings.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "Boots",
-      "type": "tag",
-      "sortid": 650,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "boots",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/boots.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
       "name": "NetherDiamondSwordUpgrade",
       "type": "recipe",
       "sortid": 651,
@@ -28708,6 +28652,30 @@
         "files": []
       },
       "path": "~/Crystallite"
+    },
+    {
+      "name": "CrystalliteCharmBaseInfo",
+      "type": "jeiinformation",
+      "sortid": 1649,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_charm_base_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "ObtainingCrystalliteInfo",
+      "type": "jeiinformation",
+      "sortid": 1650,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obtaining_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite"
     }
   ],
   "variable_elements": [
@@ -29049,6 +29017,7 @@
       "item.better_tools.crystallite_dagger_nether_diamond": "Crystallite Dagger",
       "advancements.desperation_adv.descr": "Wear a Chestplate enchanted with Desperation while at or below 20% HP",
       "item.better_tools.crystallite_armor_netherite_leggings": "Crystallite Leggings",
+      "jei.better_tools.crystallite_charm_base_info": "Used to craft or smith Crystallite Charms.\nCan be found rarely in Dungeon and MIneshaft chests.\nUse a Crystallite Gem to duplicate.\nCan also be duplicated without using Crystallite, through trading with a Jeweller villager.",
       "item.minecraft.potion.effect.double_jump_potion_long": "Potion of Double Jump",
       "block.better_tools.purple_mushroom_block": "Purple Mushroom Block",
       "item.better_tools.end_titanium_helmet": "Ender Titanium Helmet",
@@ -29159,6 +29128,7 @@
       "item.better_tools.nether_diamond_sword": "Nether Diamond Sword",
       "item.better_tools.crystallite_charm_base": "Crystallite Charm Base",
       "item.better_tools.crystallite_armor_diamond_helmet": "Crystallite Helmet",
+      "jei.better_tools.obtaining_crystallite_info": "§lObtaining Crystallite§r\n\nFind Crystallite Clusters underground by listening out for their sparkle!\nThey spawn rarely between y\u003d-48 and y\u003d46.\nThey do not spawn above y\u003d0 in oceans.\nMine the Crystallite Blocks with a §lNetherite Pickaxe§r or better.\nEach block drops 1 Crystallite Shards item, which can be used to craft Gems for crafting tools \u0026 armor.",
       "item.better_tools.crystallite_armor_amethyst_helmet": "Crystallite Helmet",
       "item.better_tools.end_titanium_leggings": "Ender Titanium Leggings",
       "effect.better_tools.frozen": "Frozen",
