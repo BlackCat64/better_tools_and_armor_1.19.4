@@ -79,7 +79,7 @@ public abstract class CrystalliteArmorLapisItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A79Magic - Keep some XP on death"));
 			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A79keep all your XP on death"));
+			list.add(Component.literal("\u00A79Keep all your XP on death"));
 		}
 
 		@Override

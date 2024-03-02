@@ -11,7 +11,9 @@
     "name": "Crystallite Dagger",
     "specialInformation": {
       "fixedValue": [
-        "§cSpeedy - Attack and mine faster"
+        "§7Upgrade: §cRuby",
+        "§7Ability:",
+        "§cSpeedy - Increased attack and mining speeds"
       ]
     },
     "creativeTab": {
@@ -24,6 +26,9 @@
     "damageVsEntity": 5.0,
     "usageCount": 1350,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"

@@ -11,7 +11,9 @@
     "name": "Crystallite Pickaxe",
     "specialInformation": {
       "fixedValue": [
-        "§cSpeedy - Attack and mine faster"
+        "§7Upgrade: §cRuby",
+        "§7Ability:",
+        "§cSpeedy - Increased attack and mining speeds"
       ]
     },
     "creativeTab": {
@@ -24,6 +26,9 @@
     "damageVsEntity": 7.0,
     "usageCount": 1800,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"
