@@ -53,8 +53,9 @@
       }
     ],
     "information": [
-      "§lElemental Crystals",
-      "§rUse in a Smithing Table to upgrade Crystallite equipment with different elemental effects!",
+      "§lElemental Crystals§r",
+      "",
+      "Use in a Smithing Table to upgrade Crystallite equipment with different elemental effects!",
       "They can also be used to smith or craft Crystallite Charms."
     ]
   }

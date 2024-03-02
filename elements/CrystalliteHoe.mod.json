@@ -10,7 +10,9 @@
     "blockingModelName": "Normal blocking",
     "name": "Crystallite Hoe",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§7Upgrade: §rNone"
+      ]
     },
     "creativeTab": {
       "value": "CUSTOM:CrystalliteTab"
@@ -22,6 +24,9 @@
     "damageVsEntity": 2.5,
     "usageCount": 1800,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"
