@@ -11,6 +11,8 @@
     "name": "Crystallite Shovel",
     "specialInformation": {
       "fixedValue": [
+        "§7Upgrade: §6Gold",
+        "§7Ability:",
         "§6Gilded - Increased block reach"
       ]
     },
@@ -24,6 +26,9 @@
     "damageVsEntity": 7.5,
     "usageCount": 1800,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"
