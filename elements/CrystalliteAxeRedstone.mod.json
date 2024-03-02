@@ -11,6 +11,8 @@
     "name": "Crystallite Axe",
     "specialInformation": {
       "fixedValue": [
+        "§7Upgrade: §cRedstone",
+        "§7Abilities:",
         "§cLeech - Kills heal you a little",
         "§cWrench - Right-click while crouching to rotate blocks"
       ]
