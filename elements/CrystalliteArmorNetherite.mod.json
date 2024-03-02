@@ -20,22 +20,38 @@
     "bootsName": "Crystallite Boots",
     "helmetSpecialInformation": {
       "fixedValue": [
-        "§8Spiky - Deal damage to melee attackers"
+        "§7Upgrade: §8Netherite",
+        "§7Ability:",
+        "§8Spiky - Deal damage to melee attackers",
+        "§7Full-set bonus:",
+        "§8Further increased damage"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
-        "§8Spiky - Deal damage to melee attackers"
+        "§7Upgrade: §8Netherite",
+        "§7Ability:",
+        "§8Spiky - Deal damage to melee attackers",
+        "§7Full-set bonus:",
+        "§8Further increased damage"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
-        "§8Spiky - Deal damage to melee attackers"
+        "§7Upgrade: §8Netherite",
+        "§7Ability:",
+        "§8Spiky - Deal damage to melee attackers",
+        "§7Full-set bonus:",
+        "§8Further increased damage"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
-        "§8Spiky - Deal damage to melee attackers"
+        "§7Upgrade: §8Netherite",
+        "§7Ability:",
+        "§8Spiky - Deal damage to melee attackers",
+        "§7Full-set bonus:",
+        "§8Further increased damage"
       ]
     },
     "helmetModelName": "Default",
@@ -66,6 +82,18 @@
     "bodyImmuneToFire": true,
     "leggingsImmuneToFire": true,
     "bootsImmuneToFire": true,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 44,
     "damageValueHelmet": 5,
     "damageValueBody": 8,

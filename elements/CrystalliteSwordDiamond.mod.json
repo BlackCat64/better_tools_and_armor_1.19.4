@@ -11,6 +11,8 @@
     "name": "Crystallite Sword",
     "specialInformation": {
       "fixedValue": [
+        "§7Upgrade: §bDiamond",
+        "§7Ability:",
         "§bDiamond Hard - Increased Durability"
       ]
     },
@@ -24,6 +26,9 @@
     "damageVsEntity": 7.5,
     "usageCount": 3600,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystaliteGem"

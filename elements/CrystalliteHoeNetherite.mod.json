@@ -11,6 +11,8 @@
     "name": "Crystallite Hoe",
     "specialInformation": {
       "fixedValue": [
+        "§7Upgrade: §8Netherite",
+        "§7Ability:",
         "§8Nether Infused - Mines Crimson and Warped blocks instantly"
       ]
     },
@@ -24,6 +26,9 @@
     "damageVsEntity": 4.5,
     "usageCount": 2250,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"

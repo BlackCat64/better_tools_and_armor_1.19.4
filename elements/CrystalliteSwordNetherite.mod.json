@@ -11,7 +11,9 @@
     "name": "Crystallite Sword",
     "specialInformation": {
       "fixedValue": [
-        "§8Sharp - Deals more damage"
+        "§7Upgrade: §8Netherite",
+        "§7Ability:",
+        "§8Sharp - Deals increased attack damage"
       ]
     },
     "creativeTab": {
@@ -24,6 +26,9 @@
     "damageVsEntity": 9.0,
     "usageCount": 2250,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystaliteGem"

@@ -58,6 +58,8 @@ public class CrystalliteShovelNetheriteItem extends ShovelItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+		list.add(Component.literal("\u00A77Upgrade: \u00A78Netherite"));
+		list.add(Component.literal("\u00A77Ability:"));
 		list.add(Component.literal("\u00A78Nether Infused - Right-click to remove any Wither effects"));
 	}
 }

@@ -11,6 +11,8 @@
     "name": "Crystallite Dagger",
     "specialInformation": {
       "fixedValue": [
+        "§7Upgrade: §bDiamond",
+        "§7Ability:",
         "§bDiamond Hard - Increased Durability"
       ]
     },
@@ -24,6 +26,9 @@
     "damageVsEntity": 5.5,
     "usageCount": 2700,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"

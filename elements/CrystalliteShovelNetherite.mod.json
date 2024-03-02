@@ -11,6 +11,8 @@
     "name": "Crystallite Shovel",
     "specialInformation": {
       "fixedValue": [
+        "§7Upgrade: §8Netherite",
+        "§7Ability:",
         "§8Nether Infused - Right-click to remove any Wither effects"
       ]
     },
@@ -24,6 +26,9 @@
     "damageVsEntity": 9.5,
     "usageCount": 2250,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"

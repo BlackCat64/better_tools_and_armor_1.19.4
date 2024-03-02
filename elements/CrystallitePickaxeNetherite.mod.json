@@ -11,6 +11,8 @@
     "name": "Crystallite Pickaxe",
     "specialInformation": {
       "fixedValue": [
+        "§7Upgrade: §8Netherite",
+        "§7Ability:",
         "§8Deep Miner - Mines all natural stones instantly when enchanted with Efficiency V"
       ]
     },

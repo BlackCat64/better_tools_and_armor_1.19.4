@@ -20,21 +20,29 @@
     "bootsName": "Crystallite Boots",
     "helmetSpecialInformation": {
       "fixedValue": [
+        "§7Upgrade: §bDiamond",
+        "§7Ability:",
         "§bDiamond Hard - Increased Durability and Protection"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
+        "§7Upgrade: §bDiamond",
+        "§7Ability:",
         "§bDiamond Hard - Increased Durability and Protection"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
+        "§7Upgrade: §bDiamond",
+        "§7Ability:",
         "§bDiamond Hard - Increased Durability and Protection"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
+        "§7Upgrade: §bDiamond",
+        "§7Ability:",
         "§bDiamond Hard - Increased Durability and Protection"
       ]
     },
@@ -66,6 +74,18 @@
     "bodyImmuneToFire": true,
     "leggingsImmuneToFire": true,
     "bootsImmuneToFire": true,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 70,
     "damageValueHelmet": 6,
     "damageValueBody": 9,
