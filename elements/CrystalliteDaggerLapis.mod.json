@@ -11,6 +11,8 @@
     "name": "Crystallite Dagger",
     "specialInformation": {
       "fixedValue": [
+        "§7Upgrade: §9Lapis Lazuli",
+        "§7Ability:",
         "§9Magic - Deals damage through armor"
       ]
     },
@@ -24,6 +26,9 @@
     "damageVsEntity": 2.0,
     "usageCount": 1350,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"
