@@ -11,9 +11,9 @@
     "name": "Crystallite Shovel",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: Iron",
+        "§7Upgrade: §fIron",
         "§7Ability:",
-        "§7Magnetic - Block drops come straight to you"
+        "§fMagnetic - Block drops come straight to you"
       ]
     },
     "creativeTab": {

@@ -75,9 +75,11 @@ public abstract class CrystalliteArmorIronItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: Iron"));
+			list.add(Component.literal("\u00A77Upgrade: \u00A7fIron"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A77Tough - Increased knockback resistance"));
+			list.add(Component.literal("\u00A7fTough - Increased knockback resistance"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A7fSlows melee attackers"));
 		}
 
 		@Override
@@ -99,9 +101,11 @@ public abstract class CrystalliteArmorIronItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: Iron"));
+			list.add(Component.literal("\u00A77Upgrade: \u00A7fIron"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A77Tough - Increased knockback resistance"));
+			list.add(Component.literal("\u00A7fTough - Increased knockback resistance"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A7fSlows melee attackers"));
 		}
 
 		@Override
@@ -123,9 +127,11 @@ public abstract class CrystalliteArmorIronItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: Iron"));
+			list.add(Component.literal("\u00A77Upgrade: \u00A7fIron"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A77Tough - Increased knockback resistance"));
+			list.add(Component.literal("\u00A7fTough - Increased knockback resistance"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A7fSlows melee attackers"));
 		}
 
 		@Override
@@ -147,9 +153,11 @@ public abstract class CrystalliteArmorIronItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: Iron"));
+			list.add(Component.literal("\u00A77Upgrade: \u00A7fIron"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A77Tough - Increased knockback resistance"));
+			list.add(Component.literal("\u00A7fTough - Increased knockback resistance"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A7fSlows melee attackers"));
 		}
 
 		@Override

@@ -20,30 +20,38 @@
     "bootsName": "Crystallite Boots",
     "helmetSpecialInformation": {
       "fixedValue": [
-        "§7Upgrade: Iron",
+        "§7Upgrade: §fIron",
         "§7Ability:",
-        "§7Tough - Increased knockback resistance"
+        "§fTough - Increased knockback resistance",
+        "§7Full-set bonus:",
+        "§fSlows melee attackers"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
-        "§7Upgrade: Iron",
+        "§7Upgrade: §fIron",
         "§7Ability:",
-        "§7Tough - Increased knockback resistance"
+        "§fTough - Increased knockback resistance",
+        "§7Full-set bonus:",
+        "§fSlows melee attackers"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
-        "§7Upgrade: Iron",
+        "§7Upgrade: §fIron",
         "§7Ability:",
-        "§7Tough - Increased knockback resistance"
+        "§fTough - Increased knockback resistance",
+        "§7Full-set bonus:",
+        "§fSlows melee attackers"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
-        "§7Upgrade: Iron",
+        "§7Upgrade: §fIron",
         "§7Ability:",
-        "§7Tough - Increased knockback resistance"
+        "§fTough - Increased knockback resistance",
+        "§7Full-set bonus:",
+        "§fSlows melee attackers"
       ]
     },
     "helmetModelName": "Default",

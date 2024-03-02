@@ -11,9 +11,9 @@
     "name": "Crystallite Sword",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: Iron",
+        "§7Upgrade: §fIron",
         "§7Ability:",
-        "§7Heavy - Deals increased knockback"
+        "§fHeavy - Deals increased knockback"
       ]
     },
     "creativeTab": {
