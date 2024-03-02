@@ -12,8 +12,9 @@
     "specialInformation": {
       "fixedValue": [
         "§7Upgrade: §8Netherite",
-        "§7Ability:",
-        "§8Nether Infused - Right-click to remove any Wither effects"
+        "§7Abilities:",
+        "§8Nether Infused - Right-click to remove any Wither effects",
+        "§8Mines all Crimson and Warped blocks instantly"
       ]
     },
     "creativeTab": {

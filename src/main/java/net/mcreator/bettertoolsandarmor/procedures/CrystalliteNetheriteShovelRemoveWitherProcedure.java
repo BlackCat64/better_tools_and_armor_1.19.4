@@ -9,6 +9,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
@@ -20,6 +21,13 @@ public class CrystalliteNetheriteShovelRemoveWitherProcedure {
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MobEffects.WITHER)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.WITHER);
+			{
+				ItemStack _ist = itemstack;
+				if (_ist.hurt(5, RandomSource.create(), null)) {
+					_ist.shrink(1);
+					_ist.setDamageValue(0);
+				}
+			}
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 100);
 			if (world instanceof Level _level) {
