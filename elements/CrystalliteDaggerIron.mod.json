@@ -11,7 +11,9 @@
     "name": "Crystallite Dagger",
     "specialInformation": {
       "fixedValue": [
-        "§7Heavy - Deals extra knockback"
+        "§7Upgrade: Iron",
+        "§7Ability:",
+        "§7Heavy - Deals increased knockback"
       ]
     },
     "creativeTab": {
@@ -24,6 +26,9 @@
     "damageVsEntity": 5.0,
     "usageCount": 1350,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"

@@ -11,7 +11,9 @@
     "name": "Crystallite Pickaxe",
     "specialInformation": {
       "fixedValue": [
-        "§7Magnetic - Dropped items come straight to you"
+        "§7Upgrade: Iron",
+        "§7Ability:",
+        "§7Magnetic - Block drops come straight to you"
       ]
     },
     "creativeTab": {
