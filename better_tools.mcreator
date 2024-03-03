@@ -28714,6 +28714,30 @@
         ]
       },
       "path": "~/Crystallite/Netherite"
+    },
+    {
+      "name": "CrystalliteShovelNetherDiamondTooltip",
+      "type": "procedure",
+      "sortid": 1653,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_shovel_nether_diamond_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteShovelNetherDiamondTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Nether Diamond"
     }
   ],
   "variable_elements": [

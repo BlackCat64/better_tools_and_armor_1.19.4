@@ -11,9 +11,9 @@
     "name": "Crystallite Shovel",
     "specialInformation": {
       "fixedValue": [
-        "§4Fireproof - Right-click to extinguish yourself",
-        "§cDurability Cost: 5",
-        "§cCooldown: 5s"
+        "§7Upgrade: §4Nether Diamond",
+        "§7Ability:",
+        "§4Fireproof - Right-click to extinguish yourself"
       ]
     },
     "creativeTab": {

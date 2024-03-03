@@ -46,6 +46,8 @@ public class CrystallitePickaxeNetherDiamondItem extends PickaxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+		list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
+		list.add(Component.literal("\u00A77Ability:"));
 		list.add(Component.literal("\u00A74Flaming - Smelts all raw ore drops"));
 	}
 }
