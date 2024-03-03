@@ -24,7 +24,7 @@
         "§7Ability:",
         "§bFreezing - Can freeze attackers",
         "§7Full-set bonus:",
-        "§bFurther increases chances of freeze"
+        "§bFurther increases chances for freeze"
       ]
     },
     "bodySpecialInformation": {
@@ -33,7 +33,7 @@
         "§7Ability:",
         "§bFreezing - Can freeze attackers",
         "§7Full-set bonus:",
-        "§bFurther increases chances of freeze"
+        "§bFurther increases chances for freeze"
       ]
     },
     "leggingsSpecialInformation": {
@@ -42,7 +42,7 @@
         "§7Ability:",
         "§bFreezing - Can freeze attackers",
         "§7Full-set bonus:",
-        "§bFurther increases chances of freeze"
+        "§bFurther increases chances for freeze"
       ]
     },
     "bootsSpecialInformation": {
@@ -51,7 +51,7 @@
         "§7Ability:",
         "§bFreezing - Can freeze attackers",
         "§7Full-set bonus:",
-        "§bFurther increases chances of freeze"
+        "§bFurther increases chances for freeze"
       ]
     },
     "helmetModelName": "Default",

@@ -78,7 +78,7 @@ public abstract class CrystalliteArmorSapphireItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7bFreezing - Can freeze attackers"));
 			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A7bFurther increases chances of freeze"));
+			list.add(Component.literal("\u00A7bFurther increases chances for freeze"));
 		}
 
 		@Override
@@ -104,7 +104,7 @@ public abstract class CrystalliteArmorSapphireItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7bFreezing - Can freeze attackers"));
 			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A7bFurther increases chances of freeze"));
+			list.add(Component.literal("\u00A7bFurther increases chances for freeze"));
 		}
 
 		@Override
@@ -130,7 +130,7 @@ public abstract class CrystalliteArmorSapphireItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7bFreezing - Can freeze attackers"));
 			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A7bFurther increases chances of freeze"));
+			list.add(Component.literal("\u00A7bFurther increases chances for freeze"));
 		}
 
 		@Override
@@ -156,7 +156,7 @@ public abstract class CrystalliteArmorSapphireItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7bFreezing - Can freeze attackers"));
 			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A7bFurther increases chances of freeze"));
+			list.add(Component.literal("\u00A7bFurther increases chances for freeze"));
 		}
 
 		@Override

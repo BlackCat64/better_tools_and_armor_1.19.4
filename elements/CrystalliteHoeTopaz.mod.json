@@ -11,7 +11,9 @@
     "name": "Crystallite Hoe",
     "specialInformation": {
       "fixedValue": [
-        "§6Charged - Has Fortune"
+        "§7Upgrade: §6Topaz",
+        "§7Ability:",
+        "§6Charged - Has Fortune IV"
       ]
     },
     "creativeTab": {
@@ -24,6 +26,9 @@
     "damageVsEntity": 2.5,
     "usageCount": 1800,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"
