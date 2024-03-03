@@ -11,7 +11,10 @@
     "name": "Crystallite Axe",
     "specialInformation": {
       "fixedValue": [
-        "§bFreezing - Can freeze opponents"
+        "§7Upgrade: §bSapphire",
+        "§7Abilities:",
+        "§bFreezing - Can freeze opponents",
+        "§bIcy Coating - Has Silk Touch"
       ]
     },
     "creativeTab": {
@@ -24,6 +27,9 @@
     "damageVsEntity": 10.5,
     "usageCount": 1800,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"

@@ -57,7 +57,10 @@ public class CrystalliteAxeSapphireItem extends AxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+		list.add(Component.literal("\u00A77Upgrade: \u00A7bSapphire"));
+		list.add(Component.literal("\u00A77Abilities:"));
 		list.add(Component.literal("\u00A7bFreezing - Can freeze opponents"));
+		list.add(Component.literal("\u00A7bIcy Coating - Has Silk Touch"));
 	}
 
 	@Override
