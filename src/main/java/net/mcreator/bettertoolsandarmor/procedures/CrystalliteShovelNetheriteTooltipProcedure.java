@@ -36,6 +36,7 @@ public class CrystalliteShovelNetheriteTooltipProcedure {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77When effect is removed:"));
 				tooltip.add(Component.literal("\u00A7cDurability Cost: 5"));
+				tooltip.add(Component.literal("\u00A7cCooldown: 5s"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
