@@ -34,10 +34,9 @@ public class CrystalliteChestplateAmethystTooltipProcedure {
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_CHESTPLATE.get()) {
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77When Underground: "));
+				tooltip.add(Component.literal("\u00A77When underground: "));
 				tooltip.add(Component.literal("\u00A79+1 Absorption Health every 15s"));
 				tooltip.add(Component.literal("\u00A77Limit: \u00A794 Absorption Health"));
-				tooltip.add(Component.literal("\u00A7cDurability Cost: 1"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}

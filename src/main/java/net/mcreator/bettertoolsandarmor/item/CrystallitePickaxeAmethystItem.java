@@ -47,8 +47,8 @@ public class CrystallitePickaxeAmethystItem extends PickaxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A7dEcholocation - Right-click while sneaking to point towards nearby ores"));
-		list.add(Component.literal("\u00A7cDurability Cost: 50"));
-		list.add(Component.literal("\u00A7cCooldown: 2mins"));
+		list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
+		list.add(Component.literal("\u00A77Ability:"));
+		list.add(Component.literal("\u00A7dEcholocation - Right-click while sneaking to point towards nearby ores/loot"));
 	}
 }

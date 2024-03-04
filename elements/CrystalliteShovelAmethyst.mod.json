@@ -11,9 +11,9 @@
     "name": "Crystallite Shovel",
     "specialInformation": {
       "fixedValue": [
-        "§dEcholocation - Right-click while sneaking to point towards the nearest loot chest",
-        "§cDurability Cost: 50",
-        "§cCooldown: 2mins"
+        "§7Upgrade: §dAmethyst",
+        "§7Ability:",
+        "§dEcholocation - Right-click while sneaking to point towards nearby ores/loot"
       ]
     },
     "creativeTab": {

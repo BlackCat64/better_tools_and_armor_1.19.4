@@ -24034,30 +24034,6 @@
       "path": "~/Crystallite/Amethyst"
     },
     {
-      "name": "CrystalliteShovelAmethystTooltip",
-      "type": "procedure",
-      "sortid": 1425,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_shovel_amethyst_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteShovelAmethystTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Amethyst"
-    },
-    {
       "name": "CrystalliteLeggingsSkyTooltip",
       "type": "procedure",
       "sortid": 1426,
@@ -28576,34 +28552,6 @@
       "path": "~/Crystallite/Amethyst"
     },
     {
-      "name": "OreLocatingTools",
-      "type": "tag",
-      "sortid": 1645,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ore_locating_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/ore_locating_tools.json"
-        ]
-      },
-      "path": "~/Crystallite/Amethyst"
-    },
-    {
-      "name": "ChestLocatingTools",
-      "type": "tag",
-      "sortid": 1646,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chest_locating_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/chest_locating_tools.json"
-        ]
-      },
-      "path": "~/Crystallite/Amethyst"
-    },
-    {
       "name": "ElementalCrystals",
       "type": "tag",
       "sortid": 1647,
@@ -28714,6 +28662,20 @@
         ]
       },
       "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "EcholocationTools",
+      "type": "tag",
+      "sortid": 1654,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echolocation_tools",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/tags/items/echolocation_tools.json"
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
     }
   ],
   "variable_elements": [

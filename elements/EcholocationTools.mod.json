@@ -6,6 +6,15 @@
     "items": [
       {
         "value": "CUSTOM:CrystallitePickaxeAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeAmethyst"
       }
     ],
     "blocks": [],
@@ -13,7 +22,7 @@
     "entities": [],
     "biomes": [],
     "damageTypes": [],
-    "name": "ore_locating_tools",
+    "name": "echolocation_tools",
     "namespace": "mod"
   }
 }

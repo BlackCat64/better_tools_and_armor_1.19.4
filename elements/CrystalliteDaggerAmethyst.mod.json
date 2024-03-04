@@ -11,9 +11,9 @@
     "name": "Crystallite Dagger",
     "specialInformation": {
       "fixedValue": [
-        "§dEcholocation - Right-click while sneaking to locate all nearby mobs",
-        "§cDurability Cost: 50",
-        "§cCooldown: 2mins"
+        "§7Upgrade: §dAmethyst",
+        "§7Ability:",
+        "§dEcholocation - Right-click while sneaking to locate all nearby mobs"
       ]
     },
     "creativeTab": {
