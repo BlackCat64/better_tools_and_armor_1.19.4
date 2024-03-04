@@ -11,6 +11,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
@@ -74,13 +75,20 @@ public abstract class CrystalliteArmorSkyItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A7fCarbonated - Foods give regeneration"));
-			list.add(Component.literal("(Drinks give double)"));
+			list.add(Component.literal("\u00A77Upgrade: \u00A7fSky"));
+			list.add(Component.literal("\u00A77Ability:"));
+			list.add(Component.literal("\u00A7fCarbonated - Eating gives a Regeneration effect"));
+			list.add(Component.literal("Drinking gives a level II effect"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_sky__layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 
@@ -92,12 +100,19 @@ public abstract class CrystalliteArmorSkyItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
+			list.add(Component.literal("\u00A77Upgrade: \u00A7fSky"));
+			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7fGusty - Knocks back melee attackers"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_sky__layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 
@@ -109,12 +124,19 @@ public abstract class CrystalliteArmorSkyItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
+			list.add(Component.literal("\u00A77Upgrade: \u00A7fSky"));
+			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7fFloaty - Low Gravity"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_sky__layer_2.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 
@@ -126,12 +148,19 @@ public abstract class CrystalliteArmorSkyItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
+			list.add(Component.literal("\u00A77Upgrade: \u00A7fSky"));
+			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7fAir Affinity - Fall damage starts at a higher height"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_sky__layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 }

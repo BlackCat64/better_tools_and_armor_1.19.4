@@ -24,6 +24,9 @@
       },
       {
         "value": "Items.RABBIT_STEW"
+      },
+      {
+        "value": "Items.POTIONITEM"
       }
     ],
     "blocks": [],

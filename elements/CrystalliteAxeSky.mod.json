@@ -11,7 +11,10 @@
     "name": "Crystallite Axe",
     "specialInformation": {
       "fixedValue": [
-        "§fAir Affinity - Mines at the same speed while airborne"
+        "§7Upgrade: §fSky",
+        "§7Abilities:",
+        "§fAir Affinity - Mines at the same speed while airborne",
+        "§fAir Proficiency - Increased critical hit damage"
       ]
     },
     "creativeTab": {

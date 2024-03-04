@@ -47,6 +47,9 @@ public class CrystalliteAxeSkyItem extends AxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+		list.add(Component.literal("\u00A77Upgrade: \u00A7fSky"));
+		list.add(Component.literal("\u00A77Abilities:"));
 		list.add(Component.literal("\u00A7fAir Affinity - Mines at the same speed while airborne"));
+		list.add(Component.literal("\u00A7fAir Proficiency - Increased critical hit damage"));
 	}
 }

@@ -40,7 +40,7 @@ public class CrystalliteHelmetSkyFoodRegenProcedure {
 				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 1));
 			} else if (itemstack.getItem().isEdible() && !(itemstack.getItem() == Items.ROTTEN_FLESH || itemstack.getItem() == Items.SPIDER_EYE || itemstack.getItem() == Items.PUFFERFISH || itemstack.getItem() == Items.POISONOUS_POTATO
-					|| itemstack.getItem() == BetterToolsModItems.EXPERIENCE_POTION.get())) {
+					|| itemstack.getItem() == BetterToolsModItems.EXPERIENCE_POTION.get() || itemstack.getItem() == BetterToolsModItems.ASCENSION_POTION.get() || itemstack.getItem() == BetterToolsModItems.DESCENSION_POTION.get())) {
 				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 0));
 			}
