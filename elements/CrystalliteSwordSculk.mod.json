@@ -11,7 +11,9 @@
     "name": "Crystallite Sword",
     "specialInformation": {
       "fixedValue": [
-        "§3Deep Dweller - Deals more damage in the dark"
+        "§7Upgrade: §3Sculk",
+        "§7Ability:",
+        "§3Deep Dweller - Increased attack damage in the dark"
       ]
     },
     "creativeTab": {
@@ -24,6 +26,9 @@
     "damageVsEntity": 7.5,
     "usageCount": 2250,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystaliteGem"

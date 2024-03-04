@@ -11,6 +11,8 @@
     "name": "Crystallite Pickaxe",
     "specialInformation": {
       "fixedValue": [
+        "§7Upgrade: §3Sculk",
+        "§7Ability:",
         "§3Resonance - Mines multiple ores at once"
       ]
     },
@@ -24,6 +26,9 @@
     "damageVsEntity": 7.5,
     "usageCount": 2250,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"

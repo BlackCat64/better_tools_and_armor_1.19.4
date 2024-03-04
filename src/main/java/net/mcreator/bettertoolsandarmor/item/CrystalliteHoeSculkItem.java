@@ -47,7 +47,9 @@ public class CrystalliteHoeSculkItem extends HoeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+		list.add(Component.literal("\u00A77Upgrade: \u00A73Sculk"));
+		list.add(Component.literal("\u00A77Abilities:"));
 		list.add(Component.literal("\u00A73Sneaky - Mines blocks silently"));
-		list.add(Component.literal("\u00A73Drops go straight into your inventory"));
+		list.add(Component.literal("\u00A73Magnetic - Block drops go straight into your inventory"));
 	}
 }

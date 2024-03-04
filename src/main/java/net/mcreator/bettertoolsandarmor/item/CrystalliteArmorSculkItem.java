@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
@@ -76,14 +77,23 @@ public abstract class CrystalliteArmorSculkItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
+			list.add(Component.literal("\u00A77Upgrade: \u00A73Sculk"));
+			list.add(Component.literal("\u00A77Abilities:"));
 			list.add(Component.literal("\u00A73Deep Dweller - Gain night vision when in the dark"));
 			list.add(Component.literal("\u00A73Darkness immunity"));
 			list.add(Component.literal("\u00A73Enemy detection range reduced"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A73Enemy detection range reduces further"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_sculk__layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 
 		@Override
@@ -100,13 +110,22 @@ public abstract class CrystalliteArmorSculkItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
+			list.add(Component.literal("\u00A77Upgrade: \u00A73Sculk"));
+			list.add(Component.literal("\u00A77Abilities:"));
 			list.add(Component.literal("\u00A73Warden Heart - Has a chance to launch sonic booms at attackers"));
 			list.add(Component.literal("\u00A73Enemy detection range reduced"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A73Enemy detection range reduces further"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_sculk__layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 
@@ -118,13 +137,22 @@ public abstract class CrystalliteArmorSculkItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A73Sneaky - Sneak more quickly"));
+			list.add(Component.literal("\u00A77Upgrade: \u00A73Sculk"));
+			list.add(Component.literal("\u00A77Abilities:"));
+			list.add(Component.literal("\u00A73Sneaky - Increases movement speed while crouching"));
 			list.add(Component.literal("\u00A73Enemy detection range reduced"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A73Enemy detection range reduces further"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_sculk__layer_2.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 
@@ -136,13 +164,22 @@ public abstract class CrystalliteArmorSculkItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A73Deep Dweller - Gain a speed boost in the dark"));
+			list.add(Component.literal("\u00A77Upgrade: \u00A73Sculk"));
+			list.add(Component.literal("\u00A77Abilities:"));
+			list.add(Component.literal("\u00A73Deep Dweller - Increased movement speed in the dark"));
 			list.add(Component.literal("\u00A73Enemy detection range reduced"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A73Enemy detection range reduces further"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_sculk__layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 }

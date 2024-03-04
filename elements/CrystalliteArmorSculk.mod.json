@@ -23,27 +23,43 @@
     "bootsName": "Crystallite Boots",
     "helmetSpecialInformation": {
       "fixedValue": [
+        "§7Upgrade: §3Sculk",
+        "§7Abilities:",
         "§3Deep Dweller - Gain night vision when in the dark",
         "§3Darkness immunity",
-        "§3Enemy detection range reduced"
+        "§3Enemy detection range reduced",
+        "§7Full-set bonus:",
+        "§3Enemy detection range reduces further"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
+        "§7Upgrade: §3Sculk",
+        "§7Abilities:",
         "§3Warden Heart - Has a chance to launch sonic booms at attackers",
-        "§3Enemy detection range reduced"
+        "§3Enemy detection range reduced",
+        "§7Full-set bonus:",
+        "§3Enemy detection range reduces further"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
-        "§3Sneaky - Sneak more quickly",
-        "§3Enemy detection range reduced"
+        "§7Upgrade: §3Sculk",
+        "§7Abilities:",
+        "§3Sneaky - Increases movement speed while crouching",
+        "§3Enemy detection range reduced",
+        "§7Full-set bonus:",
+        "§3Enemy detection range reduces further"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
-        "§3Deep Dweller - Gain a speed boost in the dark",
-        "§3Enemy detection range reduced"
+        "§7Upgrade: §3Sculk",
+        "§7Abilities:",
+        "§3Deep Dweller - Increased movement speed in the dark",
+        "§3Enemy detection range reduced",
+        "§7Full-set bonus:",
+        "§3Enemy detection range reduces further"
       ]
     },
     "helmetModelName": "Default",
@@ -74,6 +90,18 @@
     "bodyImmuneToFire": true,
     "leggingsImmuneToFire": true,
     "bootsImmuneToFire": true,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 44,
     "damageValueHelmet": 5,
     "damageValueBody": 8,

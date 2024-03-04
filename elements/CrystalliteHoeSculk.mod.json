@@ -11,8 +11,10 @@
     "name": "Crystallite Hoe",
     "specialInformation": {
       "fixedValue": [
+        "§7Upgrade: §3Sculk",
+        "§7Abilities:",
         "§3Sneaky - Mines blocks silently",
-        "§3Drops go straight into your inventory"
+        "§3Magnetic - Block drops go straight into your inventory"
       ]
     },
     "creativeTab": {
@@ -25,6 +27,9 @@
     "damageVsEntity": 3.0,
     "usageCount": 2250,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"

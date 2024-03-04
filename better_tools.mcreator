@@ -19941,30 +19941,6 @@
       "path": "~/Crystallite/Sculk"
     },
     {
-      "name": "CrystalliteChestplateSculkTooltip",
-      "type": "procedure",
-      "sortid": 1245,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_chestplate_sculk_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteChestplateSculkTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Sculk"
-    },
-    {
       "name": "WardenEchoShardsDrop",
       "type": "loottable",
       "sortid": 1246,

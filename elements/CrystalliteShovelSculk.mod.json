@@ -11,6 +11,8 @@
     "name": "Crystallite Shovel",
     "specialInformation": {
       "fixedValue": [
+        "§7Upgrade: §3Sculk",
+        "§7Ability:",
         "§3Resonance - Excavates in a 3x3 area"
       ]
     },
@@ -24,6 +26,9 @@
     "damageVsEntity": 8.0,
     "usageCount": 2250,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"

@@ -11,7 +11,10 @@
     "name": "Crystallite Axe",
     "specialInformation": {
       "fixedValue": [
-        "§3Resonance - Mines whole stacks of logs at once"
+        "§7Upgrade: §3Sculk",
+        "§7Abilities:",
+        "§3Resonance - Mines whole stacks of logs at once",
+        "§3Deep Dweller - Increased attack damage in the dark"
       ]
     },
     "creativeTab": {
@@ -24,6 +27,9 @@
     "damageVsEntity": 11.0,
     "usageCount": 2250,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"
