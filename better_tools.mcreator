@@ -23421,42 +23421,6 @@
       "path": "~/Crystallite/Amethyst"
     },
     {
-      "name": "CrystalliteShovelAmethystChestLocation",
-      "type": "procedure",
-      "sortid": 1402,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_shovel_amethyst_chest_location",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteShovelAmethystChestLocationProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Amethyst"
-    },
-    {
       "name": "CrystalliteHelmetAmethystArrows",
       "type": "procedure",
       "sortid": 1403,
@@ -28673,6 +28637,20 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/tags/items/echolocation_tools.json"
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "LootBlocks",
+      "type": "tag",
+      "sortid": 1655,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/tags/blocks/loot_blocks.json"
         ]
       },
       "path": "~/Crystallite/Amethyst"

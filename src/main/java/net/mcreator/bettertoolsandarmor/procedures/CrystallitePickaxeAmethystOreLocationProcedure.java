@@ -22,7 +22,6 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModParticleTypes;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModBlocks;
 
 import javax.annotation.Nullable;
 
@@ -54,10 +53,10 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 		double count = 0;
 		double repeats = 0;
 		if (entity.isShiftKeyDown()) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:ore_locating_tools")))) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:echolocation_tools")))) {
 				found = false;
 				radius = 0;
-				for (int index0 = 0; index0 < 15; index0++) {
+				for (int index0 = 0; index0 < 19; index0++) {
 					radius = radius + 1;
 					if (radius == 1) {
 						repeats = 1;
@@ -68,8 +67,7 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 						for (int index2 = 0; index2 < (int) (radius * 2); index2++) {
 							sz = radius * (-1);
 							for (int index3 = 0; index3 < (int) (radius * 2); index3++) {
-								if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(new ResourceLocation("forge:ores")))
-										|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == BetterToolsModBlocks.CRYSTALLITE_CLUSTER_AIR.get()) {
+								if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(new ResourceLocation("better_tools:loot_blocks")))) {
 									found = true;
 									break;
 								}
@@ -97,8 +95,7 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 						for (int index5 = 0; index5 < (int) repeats; index5++) {
 							sy = radius * (-1);
 							for (int index6 = 0; index6 < (int) (radius * 2); index6++) {
-								if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(new ResourceLocation("forge:ores")))
-										|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == BetterToolsModBlocks.CRYSTALLITE_CLUSTER_AIR.get()) {
+								if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(new ResourceLocation("better_tools:loot_blocks")))) {
 									found = true;
 									break;
 								}
@@ -129,8 +126,7 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 								repeats = (radius - 1) * 2;
 							}
 							for (int index9 = 0; index9 < (int) repeats; index9++) {
-								if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(new ResourceLocation("forge:ores")))
-										|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == BetterToolsModBlocks.CRYSTALLITE_CLUSTER_AIR.get()) {
+								if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(new ResourceLocation("better_tools:loot_blocks")))) {
 									found = true;
 									break;
 								}
