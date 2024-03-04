@@ -11,6 +11,8 @@
     "name": "Crystallite Pickaxe",
     "specialInformation": {
       "fixedValue": [
+        "§7Upgrade: §3Prismarine",
+        "§7Abilities:",
         "§3Aqua Affinity - Mines faster when wet",
         "§3Removes underwater mining penalty"
       ]
@@ -25,6 +27,9 @@
     "damageVsEntity": 8.0,
     "usageCount": 1800,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"

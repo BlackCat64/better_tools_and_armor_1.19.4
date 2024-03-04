@@ -11,7 +11,9 @@
     "name": "Crystallite Sword",
     "specialInformation": {
       "fixedValue": [
-        "§3Marine Might - Deals more damage when wet"
+        "§7Upgrade: §3Prismarine",
+        "§7Ability:",
+        "§3Marine Might - Increased attack damage when wet"
       ]
     },
     "creativeTab": {
@@ -24,6 +26,9 @@
     "damageVsEntity": 7.0,
     "usageCount": 1800,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystaliteGem"

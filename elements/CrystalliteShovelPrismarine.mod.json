@@ -11,7 +11,9 @@
     "name": "Crystallite Shovel",
     "specialInformation": {
       "fixedValue": [
-        "§3Aqua Affinity - Instamines when wet"
+        "§7Upgrade: §3Prismarine",
+        "§7Ability:",
+        "§3Aqua Affinity - Mines blocks instantly when wet"
       ]
     },
     "creativeTab": {
@@ -24,6 +26,9 @@
     "damageVsEntity": 7.5,
     "usageCount": 1800,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"

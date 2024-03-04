@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
@@ -77,12 +78,19 @@ public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
+			list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
+			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A73Amphibian - Gain Conduit Power when wet"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_prismarine__layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 
 		@Override
@@ -99,12 +107,19 @@ public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A73Ocean Dweller - Mining Fatigue immune"));
+			list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
+			list.add(Component.literal("\u00A77Ability:"));
+			list.add(Component.literal("\u00A73Ocean Dweller - Mining Fatigue immunity"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_prismarine__layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 
 		@Override
@@ -121,12 +136,20 @@ public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A73Diver - Gain Low Gravity when wet"));
+			list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
+			list.add(Component.literal("\u00A77Abilities:"));
+			list.add(Component.literal("\u00A73Buoyancy - Gain Low Gravity in rain"));
+			list.add(Component.literal("Gain Zero Gravity in water"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_prismarine__layer_2.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 
@@ -138,12 +161,20 @@ public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A73Rapid - Gain a speed boost when wet"));
+			list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
+			list.add(Component.literal("\u00A77Abilities:"));
+			list.add(Component.literal("\u00A73Rapid - Increased movement speed in rain"));
+			list.add(Component.literal("Increased swim speed"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_prismarine__layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 }

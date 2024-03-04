@@ -11,6 +11,8 @@
     "name": "Crystallite Hoe",
     "specialInformation": {
       "fixedValue": [
+        "§7Upgrade: §3Prismarine",
+        "§7Ability:",
         "§3Hydration - All tilled farmland starts with full moisture"
       ]
     },
@@ -24,6 +26,9 @@
     "damageVsEntity": 2.5,
     "usageCount": 1800,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:CrystalliteShards"
