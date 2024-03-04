@@ -50,8 +50,10 @@ public class CrystalliteHoeEmeraldItem extends HoeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+		list.add(Component.literal("\u00A77Upgrade: \u00A7aEmerald"));
+		list.add(Component.literal("\u00A77Abilities:"));
 		list.add(Component.literal("\u00A7aNourishing - Right-click to grow surrounding crops"));
-		list.add(Component.literal("\u00A77While sneaking: \u00A7aRight-click to turn dirt into grass"));
+		list.add(Component.literal("\u00A7aRight-click while crouching to turn dirt into grass"));
 	}
 
 	@Override

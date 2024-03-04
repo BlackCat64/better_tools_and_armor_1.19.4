@@ -11,6 +11,8 @@
     "name": "Crystallite Sword",
     "specialInformation": {
       "fixedValue": [
+        "§7Upgrade: §aEmerald",
+        "§7Ability:",
         "§aPoison Barbed - Poisons the target"
       ]
     },

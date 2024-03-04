@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
@@ -76,12 +77,19 @@ public abstract class CrystalliteArmorEmeraldItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
+			list.add(Component.literal("\u00A77Upgrade: \u00A7aEmerald"));
+			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7aNourishing - Eating heals more hunger"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_emerald__layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 
@@ -93,13 +101,20 @@ public abstract class CrystalliteArmorEmeraldItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A7aRecovery - Regenerate HP naturally"));
+			list.add(Component.literal("\u00A77Upgrade: \u00A7aEmerald"));
+			list.add(Component.literal("\u00A77Ability:"));
+			list.add(Component.literal("\u00A7aRecovery - Regenerate HP naturally when not in combat"));
 			list.add(Component.literal("\u00A7aEffect doubles in sunlight"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_emerald__layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 
 		@Override
@@ -116,12 +131,19 @@ public abstract class CrystalliteArmorEmeraldItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A7aPoison Barbed - Poisons attackers"));
+			list.add(Component.literal("\u00A77Upgrade: \u00A7aEmerald"));
+			list.add(Component.literal("\u00A77Ability:"));
+			list.add(Component.literal("\u00A7aPoison Barbed - Poisons melee attackers"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_emerald__layer_2.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 
@@ -133,12 +155,19 @@ public abstract class CrystalliteArmorEmeraldItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal("\u00A7aSolar - Gain a speed boost in sunlight"));
+			list.add(Component.literal("\u00A77Upgrade: \u00A7aEmerald"));
+			list.add(Component.literal("\u00A77Ability:"));
+			list.add(Component.literal("\u00A7aSolar - Increased movement speed in sunlight"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_emerald__layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 }

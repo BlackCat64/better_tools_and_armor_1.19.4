@@ -34,12 +34,12 @@ public class CrystalliteChestplateEmeraldTooltipProcedure {
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_CHESTPLATE.get()) {
 			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A77Health Recovery:"));
 				tooltip.add(Component.literal("\u00A791HP every 16s (12s below half HP)"));
 				tooltip.add(Component.literal("\u00A77When in sunlight:"));
 				tooltip.add(Component.literal("\u00A791HP every 8s (5s below half HP)"));
 				tooltip.add(Component.literal("\u00A77When \u00A7aNature Ring \u00A77also worn:"));
 				tooltip.add(Component.literal("\u00A79All cooldowns x0.75"));
-				tooltip.add(Component.literal("\u00A7cDurability Cost: 1"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
