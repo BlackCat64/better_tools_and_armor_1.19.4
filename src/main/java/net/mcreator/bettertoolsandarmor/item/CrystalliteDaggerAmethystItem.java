@@ -49,6 +49,6 @@ public class CrystalliteDaggerAmethystItem extends SwordItem {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7dEcholocation - Right-click while sneaking to locate all nearby mobs"));
+		list.add(Component.literal("\u00A7dEcholocation - Right-click while crouching to locate all nearby mobs"));
 	}
 }

@@ -38,7 +38,7 @@ public class CrystallitePickaxeAmethystTooltipProcedure {
 				tooltip.add(Component.literal("\u00A7cDurability Cost: 50"));
 				tooltip.add(Component.literal("\u00A7cCooldown: 2mins"));
 				tooltip.add(Component.literal("\u00A77Range:"));
-				tooltip.add(Component.literal("\u00A7916 Blocks"));
+				tooltip.add(Component.literal("\u00A7920 Blocks"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
