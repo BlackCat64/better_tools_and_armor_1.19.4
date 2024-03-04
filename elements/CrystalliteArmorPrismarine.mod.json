@@ -43,7 +43,7 @@
         "§7Upgrade: §3Prismarine",
         "§7Abilities:",
         "§3Buoyancy - Gain Low Gravity in rain",
-        "Gain Zero Gravity in water"
+        "§3Gain Zero Gravity in water"
       ]
     },
     "bootsSpecialInformation": {
@@ -51,7 +51,7 @@
         "§7Upgrade: §3Prismarine",
         "§7Abilities:",
         "§3Rapid - Increased movement speed in rain",
-        "Increased swim speed"
+        "§3Increased swim speed"
       ]
     },
     "helmetModelName": "Default",

@@ -34,7 +34,7 @@ public class CrystalliteLeggingsHoneyTooltipProcedure {
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_LEGGINGS.get()) {
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Armor Effect:"));
+				tooltip.add(Component.literal("\u00A77Inflicts attackers with:"));
 				tooltip.add(Component.literal("\u00A79Slowness II (0:03)"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));

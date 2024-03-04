@@ -48,7 +48,7 @@ public class CrystalliteHoeHoneyItem extends HoeItem {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
-		list.add(Component.literal("\u00A77Ability:"));
+		list.add(Component.literal("\u00A77Abilities:"));
 		list.add(Component.literal("\u00A76Hive Mind - Harvest Honeycomb from Beehives without angering nearby bees"));
 		list.add(Component.literal("\u00A76Swarm - Mining the same block many times in a row causes it to break instantly"));
 	}

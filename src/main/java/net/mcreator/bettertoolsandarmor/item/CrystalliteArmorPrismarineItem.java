@@ -139,7 +139,7 @@ public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
 			list.add(Component.literal("\u00A77Abilities:"));
 			list.add(Component.literal("\u00A73Buoyancy - Gain Low Gravity in rain"));
-			list.add(Component.literal("Gain Zero Gravity in water"));
+			list.add(Component.literal("\u00A73Gain Zero Gravity in water"));
 		}
 
 		@Override
@@ -164,7 +164,7 @@ public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
 			list.add(Component.literal("\u00A77Abilities:"));
 			list.add(Component.literal("\u00A73Rapid - Increased movement speed in rain"));
-			list.add(Component.literal("Increased swim speed"));
+			list.add(Component.literal("\u00A73Increased swim speed"));
 		}
 
 		@Override
