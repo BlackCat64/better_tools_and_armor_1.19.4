@@ -20,22 +20,38 @@
     "bootsName": "Crystallite Boots",
     "helmetSpecialInformation": {
       "fixedValue": [
-        "§6Sticky - Can stick to ceilings by holding §b[SPACE]"
+        "§7Upgrade: §6Honey",
+        "§7Ability:",
+        "§6Sticky - Can stick to ceilings by holding §b[SPACE]",
+        "§7Full-set bonus:",
+        "§6Calms all nearby bees"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
-        "§6Hive Heart - Lose half your Max Health, but gain Absorption Health which slowly regenerates"
+        "§7Upgrade: §6Honey",
+        "§7Ability:",
+        "§6Hive Heart - Lose half your Max Health, but gain Absorption Health which slowly regenerates up to double your original Max HP",
+        "§7Full-set bonus:",
+        "§6Calms all nearby bees"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
-        "§6Sticky - Slows melee attackers"
+        "§7Upgrade: §6Honey",
+        "§7Ability:",
+        "§6Sticky - Slows melee attackers",
+        "§7Full-set bonus:",
+        "§6Calms all nearby bees"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
-        "§6Combo Jump - Jump repeatedly for increased jump height"
+        "§7Upgrade: §6Honey",
+        "§7Ability:",
+        "§6Combo Jump - Jump repeatedly for increased jump height",
+        "§7Full-set bonus:",
+        "§6Calms all nearby bees"
       ]
     },
     "helmetModelName": "Default",

@@ -11,8 +11,10 @@
     "name": "Crystallite Axe",
     "specialInformation": {
       "fixedValue": [
-        "§6Swarm - Consecutive hits deal more damage",
-        "§6- Mining the same block many times in a row causes it to break instantly"
+        "§7Upgrade: §6Honey",
+        "§7Abilities:",
+        "§6Mining the same block many times in a row causes it to break instantly",
+        "§6Swarm - Consecutive hits deal more damage"
       ]
     },
     "creativeTab": {

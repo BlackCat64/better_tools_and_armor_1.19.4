@@ -11,6 +11,8 @@
     "name": "Crystallite Sword",
     "specialInformation": {
       "fixedValue": [
+        "§7Upgrade: §6Honey",
+        "§7Ability:",
         "§6Swarm - Consecutive hits deal more damage"
       ]
     },
