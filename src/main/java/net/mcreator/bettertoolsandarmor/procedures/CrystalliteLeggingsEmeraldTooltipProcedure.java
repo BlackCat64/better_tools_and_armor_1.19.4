@@ -34,7 +34,7 @@ public class CrystalliteLeggingsEmeraldTooltipProcedure {
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_LEGGINGS.get()) {
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Effects attackers with:"));
+				tooltip.add(Component.literal("\u00A77Inflicts attackers with:"));
 				tooltip.add(Component.literal("\u00A79Poison II (0:03)"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
