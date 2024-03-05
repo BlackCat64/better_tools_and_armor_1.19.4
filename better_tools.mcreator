@@ -10717,51 +10717,6 @@
       "path": "~/Ender Titanium"
     },
     {
-      "name": "EndStonePebbles",
-      "type": "block",
-      "sortid": 255,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "end_stone_pebbles",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/block/EndStonePebblesBlock.java",
-          "src/main/resources/assets/better_tools/models/item/end_stone_pebbles.json",
-          "src/main/resources/assets/better_tools/blockstates/end_stone_pebbles.json",
-          "src/main/resources/assets/better_tools/models/block/end_stone_pebbles.json"
-        ]
-      },
-      "path": "~/Ender Titanium"
-    },
-    {
-      "name": "EndStonePebblesRecipe",
-      "type": "recipe",
-      "sortid": 852,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "end_stone_pebbles_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/recipes/end_stone_pebbles_recipe.json"
-        ]
-      },
-      "path": "~/Ender Titanium"
-    },
-    {
-      "name": "EndStonePebblesReverseRecipe",
-      "type": "recipe",
-      "sortid": 853,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "end_stone_pebbles_reverse_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/recipes/end_stone_recipe.json"
-        ]
-      },
-      "path": "~/Ender Titanium"
-    },
-    {
       "name": "GoldenPotato",
       "type": "item",
       "sortid": 256,
@@ -30034,7 +29989,6 @@
       "advancements.all_effect_armor_adv.title": "Effect Master",
       "item.minecraft.lingering_potion.effect.swift_swim_potion": "Lingering Potion of Rapidity",
       "item.minecraft.lingering_potion.effect.karma_potion": "Lingering Potion of Karma",
-      "block.better_tools.end_stone_pebbles": "End Stone Pebbles",
       "advancements.double_jump_adv.descr": "Get the Double Jump effect",
       "item.minecraft.splash_potion.effect.potion_of_decay": "Splash Potion of Decay",
       "advancements.shoot_through_walls_adv.descr": "Hit a mob on the other side of a wall using a Warden Staff",

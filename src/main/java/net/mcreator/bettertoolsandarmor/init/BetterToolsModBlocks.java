@@ -103,7 +103,6 @@ import net.mcreator.bettertoolsandarmor.block.FlintBlockwoodBlock;
 import net.mcreator.bettertoolsandarmor.block.FlintBlockBlock;
 import net.mcreator.bettertoolsandarmor.block.EndTitaniumOreBlock;
 import net.mcreator.bettertoolsandarmor.block.EndTitaniumBlockBlock;
-import net.mcreator.bettertoolsandarmor.block.EndStonePebblesBlock;
 import net.mcreator.bettertoolsandarmor.block.DeepslateRubyOreBlock;
 import net.mcreator.bettertoolsandarmor.block.DeepslateRandomOreBlock;
 import net.mcreator.bettertoolsandarmor.block.DarkPolishedLapisWallBlock;
@@ -169,7 +168,6 @@ public class BetterToolsModBlocks {
 	public static final RegistryObject<Block> BLUE_SLIME_BLOCK = REGISTRY.register("blue_slime_block", () -> new BlueSlimeBlockBlock());
 	public static final RegistryObject<Block> BLUE_MUSHROOM = REGISTRY.register("blue_mushroom", () -> new BlueMushroomBlock());
 	public static final RegistryObject<Block> BLUE_MUSHROOM_BLOCK = REGISTRY.register("blue_mushroom_block", () -> new BlueMushroomBlockBlock());
-	public static final RegistryObject<Block> END_STONE_PEBBLES = REGISTRY.register("end_stone_pebbles", () -> new EndStonePebblesBlock());
 	public static final RegistryObject<Block> CHARGED_ICE_ON = REGISTRY.register("charged_ice_on", () -> new ChargedIceOnBlock());
 	public static final RegistryObject<Block> DARK_POLISHED_COAL_BLOCK = REGISTRY.register("dark_polished_coal_block", () -> new DarkPolishedCoalBlockBlock());
 	public static final RegistryObject<Block> DARK_POLISHED_COAL_SLAB = REGISTRY.register("dark_polished_coal_slab", () -> new DarkPolishedCoalSlabBlock());

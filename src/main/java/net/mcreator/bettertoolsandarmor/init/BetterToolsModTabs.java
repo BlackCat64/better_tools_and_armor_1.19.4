@@ -42,7 +42,6 @@ public class BetterToolsModTabs {
 					tabData.accept(BetterToolsModItems.RICK_ROLL_DISC.get());
 					tabData.accept(BetterToolsModItems.AMOGUS.get());
 					tabData.accept(BetterToolsModItems.MOGUS_DRIP_DISC.get());
-					tabData.accept(BetterToolsModBlocks.END_STONE_PEBBLES.get().asItem());
 					tabData.accept(BetterToolsModItems.GOLDEN_POTATO.get());
 					tabData.accept(BetterToolsModItems.DIAMOND_APPLE.get());
 					tabData.accept(BetterToolsModItems.EXPERIENCE_POTION.get());

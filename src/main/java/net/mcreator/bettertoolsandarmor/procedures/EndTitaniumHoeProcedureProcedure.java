@@ -54,7 +54,7 @@ public class EndTitaniumHoeProcedureProcedure {
 			}.checkGamemode(entity))) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y, z);
-					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
+					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x + 0.5, y + 0.5, z + 0.5), null);
 					world.destroyBlock(_pos, false);
 				}
 				{

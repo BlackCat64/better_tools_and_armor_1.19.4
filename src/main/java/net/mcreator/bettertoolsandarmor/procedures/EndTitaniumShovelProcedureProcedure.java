@@ -7,21 +7,19 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModBlocks;
 
 import javax.annotation.Nullable;
 
@@ -53,11 +51,10 @@ public class EndTitaniumShovelProcedureProcedure {
 					return false;
 				}
 			}.checkGamemode(entity))) {
-				world.destroyBlock(BlockPos.containing(x, y, z), false);
-				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(BetterToolsModBlocks.END_STONE_PEBBLES.get()));
-					entityToSpawn.setPickUpDelay(10);
-					_level.addFreshEntity(entityToSpawn);
+				{
+					BlockPos _pos = BlockPos.containing(x, y, z);
+					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x + 0.5, y + 0.5, z + 0.5), null);
+					world.destroyBlock(_pos, false);
 				}
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);

@@ -606,7 +606,6 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> RICK_ROLL_DISC = REGISTRY.register("rick_roll_disc", () -> new RickRollDiscItem());
 	public static final RegistryObject<Item> AMOGUS = REGISTRY.register("amogus", () -> new AmogusItem());
 	public static final RegistryObject<Item> MOGUS_DRIP_DISC = REGISTRY.register("mogus_drip_disc", () -> new MogusDripDiscItem());
-	public static final RegistryObject<Item> END_STONE_PEBBLES = block(BetterToolsModBlocks.END_STONE_PEBBLES);
 	public static final RegistryObject<Item> GOLDEN_POTATO = REGISTRY.register("golden_potato", () -> new GoldenPotatoItem());
 	public static final RegistryObject<Item> DIAMOND_APPLE = REGISTRY.register("diamond_apple", () -> new DiamondAppleItem());
 	public static final RegistryObject<Item> EXPERIENCE_POTION = REGISTRY.register("experience_potion", () -> new ExperiencePotionItem());

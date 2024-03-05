@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "better_tools:item/end_stone_pebbles"
-  },
-  "render_type": "translucent"
-}
