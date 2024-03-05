@@ -46,6 +46,6 @@ public class EndTitaniumHoeItem extends HoeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A75Mines Purpur quickly"));
+		list.add(Component.literal("\u00A75Mines Purpur instantly"));
 	}
 }

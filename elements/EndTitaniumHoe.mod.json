@@ -11,7 +11,7 @@
     "name": "Ender Titanium Hoe",
     "specialInformation": {
       "fixedValue": [
-        "§5Mines Purpur quickly"
+        "§5Mines Purpur instantly"
       ]
     },
     "creativeTab": {
@@ -24,6 +24,9 @@
     "damageVsEntity": 3.0,
     "usageCount": 2700,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:EndTitaniumIngot"

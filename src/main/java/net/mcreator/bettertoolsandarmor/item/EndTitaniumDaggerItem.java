@@ -52,7 +52,7 @@ public class EndTitaniumDaggerItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A75Deals more damage in The End"));
+		list.add(Component.literal("\u00A75Increased attack damage in The End"));
 	}
 
 	@Override
