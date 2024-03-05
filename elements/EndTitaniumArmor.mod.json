@@ -26,24 +26,30 @@
     "bootsName": "Ender Titanium Boots",
     "helmetSpecialInformation": {
       "fixedValue": [
-        "§5Makes the wearer immune to Endermen"
+        "§5Makes the wearer immune to Endermen",
+        "§7Full-set bonus:",
+        "§5Saves from void death"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
-        "§5Can teleport attackers away"
+        "§5Can teleport attackers away",
+        "§7Full-set bonus:",
+        "§5Saves from void death"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
-        "§5Levitation Resistant"
+        "§5Levitation Resistant",
+        "§7Full-set bonus:",
+        "§5Saves from void death"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
         "§5Press §b[Left Shift] §5in mid-air for 5s Slow Falling",
-        "§cDurability Cost: 10",
-        "§cCooldown: 20s"
+        "§7Full-set bonus:",
+        "§5Saves from void death"
       ]
     },
     "helmetModelName": "Default",

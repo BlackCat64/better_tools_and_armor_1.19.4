@@ -78,6 +78,8 @@ public abstract class EndTitaniumArmorItem extends ArmorItem {
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
 			list.add(Component.literal("\u00A75Makes the wearer immune to Endermen"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A75Saves from void death"));
 		}
 
 		@Override
@@ -105,6 +107,8 @@ public abstract class EndTitaniumArmorItem extends ArmorItem {
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
 			list.add(Component.literal("\u00A75Can teleport attackers away"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A75Saves from void death"));
 		}
 
 		@Override
@@ -127,6 +131,8 @@ public abstract class EndTitaniumArmorItem extends ArmorItem {
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
 			list.add(Component.literal("\u00A75Levitation Resistant"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A75Saves from void death"));
 		}
 
 		@Override
@@ -154,8 +160,8 @@ public abstract class EndTitaniumArmorItem extends ArmorItem {
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
 			list.add(Component.literal("\u00A75Press \u00A7b[Left Shift] \u00A75in mid-air for 5s Slow Falling"));
-			list.add(Component.literal("\u00A7cDurability Cost: 10"));
-			list.add(Component.literal("\u00A7cCooldown: 20s"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A75Saves from void death"));
 		}
 
 		@Override
