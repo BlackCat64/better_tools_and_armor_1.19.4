@@ -41,9 +41,10 @@
       }
     ],
     "information": [
-      "§lCrystallite Upgrades: Iron§r",
+      "§lCrystallite Upgrades: §fIron§r",
       "",
-      "Theme: Knockback and Magnetism"
+      "Theme:",
+      "Knockback and Magnetism"
     ]
   }
 }
