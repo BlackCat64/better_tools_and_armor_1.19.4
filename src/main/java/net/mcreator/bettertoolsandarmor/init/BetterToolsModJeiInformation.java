@@ -29,5 +29,11 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_CHARM_BASE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_charm_base_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.CRYSTALLITE_BLOCK.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get()),
 				new ItemStack(BetterToolsModBlocks.CUT_CRYSTALLITE_BLOCK.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.obtaining_crystallite_info"));
+		registration.addIngredientInfo(
+				List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SWORD_IRON.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_PICKAXE_IRON.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_IRON.get()),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_SHOVEL_IRON.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_HOE_IRON.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_DAGGER_IRON.get()),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_IRON_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_IRON_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_IRON_LEGGINGS.get()),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_IRON_BOOTS.get()), new ItemStack(BetterToolsModItems.TOUGH_CRYSTAL.get()), new ItemStack(BetterToolsModItems.TOUGH_NECKLACE.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.iron_crystallite_info"));
 	}
 }

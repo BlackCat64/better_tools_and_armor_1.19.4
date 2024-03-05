@@ -416,6 +416,8 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> EARTH_CIRCLET = REGISTRY.register("earth_circlet", () -> new EarthCircletItem());
 	public static final RegistryObject<Item> GUARDIAN_CRYSTAL = REGISTRY.register("guardian_crystal", () -> new GuardianCrystalItem());
 	public static final RegistryObject<Item> GUARDIAN_NECKLACE = REGISTRY.register("guardian_necklace", () -> new GuardianNecklaceItem());
+	public static final RegistryObject<Item> HIVE_CRYSTAL = REGISTRY.register("hive_crystal", () -> new HiveCrystalItem());
+	public static final RegistryObject<Item> CURING_CHARM = REGISTRY.register("curing_charm", () -> new CuringCharmItem());
 	public static final RegistryObject<Item> ENDER_GOGGLES = REGISTRY.register("ender_goggles", () -> new EnderGogglesItem());
 	public static final RegistryObject<Item> BOUNCY_BRACELET = REGISTRY.register("bouncy_bracelet", () -> new BouncyBraceletItem());
 	public static final RegistryObject<Item> POISON_CHARM = REGISTRY.register("poison_charm", () -> new PoisonCharmItem());
@@ -570,6 +572,16 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> CRYSTALLITE_ARMOR_PRISMARINE_CHESTPLATE = REGISTRY.register("crystallite_armor_prismarine_chestplate", () -> new CrystalliteArmorPrismarineItem.Chestplate());
 	public static final RegistryObject<Item> CRYSTALLITE_ARMOR_PRISMARINE_LEGGINGS = REGISTRY.register("crystallite_armor_prismarine_leggings", () -> new CrystalliteArmorPrismarineItem.Leggings());
 	public static final RegistryObject<Item> CRYSTALLITE_ARMOR_PRISMARINE_BOOTS = REGISTRY.register("crystallite_armor_prismarine_boots", () -> new CrystalliteArmorPrismarineItem.Boots());
+	public static final RegistryObject<Item> CRYSTALLITE_SWORD_HONEY = REGISTRY.register("crystallite_sword_honey", () -> new CrystalliteSwordHoneyItem());
+	public static final RegistryObject<Item> CRYSTALLITE_PICKAXE_HONEY = REGISTRY.register("crystallite_pickaxe_honey", () -> new CrystallitePickaxeHoneyItem());
+	public static final RegistryObject<Item> CRYSTALLITE_AXE_HONEY = REGISTRY.register("crystallite_axe_honey", () -> new CrystalliteAxeHoneyItem());
+	public static final RegistryObject<Item> CRYSTALLITE_SHOVEL_HONEY = REGISTRY.register("crystallite_shovel_honey", () -> new CrystalliteShovelHoneyItem());
+	public static final RegistryObject<Item> CRYSTALLITE_HOE_HONEY = REGISTRY.register("crystallite_hoe_honey", () -> new CrystalliteHoeHoneyItem());
+	public static final RegistryObject<Item> CRYSTALLITE_DAGGER_HONEY = REGISTRY.register("crystallite_dagger_honey", () -> new CrystalliteDaggerHoneyItem());
+	public static final RegistryObject<Item> CRYSTALLITE_ARMOR_HONEY_HELMET = REGISTRY.register("crystallite_armor_honey_helmet", () -> new CrystalliteArmorHoneyItem.Helmet());
+	public static final RegistryObject<Item> CRYSTALLITE_ARMOR_HONEY_CHESTPLATE = REGISTRY.register("crystallite_armor_honey_chestplate", () -> new CrystalliteArmorHoneyItem.Chestplate());
+	public static final RegistryObject<Item> CRYSTALLITE_ARMOR_HONEY_LEGGINGS = REGISTRY.register("crystallite_armor_honey_leggings", () -> new CrystalliteArmorHoneyItem.Leggings());
+	public static final RegistryObject<Item> CRYSTALLITE_ARMOR_HONEY_BOOTS = REGISTRY.register("crystallite_armor_honey_boots", () -> new CrystalliteArmorHoneyItem.Boots());
 	public static final RegistryObject<Item> SUGAR_BLOCK = block(BetterToolsModBlocks.SUGAR_BLOCK);
 	public static final RegistryObject<Item> FLINT_BLOCK = block(BetterToolsModBlocks.FLINT_BLOCK);
 	public static final RegistryObject<Item> RANDOM_ORE = block(BetterToolsModBlocks.RANDOM_ORE);
@@ -603,6 +615,8 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> GUARDIAN_SPIKE = REGISTRY.register("guardian_spike", () -> new GuardianSpikeItem());
 	public static final RegistryObject<Item> APPLE_JUICE = REGISTRY.register("apple_juice", () -> new AppleJuiceItem());
 	public static final RegistryObject<Item> BERRY_SMOOTHIE = REGISTRY.register("berry_smoothie", () -> new BerrySmoothieItem());
+	public static final RegistryObject<Item> ASCENSION_POTION = REGISTRY.register("ascension_potion", () -> new AscensionPotionItem());
+	public static final RegistryObject<Item> DESCENSION_POTION = REGISTRY.register("descension_potion", () -> new DescensionPotionItem());
 	public static final RegistryObject<Item> CHARGED_ICE_ON = block(BetterToolsModBlocks.CHARGED_ICE_ON);
 	public static final RegistryObject<Item> DARK_POLISHED_COAL_BLOCK = block(BetterToolsModBlocks.DARK_POLISHED_COAL_BLOCK);
 	public static final RegistryObject<Item> DARK_POLISHED_COAL_SLAB = block(BetterToolsModBlocks.DARK_POLISHED_COAL_SLAB);
@@ -750,20 +764,6 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> FLINT_BLOCKWOOD = block(BetterToolsModBlocks.FLINT_BLOCKWOOD);
 	public static final RegistryObject<Item> CRYSTALLITE_CLUSTER_AIR = block(BetterToolsModBlocks.CRYSTALLITE_CLUSTER_AIR);
 	public static final RegistryObject<Item> CLIMBABLE_WALL = block(BetterToolsModBlocks.CLIMBABLE_WALL);
-	public static final RegistryObject<Item> CRYSTALLITE_SWORD_HONEY = REGISTRY.register("crystallite_sword_honey", () -> new CrystalliteSwordHoneyItem());
-	public static final RegistryObject<Item> CRYSTALLITE_PICKAXE_HONEY = REGISTRY.register("crystallite_pickaxe_honey", () -> new CrystallitePickaxeHoneyItem());
-	public static final RegistryObject<Item> CRYSTALLITE_AXE_HONEY = REGISTRY.register("crystallite_axe_honey", () -> new CrystalliteAxeHoneyItem());
-	public static final RegistryObject<Item> CRYSTALLITE_SHOVEL_HONEY = REGISTRY.register("crystallite_shovel_honey", () -> new CrystalliteShovelHoneyItem());
-	public static final RegistryObject<Item> CRYSTALLITE_HOE_HONEY = REGISTRY.register("crystallite_hoe_honey", () -> new CrystalliteHoeHoneyItem());
-	public static final RegistryObject<Item> CRYSTALLITE_DAGGER_HONEY = REGISTRY.register("crystallite_dagger_honey", () -> new CrystalliteDaggerHoneyItem());
-	public static final RegistryObject<Item> CRYSTALLITE_ARMOR_HONEY_HELMET = REGISTRY.register("crystallite_armor_honey_helmet", () -> new CrystalliteArmorHoneyItem.Helmet());
-	public static final RegistryObject<Item> CRYSTALLITE_ARMOR_HONEY_CHESTPLATE = REGISTRY.register("crystallite_armor_honey_chestplate", () -> new CrystalliteArmorHoneyItem.Chestplate());
-	public static final RegistryObject<Item> CRYSTALLITE_ARMOR_HONEY_LEGGINGS = REGISTRY.register("crystallite_armor_honey_leggings", () -> new CrystalliteArmorHoneyItem.Leggings());
-	public static final RegistryObject<Item> CRYSTALLITE_ARMOR_HONEY_BOOTS = REGISTRY.register("crystallite_armor_honey_boots", () -> new CrystalliteArmorHoneyItem.Boots());
-	public static final RegistryObject<Item> HIVE_CRYSTAL = REGISTRY.register("hive_crystal", () -> new HiveCrystalItem());
-	public static final RegistryObject<Item> CURING_CHARM = REGISTRY.register("curing_charm", () -> new CuringCharmItem());
-	public static final RegistryObject<Item> ASCENSION_POTION = REGISTRY.register("ascension_potion", () -> new AscensionPotionItem());
-	public static final RegistryObject<Item> DESCENSION_POTION = REGISTRY.register("descension_potion", () -> new DescensionPotionItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

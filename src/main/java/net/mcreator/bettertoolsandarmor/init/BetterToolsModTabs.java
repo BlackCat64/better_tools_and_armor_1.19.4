@@ -236,6 +236,8 @@ public class BetterToolsModTabs {
 					tabData.accept(BetterToolsModItems.EARTH_CIRCLET.get());
 					tabData.accept(BetterToolsModItems.GUARDIAN_CRYSTAL.get());
 					tabData.accept(BetterToolsModItems.GUARDIAN_NECKLACE.get());
+					tabData.accept(BetterToolsModItems.HIVE_CRYSTAL.get());
+					tabData.accept(BetterToolsModItems.CURING_CHARM.get());
 					tabData.accept(BetterToolsModItems.ENDER_GOGGLES.get());
 					tabData.accept(BetterToolsModItems.BOUNCY_BRACELET.get());
 					tabData.accept(BetterToolsModItems.POISON_CHARM.get());
@@ -400,8 +402,6 @@ public class BetterToolsModTabs {
 					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_CHESTPLATE.get());
 					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_LEGGINGS.get());
 					tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_BOOTS.get());
-					tabData.accept(BetterToolsModItems.HIVE_CRYSTAL.get());
-					tabData.accept(BetterToolsModItems.CURING_CHARM.get());
 				})
 
 		);
