@@ -35,7 +35,9 @@
     ],
     "name": "Red Ice",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§cGreatly increases running speed"
+      ]
     },
     "hardness": 0.5,
     "resistance": 0.5,

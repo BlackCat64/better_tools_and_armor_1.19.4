@@ -35,7 +35,9 @@
     ],
     "name": "Blue Slime Block",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§bIncreases jump height"
+      ]
     },
     "hardness": 0.0,
     "resistance": 0.0,
