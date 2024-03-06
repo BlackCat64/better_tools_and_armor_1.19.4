@@ -25,7 +25,7 @@ public class PoisonCharmItem extends Item implements ICurioItem {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("\u00A77When worn:"));
-		list.add(Component.literal("\u00A79+1 Karma Damage to attackers"));
+		list.add(Component.literal("\u00A79+1 Karma Damage to all attackers"));
 	}
 
 	@Override

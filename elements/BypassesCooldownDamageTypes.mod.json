@@ -11,6 +11,9 @@
     "damageTypes": [
       {
         "value": "CUSTOM:MagicWeaponDamage"
+      },
+      {
+        "value": "CUSTOM:KarmaDamage"
       }
     ],
     "name": "bypasses_cooldown",
