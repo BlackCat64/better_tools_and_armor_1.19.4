@@ -1,0 +1,21 @@
+{
+  "_fv": 57,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:FourLeafClover"
+      }
+    ],
+    "information": [
+      "Four Leaf Clovers can be found in Treehouse chest loot, and they are used to brew Luck Potions.",
+      "Four Leaf Clovers can be bone-mealed to grow more of them.",
+      "",
+      "",
+      "§lImproved Luck Effect§r",
+      "",
+      "Having an increased Luck value gives a chance for ores to drop double!",
+      "The chance is +5% per +1 Luck"
+    ]
+  }
+}

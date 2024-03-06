@@ -1,6 +1,8 @@
 
 package net.mcreator.bettertoolsandarmor.init;
 
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
@@ -124,5 +126,29 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_LEGGINGS.get()),
 						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_BOOTS.get()), new ItemStack(BetterToolsModItems.HIVE_CRYSTAL.get()), new ItemStack(BetterToolsModItems.CURING_CHARM.get())),
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.honey_crystallite_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.SUGAR_BOOTS.get()), new ItemStack(BetterToolsModItems.RABBIT_BOOTS.get()), new ItemStack(BetterToolsModItems.PHANTOM_BOOTS.get()),
+				new ItemStack(BetterToolsModItems.CACTUS_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.HEARTY_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.RUBY_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTAL_LEGGINGS.get()),
+				new ItemStack(BetterToolsModItems.GOLD_CARROT_HELMET.get()), new ItemStack(BetterToolsModItems.BLACKSTONE_LEGGINGS.get()), new ItemStack(BetterToolsModItems.IRON_SUGAR_BOOTS.get()),
+				new ItemStack(BetterToolsModItems.IRON_RABBIT_BOOTS.get()), new ItemStack(BetterToolsModItems.IRON_PHANTOM_BOOTS.get()), new ItemStack(BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get()),
+				new ItemStack(BetterToolsModItems.IRON_HEARTY_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.IRON_GOLD_CARROT_HELMET.get()), new ItemStack(BetterToolsModItems.DIAMOND_SUGAR_BOOTS.get()),
+				new ItemStack(BetterToolsModItems.DIAMOND_RABBIT_BOOTS.get()), new ItemStack(BetterToolsModItems.DIAMOND_PHANTOM_BOOTS.get()), new ItemStack(BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get()),
+				new ItemStack(BetterToolsModItems.DIAMOND_HEARTY_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.DIAMOND_RUBY_LEGGINGS.get()), new ItemStack(BetterToolsModItems.DIAMOND_CRYSTAL_LEGGINGS.get()),
+				new ItemStack(BetterToolsModItems.DIAMOND_GOLD_CARROT_HELMET.get()), new ItemStack(BetterToolsModItems.DIAMOND_BLACKSTONE_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYING_OBSIDIAN_HELMET.get()),
+				new ItemStack(BetterToolsModItems.DIAMOND_CRYING_OBSIDIAN_HELMET.get()), new ItemStack(BetterToolsModItems.WINGED_BOOTS_BOOTS.get()), new ItemStack(BetterToolsModItems.GLASS_HELMET.get()),
+				new ItemStack(BetterToolsModItems.GLASS_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.GLASS_LEGGINGS.get()), new ItemStack(BetterToolsModItems.GLASS_BOOTS.get()), new ItemStack(BetterToolsModItems.MAGMA_CHESTPLATE.get()),
+				new ItemStack(BetterToolsModItems.DIAMOND_MAGMA_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.IRON_GLASS_ARMOR_HELMET.get()), new ItemStack(BetterToolsModItems.IRON_GLASS_ARMOR_CHESTPLATE.get()),
+				new ItemStack(BetterToolsModItems.IRON_GLASS_ARMOR_LEGGINGS.get()), new ItemStack(BetterToolsModItems.IRON_GLASS_ARMOR_BOOTS.get()), new ItemStack(BetterToolsModItems.DIAMOND_GLASS_ARMOR_HELMET.get()),
+				new ItemStack(BetterToolsModItems.DIAMOND_GLASS_ARMOR_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.DIAMOND_GLASS_ARMOR_LEGGINGS.get()), new ItemStack(BetterToolsModItems.DIAMOND_GLASS_ARMOR_BOOTS.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.effect_armor_jei_information"));
+		registration.addIngredientInfo(
+				List.of(new ItemStack(BetterToolsModBlocks.NETHER_DIAMOND_BLOCK.get()), new ItemStack(BetterToolsModBlocks.RUBY_BLOCK.get()), new ItemStack(BetterToolsModBlocks.END_TITANIUM_BLOCK.get()),
+						new ItemStack(BetterToolsModBlocks.SAPPHIRE_BLOCK.get()), new ItemStack(BetterToolsModBlocks.TOPAZ_BLOCK.get()), new ItemStack(BetterToolsModBlocks.CUT_CRYSTALLITE_BLOCK.get()), new ItemStack(Blocks.LAPIS_BLOCK),
+						new ItemStack(Blocks.QUARTZ_BLOCK), new ItemStack(Blocks.COPPER_BLOCK), new ItemStack(Blocks.WAXED_COPPER_BLOCK), new ItemStack(Blocks.AMETHYST_BLOCK)),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.beacon_base_blocks_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.NETHER_DIAMOND.get()), new ItemStack(BetterToolsModItems.RUBY.get()), new ItemStack(BetterToolsModItems.END_TITANIUM_INGOT.get()),
+				new ItemStack(BetterToolsModItems.SAPPHIRE.get()), new ItemStack(BetterToolsModItems.TOPAZ.get()), new ItemStack(Items.LAPIS_LAZULI), new ItemStack(Items.QUARTZ), new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()),
+				new ItemStack(Items.AMETHYST_SHARD), new ItemStack(Items.COPPER_INGOT)), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.beacon_payment_items_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.CHARGED_ICE_ON.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.red_ice_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.FOUR_LEAF_CLOVER.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.improved_luck_info"));
 	}
 }

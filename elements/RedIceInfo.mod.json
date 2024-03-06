@@ -1,0 +1,14 @@
+{
+  "_fv": 57,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:ChargedIceOn"
+      }
+    ],
+    "information": [
+      "Red Ice allows you to run VERY fast on top of it, as long as you're not jumping."
+    ]
+  }
+}
