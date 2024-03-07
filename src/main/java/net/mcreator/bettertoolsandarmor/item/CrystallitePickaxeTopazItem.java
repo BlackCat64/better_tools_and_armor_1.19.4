@@ -48,6 +48,6 @@ public class CrystallitePickaxeTopazItem extends PickaxeItem {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A76Topaz"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A76Charged - Ores may drop more resources"));
+		list.add(Component.literal("\u00A76Charged - Ores have a chance to drop double"));
 	}
 }

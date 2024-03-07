@@ -12131,9 +12131,6 @@
       "locked_code": false,
       "registry_name": "crystallite_pickaxe_topaz_double_drops",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystallitePickaxeTopazDoubleDropsProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "blockstate",
