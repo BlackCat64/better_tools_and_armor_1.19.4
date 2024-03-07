@@ -75,7 +75,7 @@ public class SmeltingTouchProcedureProcedure {
 								}
 							}.compareDistOf((x + 0.5), (y + 0.5), (z + 0.5))).findFirst().orElse(null)) instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY).getCount(); index0++) {
 								if (world instanceof ServerLevel _level) {
-									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5),
+									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5),
 											(world instanceof Level _lvlSmeltResult
 													? _lvlSmeltResult.getRecipeManager().getRecipeFor(RecipeType.SMELTING,
 															new SimpleContainer((((Entity) world.getEntitiesOfClass(ItemEntity.class, AABB.ofSize(new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), 1, 1, 1), e -> true).stream().sorted(new Object() {

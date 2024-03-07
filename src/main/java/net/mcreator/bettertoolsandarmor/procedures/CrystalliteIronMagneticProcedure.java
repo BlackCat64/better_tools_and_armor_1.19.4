@@ -41,10 +41,10 @@ public class CrystalliteIronMagneticProcedure {
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:magnetic_tools")))) {
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-				BetterToolsMod.queueServerWork(4, () -> {
+				BetterToolsMod.queueServerWork(6, () -> {
 					{
-						final Vec3 _center = new Vec3((x + 0.5), (y + 0.5), (z + 0.5));
-						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+						final Vec3 _center = new Vec3((x + 0.5), (y + 0.8), (z + 0.5));
+						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
 								.collect(Collectors.toList());
 						for (Entity entityiterator : _entfound) {
 							if (entityiterator instanceof ItemEntity) {
