@@ -17,6 +17,7 @@ import net.minecraftforge.common.capabilities.Capability;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
@@ -99,6 +100,8 @@ public class BetterToolsModVariables {
 				clone.stick_to_ceiling = original.stick_to_ceiling;
 				clone.crystallite_honey_absorption_timer = original.crystallite_honey_absorption_timer;
 				clone.time_since_last_jumped = original.time_since_last_jumped;
+				clone.smelting_touch_item_to_smelt = original.smelting_touch_item_to_smelt;
+				clone.smelting_touch_item_to_drop = original.smelting_touch_item_to_drop;
 			}
 		}
 	}
@@ -160,6 +163,8 @@ public class BetterToolsModVariables {
 		public boolean stick_to_ceiling = false;
 		public double crystallite_honey_absorption_timer = 0;
 		public double time_since_last_jumped = 0;
+		public ItemStack smelting_touch_item_to_smelt = ItemStack.EMPTY;
+		public ItemStack smelting_touch_item_to_drop = ItemStack.EMPTY;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -194,6 +199,8 @@ public class BetterToolsModVariables {
 			nbt.putBoolean("stick_to_ceiling", stick_to_ceiling);
 			nbt.putDouble("crystallite_honey_absorption_timer", crystallite_honey_absorption_timer);
 			nbt.putDouble("time_since_last_jumped", time_since_last_jumped);
+			nbt.put("smelting_touch_item_to_smelt", smelting_touch_item_to_smelt.save(new CompoundTag()));
+			nbt.put("smelting_touch_item_to_drop", smelting_touch_item_to_drop.save(new CompoundTag()));
 			return nbt;
 		}
 
@@ -225,6 +232,8 @@ public class BetterToolsModVariables {
 			stick_to_ceiling = nbt.getBoolean("stick_to_ceiling");
 			crystallite_honey_absorption_timer = nbt.getDouble("crystallite_honey_absorption_timer");
 			time_since_last_jumped = nbt.getDouble("time_since_last_jumped");
+			smelting_touch_item_to_smelt = ItemStack.of(nbt.getCompound("smelting_touch_item_to_smelt"));
+			smelting_touch_item_to_drop = ItemStack.of(nbt.getCompound("smelting_touch_item_to_drop"));
 		}
 	}
 
@@ -275,6 +284,8 @@ public class BetterToolsModVariables {
 					variables.stick_to_ceiling = message.data.stick_to_ceiling;
 					variables.crystallite_honey_absorption_timer = message.data.crystallite_honey_absorption_timer;
 					variables.time_since_last_jumped = message.data.time_since_last_jumped;
+					variables.smelting_touch_item_to_smelt = message.data.smelting_touch_item_to_smelt;
+					variables.smelting_touch_item_to_drop = message.data.smelting_touch_item_to_drop;
 				}
 			});
 			context.setPacketHandled(true);
