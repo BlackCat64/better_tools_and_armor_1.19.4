@@ -10,7 +10,6 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.item.ItemStack;
@@ -21,10 +20,8 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
@@ -48,20 +45,11 @@ public class SmeltingTouchProcedureProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return;
-		if (!(new Object() {
-			public boolean checkGamemode(Entity _ent) {
-				if (_ent instanceof ServerPlayer _serverPlayer) {
-					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-				} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
-					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-				}
-				return false;
-			}
-		}.checkGamemode(entity))) {
+		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 			if (blockstate.is(BlockTags.create(new ResourceLocation("forge:ores")))) {
 				if (EnchantmentHelper.getItemEnchantmentLevel(BetterToolsModEnchantments.SMELTING_TOUCH.get(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:smelting_touch_tools")))) {
-					BetterToolsMod.queueServerWork(2, () -> {
+					BetterToolsMod.queueServerWork(1, () -> {
 						if (IsNearestItemEntityNaturallyDroppedProcedure.execute(world, x, y, z)) {
 							{
 								ItemStack _setval = (((Entity) world.getEntitiesOfClass(ItemEntity.class, AABB.ofSize(new Vec3((x + 0.5), (y + 0.8), (z + 0.5)), 1.25, 1.25, 1.25), e -> true).stream().sorted(new Object() {

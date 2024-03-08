@@ -60,7 +60,7 @@ public class CrystallitePickaxeTopazDoubleDropsProcedure {
 							}
 							dupe_chance = dupe_chance + 0.05 * ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue();
 							if (Math.random() < dupe_chance) {
-								BetterToolsMod.queueServerWork(4, () -> {
+								BetterToolsMod.queueServerWork(2, () -> {
 									if (IsNearestItemEntityNaturallyDroppedProcedure.execute(world, x, y, z)) {
 										if (((((Entity) world.getEntitiesOfClass(ItemEntity.class, AABB.ofSize(new Vec3((x + 0.5), (y + 0.8), (z + 0.5)), 1.25, 1.25, 1.25), e -> true).stream().sorted(new Object() {
 											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
