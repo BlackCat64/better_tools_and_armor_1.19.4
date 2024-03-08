@@ -12,7 +12,7 @@ import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class EnderTitaniumBootsBugfixProcedure {
+public class CharmAdvBugfixProcedure {
 	@SubscribeEvent
 	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
 		execute(event, event.getEntity());
@@ -25,13 +25,6 @@ public class EnderTitaniumBootsBugfixProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		{
-			boolean _setval = false;
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.slow_falling_cooldown = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
 		{
 			double _setval = 0;
 			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

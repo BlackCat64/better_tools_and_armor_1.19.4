@@ -52,7 +52,7 @@ public class FloatKeyMessage {
 			return;
 		if (type == 0) {
 
-			EnderTitaniumBootsFloatProcedure.execute(world, x, y, z, entity);
+			EnderTitaniumBootsFloatProcedure.execute(entity);
 		}
 	}
 

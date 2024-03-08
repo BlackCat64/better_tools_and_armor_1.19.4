@@ -59,5 +59,14 @@ public class TrackLastOnGroundPositionProcedure {
 				});
 			}
 		}
+		if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).ender_titanium_boots_cooldown > 0) {
+			{
+				double _setval = (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).ender_titanium_boots_cooldown - 1;
+				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.ender_titanium_boots_cooldown = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		}
 	}
 }

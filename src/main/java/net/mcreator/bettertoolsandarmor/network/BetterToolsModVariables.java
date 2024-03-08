@@ -102,6 +102,7 @@ public class BetterToolsModVariables {
 				clone.time_since_last_jumped = original.time_since_last_jumped;
 				clone.smelting_touch_item_to_smelt = original.smelting_touch_item_to_smelt;
 				clone.smelting_touch_item_to_drop = original.smelting_touch_item_to_drop;
+				clone.ender_titanium_boots_cooldown = original.ender_titanium_boots_cooldown;
 			}
 		}
 	}
@@ -165,6 +166,7 @@ public class BetterToolsModVariables {
 		public double time_since_last_jumped = 0;
 		public ItemStack smelting_touch_item_to_smelt = ItemStack.EMPTY;
 		public ItemStack smelting_touch_item_to_drop = ItemStack.EMPTY;
+		public double ender_titanium_boots_cooldown = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -201,6 +203,7 @@ public class BetterToolsModVariables {
 			nbt.putDouble("time_since_last_jumped", time_since_last_jumped);
 			nbt.put("smelting_touch_item_to_smelt", smelting_touch_item_to_smelt.save(new CompoundTag()));
 			nbt.put("smelting_touch_item_to_drop", smelting_touch_item_to_drop.save(new CompoundTag()));
+			nbt.putDouble("ender_titanium_boots_cooldown", ender_titanium_boots_cooldown);
 			return nbt;
 		}
 
@@ -234,6 +237,7 @@ public class BetterToolsModVariables {
 			time_since_last_jumped = nbt.getDouble("time_since_last_jumped");
 			smelting_touch_item_to_smelt = ItemStack.of(nbt.getCompound("smelting_touch_item_to_smelt"));
 			smelting_touch_item_to_drop = ItemStack.of(nbt.getCompound("smelting_touch_item_to_drop"));
+			ender_titanium_boots_cooldown = nbt.getDouble("ender_titanium_boots_cooldown");
 		}
 	}
 
@@ -286,6 +290,7 @@ public class BetterToolsModVariables {
 					variables.time_since_last_jumped = message.data.time_since_last_jumped;
 					variables.smelting_touch_item_to_smelt = message.data.smelting_touch_item_to_smelt;
 					variables.smelting_touch_item_to_drop = message.data.smelting_touch_item_to_drop;
+					variables.ender_titanium_boots_cooldown = message.data.ender_titanium_boots_cooldown;
 				}
 			});
 			context.setPacketHandled(true);
