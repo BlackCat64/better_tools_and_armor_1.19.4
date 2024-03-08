@@ -29062,6 +29062,38 @@
         "files": []
       },
       "path": "~/Purple Mushrooms"
+    },
+    {
+      "name": "IsNearestItemEntityNaturallyDropped",
+      "type": "procedure",
+      "sortid": 1684,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_nearest_item_entity_naturally_dropped",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IsNearestItemEntityNaturallyDroppedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
