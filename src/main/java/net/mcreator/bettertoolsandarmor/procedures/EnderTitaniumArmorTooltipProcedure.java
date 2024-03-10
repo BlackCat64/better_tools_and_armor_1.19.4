@@ -9,6 +9,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -33,14 +34,18 @@ public class EnderTitaniumArmorTooltipProcedure {
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.END_TITANIUM_HELMET.get() || itemstack.getItem() == BetterToolsModItems.END_TITANIUM_CHESTPLATE.get() || itemstack.getItem() == BetterToolsModItems.END_TITANIUM_LEGGINGS.get()
 				|| itemstack.getItem() == BetterToolsModItems.END_TITANIUM_BOOTS.get()) {
-			if (itemstack.getItem() == BetterToolsModItems.END_TITANIUM_BOOTS.get()) {
-				tooltip.add(Component.literal("\u00A77When float ability used:"));
-				tooltip.add(Component.literal("\u00A7cDurability Cost: 10"));
-				tooltip.add(Component.literal("\u00A7cCooldown: 20s"));
+			if (Screen.hasShiftDown()) {
+				if (itemstack.getItem() == BetterToolsModItems.END_TITANIUM_BOOTS.get()) {
+					tooltip.add(Component.literal("\u00A77When float ability used:"));
+					tooltip.add(Component.literal("\u00A7cDurability Cost: 10"));
+					tooltip.add(Component.literal("\u00A7cCooldown: 20s"));
+				}
+				tooltip.add(Component.literal("\u00A77When saved from void:"));
+				tooltip.add(Component.literal("\u00A7cDurability Cost: 20%"));
+				tooltip.add(Component.literal("\u00A7cCooldown: 10mins"));
+			} else {
+				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
-			tooltip.add(Component.literal("\u00A77When saved from void:"));
-			tooltip.add(Component.literal("\u00A7cDurability Cost: 20%"));
-			tooltip.add(Component.literal("\u00A7cCooldown: 10mins"));
 		}
 	}
 }

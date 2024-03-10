@@ -29136,6 +29136,30 @@
         ]
       },
       "path": "~/Consumables"
+    },
+    {
+      "name": "RecallPotionProcedure",
+      "type": "procedure",
+      "sortid": 1690,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recall_potion_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/RecallPotionProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Consumables"
     }
   ],
   "variable_elements": [

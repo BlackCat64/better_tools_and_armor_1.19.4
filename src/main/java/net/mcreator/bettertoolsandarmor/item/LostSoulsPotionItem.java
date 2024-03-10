@@ -2,6 +2,7 @@
 package net.mcreator.bettertoolsandarmor.item;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Items;
@@ -17,6 +18,11 @@ import java.util.List;
 public class LostSoulsPotionItem extends Item {
 	public LostSoulsPotionItem() {
 		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat().build()));
+	}
+
+	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.DRINK;
 	}
 
 	@Override

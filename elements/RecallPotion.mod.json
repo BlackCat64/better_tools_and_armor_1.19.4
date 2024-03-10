@@ -37,6 +37,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "RecallPotionProcedure"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {
@@ -50,6 +53,6 @@
     },
     "isMeat": false,
     "isAlwaysEdible": true,
-    "animation": "eat"
+    "animation": "drink"
   }
 }
