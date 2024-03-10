@@ -38,130 +38,6 @@ public class RecallPotionProcedureProcedure {
 				return dataIndex0.getString("SpawnDimension");
 			}
 		}.getValue()) + "]").equals("" + entity.level.dimension())) {
-			if ((entity.level.dimension()) == Level.NETHER) {
-				if ((world.getBlockState(BlockPos.containing(
-						(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level.getLevelData().getXSpawn())
-								: 0,
-						(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level.getLevelData().getYSpawn())
-								: 0,
-						(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level.getLevelData().getZSpawn())
-								: 0)))
-						.getBlock() == Blocks.RESPAWN_ANCHOR) {
-					if (((world.getBlockState(BlockPos.containing(
-							(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level.getLevelData().getXSpawn())
-									: 0,
-							(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level.getLevelData().getYSpawn())
-									: 0,
-							(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level.getLevelData().getZSpawn())
-									: 0)))
-							.getBlock().getStateDefinition().getProperty("charges") instanceof IntegerProperty _getip14
-									? (world.getBlockState(BlockPos.containing(
-											(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-													? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level.getLevelData().getXSpawn())
-													: 0,
-											(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-													? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level.getLevelData().getYSpawn())
-													: 0,
-											(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-													? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level.getLevelData().getZSpawn())
-													: 0)))
-											.getValue(_getip14)
-									: -1) > 0) {
-						{
-							int _value = (int) (((world.getBlockState(BlockPos.containing(
-									(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-											? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level.getLevelData().getXSpawn())
-											: 0,
-									(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-											? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level.getLevelData().getYSpawn())
-											: 0,
-									(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-											? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level.getLevelData().getZSpawn())
-											: 0)))
-									.getBlock().getStateDefinition().getProperty("charges") instanceof IntegerProperty _getip22
-											? (world.getBlockState(BlockPos.containing(
-													(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-															? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level.getLevelData().getXSpawn())
-															: 0,
-													(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-															? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level.getLevelData().getYSpawn())
-															: 0,
-													(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-															? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level.getLevelData().getZSpawn())
-															: 0)))
-													.getValue(_getip22)
-											: -1)
-									- 1);
-							BlockPos _pos = BlockPos.containing(
-									(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-											? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level.getLevelData().getXSpawn())
-											: 0,
-									(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-											? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level.getLevelData().getYSpawn())
-											: 0,
-									(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-											? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level.getLevelData().getZSpawn())
-											: 0);
-							BlockState _bs = world.getBlockState(_pos);
-							if (_bs.getBlock().getStateDefinition().getProperty("charges") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-						}
-					} else {
-						valid_spawn = false;
-						{
-							Entity _ent = entity;
-							if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-								_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-										_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "title @s actionbar \"\u00A7cYour Respawn Anchor has no charges remaining\"");
-							}
-						}
-					}
-				} else {
-					valid_spawn = false;
-					{
-						Entity _ent = entity;
-						if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "title @s actionbar \"\u00A7cYour Respawn Anchor has been destroyed\"");
-						}
-					}
-				}
-			} else if ((entity.level.dimension()) == Level.OVERWORLD) {
-				if (!((world.getBlockState(BlockPos.containing(
-						(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level.getLevelData().getXSpawn())
-								: 0,
-						(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level.getLevelData().getYSpawn())
-								: 0,
-						(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level.getLevelData().getZSpawn())
-								: 0)))
-						.is(BlockTags.create(new ResourceLocation("minecraft:beds"))))) {
-					valid_spawn = false;
-					{
-						Entity _ent = entity;
-						_ent.teleportTo((world.getLevelData().getXSpawn() + 0.5), (world.getLevelData().getYSpawn()), (world.getLevelData().getZSpawn() + 0.5));
-						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport((world.getLevelData().getXSpawn() + 0.5), (world.getLevelData().getYSpawn()), (world.getLevelData().getZSpawn() + 0.5), _ent.getYRot(), _ent.getXRot());
-					}
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, new BlockPos(world.getLevelData().getXSpawn(), world.getLevelData().getYSpawn(), world.getLevelData().getZSpawn()),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
-						} else {
-							_level.playLocalSound((world.getLevelData().getXSpawn()), (world.getLevelData().getYSpawn()), (world.getLevelData().getZSpawn()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")),
-									SoundSource.PLAYERS, 1, 1, false);
-						}
-					}
-				}
-			}
 			if (world
 					.getBlockState(BlockPos.containing(
 							(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
@@ -191,6 +67,146 @@ public class RecallPotionProcedureProcedure {
 					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
 						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
 								_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "title @s actionbar \"\u00A7cSpawn point is obstructed\"");
+					}
+				}
+			} else {
+				if ((entity.level.dimension()) == Level.NETHER) {
+					if ((world.getBlockState(BlockPos.containing(
+							(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+									? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level.getLevelData().getXSpawn())
+									: 0,
+							(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+									? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level.getLevelData().getYSpawn())
+									: 0,
+							(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+									? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level.getLevelData().getZSpawn())
+									: 0)))
+							.getBlock() == Blocks.RESPAWN_ANCHOR) {
+						if (((world.getBlockState(BlockPos.containing(
+								(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+										? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level.getLevelData().getXSpawn())
+										: 0,
+								(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+										? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level.getLevelData().getYSpawn())
+										: 0,
+								(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+										? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level.getLevelData().getZSpawn())
+										: 0)))
+								.getBlock().getStateDefinition().getProperty("charges") instanceof IntegerProperty _getip23
+										? (world.getBlockState(BlockPos.containing(
+												(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+														? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level.getLevelData().getXSpawn())
+														: 0,
+												(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+														? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level.getLevelData().getYSpawn())
+														: 0,
+												(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+														? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level.getLevelData().getZSpawn())
+														: 0)))
+												.getValue(_getip23)
+										: -1) > 0) {
+							{
+								int _value = (int) (((world.getBlockState(BlockPos.containing(
+										(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+												? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level.getLevelData().getXSpawn())
+												: 0,
+										(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+												? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level.getLevelData().getYSpawn())
+												: 0,
+										(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+												? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level.getLevelData().getZSpawn())
+												: 0)))
+										.getBlock().getStateDefinition().getProperty("charges") instanceof IntegerProperty _getip31
+												? (world.getBlockState(BlockPos.containing((entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+														? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level.getLevelData().getXSpawn())
+														: 0,
+														(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+																? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null)
+																		? _player.getRespawnPosition().getY()
+																		: _player.level.getLevelData().getYSpawn())
+																: 0,
+														(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+																? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null)
+																		? _player.getRespawnPosition().getZ()
+																		: _player.level.getLevelData().getZSpawn())
+																: 0)))
+														.getValue(_getip31)
+												: -1)
+										- 1);
+								BlockPos _pos = BlockPos.containing(
+										(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+												? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level.getLevelData().getXSpawn())
+												: 0,
+										(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+												? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level.getLevelData().getYSpawn())
+												: 0,
+										(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+												? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level.getLevelData().getZSpawn())
+												: 0);
+								BlockState _bs = world.getBlockState(_pos);
+								if (_bs.getBlock().getStateDefinition().getProperty("charges") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+									world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+							}
+						} else {
+							valid_spawn = false;
+							{
+								Entity _ent = entity;
+								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+									_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+											_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "title @s actionbar \"\u00A7cYour Respawn Anchor has no charges remaining\"");
+								}
+							}
+						}
+					} else {
+						valid_spawn = false;
+						{
+							Entity _ent = entity;
+							if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+										_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "title @s actionbar \"\u00A7cYour Respawn Anchor has been destroyed\"");
+							}
+						}
+					}
+				} else if ((entity.level.dimension()) == Level.OVERWORLD) {
+					if (!((world.getBlockState(BlockPos.containing(
+							(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+									? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level.getLevelData().getXSpawn())
+									: 0,
+							(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+									? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level.getLevelData().getYSpawn())
+									: 0,
+							(entity instanceof ServerPlayer _player && !_player.level.isClientSide())
+									? ((_player.getRespawnDimension().equals(_player.level.dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level.getLevelData().getZSpawn())
+									: 0)))
+							.is(BlockTags.create(new ResourceLocation("minecraft:beds"))))) {
+						valid_spawn = false;
+						if (world.getBlockState(new BlockPos(world.getLevelData().getXSpawn(), world.getLevelData().getYSpawn(), world.getLevelData().getZSpawn())).canOcclude()
+								&& world.getBlockState(BlockPos.containing(world.getLevelData().getXSpawn(), world.getLevelData().getYSpawn() + 1, world.getLevelData().getZSpawn())).canOcclude()) {
+							valid_spawn = false;
+							{
+								Entity _ent = entity;
+								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+									_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+											_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "title @s actionbar \"\u00A7cSpawn point is obstructed\"");
+								}
+							}
+						} else {
+							{
+								Entity _ent = entity;
+								_ent.teleportTo((world.getLevelData().getXSpawn() + 0.5), (world.getLevelData().getYSpawn()), (world.getLevelData().getZSpawn() + 0.5));
+								if (_ent instanceof ServerPlayer _serverPlayer)
+									_serverPlayer.connection.teleport((world.getLevelData().getXSpawn() + 0.5), (world.getLevelData().getYSpawn()), (world.getLevelData().getZSpawn() + 0.5), _ent.getYRot(), _ent.getXRot());
+							}
+							if (world instanceof Level _level) {
+								if (!_level.isClientSide()) {
+									_level.playSound(null, new BlockPos(world.getLevelData().getXSpawn(), world.getLevelData().getYSpawn(), world.getLevelData().getZSpawn()),
+											ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
+								} else {
+									_level.playLocalSound((world.getLevelData().getXSpawn()), (world.getLevelData().getYSpawn()), (world.getLevelData().getZSpawn()),
+											ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
+								}
+							}
+						}
 					}
 				}
 			}
