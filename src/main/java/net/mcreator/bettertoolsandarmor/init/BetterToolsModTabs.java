@@ -52,6 +52,8 @@ public class BetterToolsModTabs {
 					tabData.accept(BetterToolsModItems.BERRY_SMOOTHIE.get());
 					tabData.accept(BetterToolsModItems.ASCENSION_POTION.get());
 					tabData.accept(BetterToolsModItems.DESCENSION_POTION.get());
+					tabData.accept(BetterToolsModItems.RECALL_POTION.get());
+					tabData.accept(BetterToolsModItems.LOST_SOULS_POTION.get());
 				})
 
 		);

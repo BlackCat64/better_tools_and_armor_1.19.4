@@ -54,6 +54,7 @@ import net.mcreator.bettertoolsandarmor.item.RubyDaggerItem;
 import net.mcreator.bettertoolsandarmor.item.RubyArmorItem;
 import net.mcreator.bettertoolsandarmor.item.RickRollDiscItem;
 import net.mcreator.bettertoolsandarmor.item.ReflectCharmItem;
+import net.mcreator.bettertoolsandarmor.item.RecallPotionItem;
 import net.mcreator.bettertoolsandarmor.item.RandomGemItem;
 import net.mcreator.bettertoolsandarmor.item.RabbitBootsItem;
 import net.mcreator.bettertoolsandarmor.item.PoisonCharmItem;
@@ -77,6 +78,7 @@ import net.mcreator.bettertoolsandarmor.item.MagmaBodyItem;
 import net.mcreator.bettertoolsandarmor.item.MagicRingItem;
 import net.mcreator.bettertoolsandarmor.item.MagicCrystalItem;
 import net.mcreator.bettertoolsandarmor.item.LuckyCharmItem;
+import net.mcreator.bettertoolsandarmor.item.LostSoulsPotionItem;
 import net.mcreator.bettertoolsandarmor.item.IronSugarBootsItem;
 import net.mcreator.bettertoolsandarmor.item.IronRabbitBootsItem;
 import net.mcreator.bettertoolsandarmor.item.IronPhantomBootsItem;
@@ -763,6 +765,8 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> FLINT_BLOCKWOOD = block(BetterToolsModBlocks.FLINT_BLOCKWOOD);
 	public static final RegistryObject<Item> CRYSTALLITE_CLUSTER_AIR = block(BetterToolsModBlocks.CRYSTALLITE_CLUSTER_AIR);
 	public static final RegistryObject<Item> CLIMBABLE_WALL = block(BetterToolsModBlocks.CLIMBABLE_WALL);
+	public static final RegistryObject<Item> RECALL_POTION = REGISTRY.register("recall_potion", () -> new RecallPotionItem());
+	public static final RegistryObject<Item> LOST_SOULS_POTION = REGISTRY.register("lost_souls_potion", () -> new LostSoulsPotionItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

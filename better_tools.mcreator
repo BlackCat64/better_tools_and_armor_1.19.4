@@ -29078,6 +29078,64 @@
         ]
       },
       "path": "~/Advancements"
+    },
+    {
+      "name": "RecallPotion",
+      "type": "item",
+      "sortid": 1686,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recall_potion",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/recall_potion.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/RecallPotionItem.java"
+        ]
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "RecallPotionRecipe",
+      "type": "recipe",
+      "sortid": 1687,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recall_potion_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/recipes/brewing/RecallPotionRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "LostSoulsPotion",
+      "type": "item",
+      "sortid": 1688,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_souls_potion",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/lost_souls_potion.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/LostSoulsPotionItem.java"
+        ]
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "LostSoulsPotionRecipe",
+      "type": "recipe",
+      "sortid": 1689,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_souls_potion_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/recipes/brewing/LostSoulsPotionRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Consumables"
     }
   ],
   "variable_elements": [
@@ -29623,6 +29681,7 @@
       "block.better_tools.light_polished_amethyst_block": "Light Metallic Amethyst Block",
       "item_group.better_tools.blocks_tab": "BT+A - Building Blocks",
       "item.copper_tools_and_armor.copper_axe": "Copper Axe",
+      "item.better_tools.recall_potion": "Recall Potion",
       "item.better_tools.topaz_shovel": "Topaz Shovel",
       "advancements.sugar_clump_adv.title": "Sugar Rush",
       "advancements.end_titanium_tools_adv.descr": "Smith a full set of Ender Titanium tools",
@@ -30149,6 +30208,7 @@
       "item.better_tools.crystallite_shovel_gold": "Crystallite Shovel",
       "item.better_tools.crystallite_axe_nether_diamond": "Crystallite Axe",
       "item.better_tools.electric_staff": "Lightning Staff",
+      "item.better_tools.lost_souls_potion": "Potion of Lost Souls",
       "item.better_tools.blue_slimeball": "Blue Slimeball",
       "item.better_tools.crystallite_dagger_topaz": "Crystallite Dagger",
       "block.better_tools.nether_diamond_block": "Nether Diamond Block",
