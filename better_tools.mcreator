@@ -29160,6 +29160,62 @@
         ]
       },
       "path": "~/Consumables"
+    },
+    {
+      "name": "LostSoulsPotionProcedure",
+      "type": "procedure",
+      "sortid": 1691,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_souls_potion_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/LostSoulsPotionProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "DeathLocationTracker",
+      "type": "procedure",
+      "sortid": 1692,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_location_tracker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DeathLocationTrackerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Consumables"
     }
   ],
   "variable_elements": [
@@ -29341,6 +29397,24 @@
       "name": "ender_titanium_boots_cooldown",
       "type": "number",
       "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "last_death_x",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "last_death_y",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "last_death_z",
+      "type": "number",
+      "scope": "player_persistent",
       "value": "0"
     }
   ],

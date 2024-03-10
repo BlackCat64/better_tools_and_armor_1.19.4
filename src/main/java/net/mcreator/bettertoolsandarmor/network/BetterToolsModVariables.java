@@ -84,6 +84,9 @@ public class BetterToolsModVariables {
 			clone.attack_damage_modifier = original.attack_damage_modifier;
 			clone.knockback_resistance = original.knockback_resistance;
 			clone.knockback_resistance_modifier = original.knockback_resistance_modifier;
+			clone.last_death_x = original.last_death_x;
+			clone.last_death_y = original.last_death_y;
+			clone.last_death_z = original.last_death_z;
 			if (!event.isWasDeath()) {
 				clone.time_since_last_hurt = original.time_since_last_hurt;
 				clone.slow_falling_cooldown = original.slow_falling_cooldown;
@@ -167,6 +170,9 @@ public class BetterToolsModVariables {
 		public ItemStack smelting_touch_item_to_smelt = ItemStack.EMPTY;
 		public ItemStack smelting_touch_item_to_drop = ItemStack.EMPTY;
 		public double ender_titanium_boots_cooldown = 0;
+		public double last_death_x = 0;
+		public double last_death_y = 0;
+		public double last_death_z = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -204,6 +210,9 @@ public class BetterToolsModVariables {
 			nbt.put("smelting_touch_item_to_smelt", smelting_touch_item_to_smelt.save(new CompoundTag()));
 			nbt.put("smelting_touch_item_to_drop", smelting_touch_item_to_drop.save(new CompoundTag()));
 			nbt.putDouble("ender_titanium_boots_cooldown", ender_titanium_boots_cooldown);
+			nbt.putDouble("last_death_x", last_death_x);
+			nbt.putDouble("last_death_y", last_death_y);
+			nbt.putDouble("last_death_z", last_death_z);
 			return nbt;
 		}
 
@@ -238,6 +247,9 @@ public class BetterToolsModVariables {
 			smelting_touch_item_to_smelt = ItemStack.of(nbt.getCompound("smelting_touch_item_to_smelt"));
 			smelting_touch_item_to_drop = ItemStack.of(nbt.getCompound("smelting_touch_item_to_drop"));
 			ender_titanium_boots_cooldown = nbt.getDouble("ender_titanium_boots_cooldown");
+			last_death_x = nbt.getDouble("last_death_x");
+			last_death_y = nbt.getDouble("last_death_y");
+			last_death_z = nbt.getDouble("last_death_z");
 		}
 	}
 
@@ -291,6 +303,9 @@ public class BetterToolsModVariables {
 					variables.smelting_touch_item_to_smelt = message.data.smelting_touch_item_to_smelt;
 					variables.smelting_touch_item_to_drop = message.data.smelting_touch_item_to_drop;
 					variables.ender_titanium_boots_cooldown = message.data.ender_titanium_boots_cooldown;
+					variables.last_death_x = message.data.last_death_x;
+					variables.last_death_y = message.data.last_death_y;
+					variables.last_death_z = message.data.last_death_z;
 				}
 			});
 			context.setPacketHandled(true);
