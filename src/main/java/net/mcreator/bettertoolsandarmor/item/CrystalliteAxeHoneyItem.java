@@ -49,7 +49,7 @@ public class CrystalliteAxeHoneyItem extends AxeItem {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
 		list.add(Component.literal("\u00A77Abilities:"));
-		list.add(Component.literal("\u00A76Mining the same block many times in a row causes it to break instantly"));
 		list.add(Component.literal("\u00A76Swarm - Consecutive hits deal more damage"));
+		list.add(Component.literal("\u00A76Mining the same block many times in a row causes it to break instantly"));
 	}
 }

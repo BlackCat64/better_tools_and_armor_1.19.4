@@ -48,7 +48,7 @@ public class NetherDiamondAxeItem extends AxeItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		NetherDiamondSwordProcedureProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		NetherDiamondSwordProcedureProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity, sourceentity);
 		return retval;
 	}
 
