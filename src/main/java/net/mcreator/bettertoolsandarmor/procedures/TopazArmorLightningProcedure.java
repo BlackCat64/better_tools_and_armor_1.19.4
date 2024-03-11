@@ -93,6 +93,9 @@ public class TopazArmorLightningProcedure {
 				chance = chance * 2;
 			}
 		}
+		if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
+			chance = chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
+		}
 		if (Math.random() < chance) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new LightningBolt(EntityType.LIGHTNING_BOLT, _level);
