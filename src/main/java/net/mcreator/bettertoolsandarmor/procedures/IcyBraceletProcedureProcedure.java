@@ -55,6 +55,9 @@ public class IcyBraceletProcedureProcedure {
 					time = 200;
 					chance = 0.2;
 				}
+				if (entity instanceof LivingEntity && ((LivingEntity) immediatesourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
+					chance = chance + ((LivingEntity) immediatesourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
+				}
 				if (Math.random() < chance) {
 					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 						_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), (int) time, 0, false, false));

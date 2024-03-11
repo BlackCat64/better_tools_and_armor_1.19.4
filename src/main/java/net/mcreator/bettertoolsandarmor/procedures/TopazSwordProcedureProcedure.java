@@ -26,7 +26,7 @@ public class TopazSwordProcedureProcedure {
 			chance = 0.1;
 		}
 		if (entity instanceof LivingEntity && ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
-			chance = chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
+			chance = chance + ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
 		}
 		if (Math.random() < chance) {
 			if (world instanceof ServerLevel _level) {
