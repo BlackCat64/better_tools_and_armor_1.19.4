@@ -51,11 +51,11 @@ public class EndTitaniumChestplateProcedureProcedure {
 				chance = chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
 			}
 			if (!(sourceentity instanceof Player) && Math.random() <= chance) {
-				for (int index0 = 0; index0 < 16; index0++) {
-					rndx = sourceentity.getX() - 8 + Mth.nextInt(RandomSource.create(), 0, 16);
-					rndy = sourceentity.getY() - 8 + Mth.nextInt(RandomSource.create(), 0, 16);
-					rndz = sourceentity.getZ() - 8 + Mth.nextInt(RandomSource.create(), 0, 16);
-					for (int index1 = 0; index1 < 20; index1++) {
+				for (int index0 = 0; index0 < 40; index0++) {
+					rndx = sourceentity.getX() - 20 + Mth.nextInt(RandomSource.create(), 0, 40);
+					rndy = Math.max(-60, sourceentity.getY() - 20) + Mth.nextInt(RandomSource.create(), 0, 40);
+					rndz = sourceentity.getZ() - 20 + Mth.nextInt(RandomSource.create(), 0, 40);
+					for (int index1 = 0; index1 < 40; index1++) {
 						if (!(world.getBlockState(BlockPos.containing(rndx, rndy - 1, rndz)).canOcclude() && !world.getBlockState(BlockPos.containing(rndx, rndy, rndz)).canOcclude()
 								&& !world.getBlockState(BlockPos.containing(rndx, rndy + 1, rndz)).canOcclude())) {
 							rndy = rndy - 1;
