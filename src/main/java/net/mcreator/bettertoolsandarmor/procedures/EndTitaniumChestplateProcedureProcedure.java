@@ -40,12 +40,17 @@ public class EndTitaniumChestplateProcedureProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
+		boolean valid = false;
 		double rndx = 0;
 		double rndz = 0;
 		double rndy = 0;
-		boolean valid = false;
+		double chance = 0;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_CHESTPLATE.get()) {
-			if (!(sourceentity instanceof Player) && Math.random() <= 0.2) {
+			chance = 0.2;
+			if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
+				chance = chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
+			}
+			if (!(sourceentity instanceof Player) && Math.random() <= chance) {
 				for (int index0 = 0; index0 < 16; index0++) {
 					rndx = sourceentity.getX() - 8 + Mth.nextInt(RandomSource.create(), 0, 16);
 					rndy = sourceentity.getY() - 8 + Mth.nextInt(RandomSource.create(), 0, 16);
