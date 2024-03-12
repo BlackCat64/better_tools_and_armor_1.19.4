@@ -29232,6 +29232,30 @@
         ]
       },
       "path": "~/Consumables"
+    },
+    {
+      "name": "RecallPotionInfo",
+      "type": "jeiinformation",
+      "sortid": 1693,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recall_potion_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "LostSoulsPotionInfo",
+      "type": "jeiinformation",
+      "sortid": 1694,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_souls_potion_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Consumables"
     }
   ],
   "variable_elements": [
@@ -29586,6 +29610,7 @@
       "item.better_tools.crystallite_sword": "Crystallite Sword",
       "item.better_tools.fire_staff": "Fire Staff",
       "item.better_tools.crystallite_axe_topaz": "Crystallite Axe",
+      "jei.better_tools.lost_souls_potion_info": "Teleports you to your last death location, if it is in the same dimension.\nIt will fail if you died in lava, or inside a solid block.\nIf you died in the void, you will be placed on a small floating platform.",
       "item.better_tools.guardian_necklace": "§3Guardian Necklace",
       "item.better_tools.crystallite_pickaxe": "Crystallite Pickaxe",
       "block.better_tools.light_polished_iron_block": "Polished Iron Block",
@@ -29764,7 +29789,7 @@
       "item.better_tools.crying_obsidian_helmet": "Crying Obsidian Helmet",
       "item.better_tools.crystallite_sword_amethyst": "Crystallite Sword",
       "item.better_tools.rick_roll_disc": "Music Disc",
-      "jei.better_tools.improved_luck_info": "Four Leaf Clovers can be found in Treehouse chest loot, and they are used to brew Luck Potions.\nFour Leaf Clovers can be bone-mealed to grow more of them.\n\n\n§lImproved Luck Effect§r\n\nHaving an increased Luck value gives a chance for ores to drop double!\nThe chance is +5% per +1 Luck",
+      "jei.better_tools.improved_luck_info": "Four Leaf Clovers can be found in Treehouse chest loot, and they are used to brew Luck Potions.\nFour Leaf Clovers can be bone-mealed to grow more of them.\n\n\n§lImproved Luck Effect§r\nHaving an increased Luck value gives a chance for ores to drop double!\nIt also increases the chance for additional effects of items to activate.\nThe chance increase is +5% per +1 Luck",
       "item.better_tools.crystallite_dagger_redstone": "Crystallite Dagger",
       "block.better_tools.sapphire_ore": "Sapphire Ore",
       "gui.better_tools.attributes_viewer.label_009": "00",
@@ -30240,6 +30265,7 @@
       "advancements.golden_potato_adv.descr": "Eat a Golden Potato",
       "block.better_tools.topaz_ore": "Topaz Ore",
       "block.better_tools.polished_gold_slab": "Polished Gold Slab",
+      "jei.better_tools.recall_potion_info": "Teleports you to your current spawn point, if it is in the same dimension.\nIn the Overworld, if it is obstructed, you will be placed at the world spawn instead.\nTo use in the Nether, you must have a Respawn Anchor with charges remaining.",
       "block.better_tools.light_polished_iron_slab": "Polished Iron Slab",
       "jei.better_tools.elemental_crystals_info": "§lElemental Crystals§r\n\nUse in a Smithing Table to upgrade Crystallite equipment with different elemental effects!\nThey can also be used to smith or craft Crystallite Charms.",
       "item.better_tools.nature_ring": "§aNature Ring",

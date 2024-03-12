@@ -5,6 +5,9 @@
     "items": [
       {
         "value": "CUSTOM:FourLeafClover"
+      },
+      {
+        "value": "CUSTOM:LuckyCharm"
       }
     ],
     "information": [
@@ -13,9 +16,9 @@
       "",
       "",
       "§lImproved Luck Effect§r",
-      "",
       "Having an increased Luck value gives a chance for ores to drop double!",
-      "The chance is +5% per +1 Luck"
+      "It also increases the chance for additional effects of items to activate.",
+      "The chance increase is +5% per +1 Luck"
     ]
   }
 }

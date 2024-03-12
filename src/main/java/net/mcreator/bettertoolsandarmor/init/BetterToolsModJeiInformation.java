@@ -148,10 +148,12 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.NETHER_DIAMOND.get()), new ItemStack(BetterToolsModItems.RUBY.get()), new ItemStack(BetterToolsModItems.END_TITANIUM_INGOT.get()),
 				new ItemStack(BetterToolsModItems.SAPPHIRE.get()), new ItemStack(BetterToolsModItems.TOPAZ.get()), new ItemStack(Items.LAPIS_LAZULI), new ItemStack(Items.QUARTZ), new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()),
 				new ItemStack(Items.AMETHYST_SHARD), new ItemStack(Items.COPPER_INGOT)), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.beacon_payment_items_info"));
-		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.FOUR_LEAF_CLOVER.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.improved_luck_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.FOUR_LEAF_CLOVER.get()), new ItemStack(BetterToolsModItems.LUCKY_CHARM.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.improved_luck_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.BLUE_MUSHROOM.get()), new ItemStack(BetterToolsModBlocks.BLUE_MUSHROOM_BLOCK.get())), VanillaTypes.ITEM_STACK,
 				Component.translatable("jei.better_tools.blue_mushroom_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.PURPLE_MUSHROOM.get()), new ItemStack(BetterToolsModBlocks.PURPLE_MUSHROOM_BLOCK.get())), VanillaTypes.ITEM_STACK,
 				Component.translatable("jei.better_tools.purple_mushroom_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.RECALL_POTION.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.recall_potion_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.LOST_SOULS_POTION.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.lost_souls_potion_info"));
 	}
 }
