@@ -48,10 +48,15 @@ public class CrystalliteChestplateSculkSonicBoomProcedure {
 		double change_x = 0;
 		double change_y = 0;
 		double change_z = 0;
+		double chance = 0;
 		if (!BetterToolsModVariables.being_damaged_flag) {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()) {
 				if (!(sourceentity instanceof Player)) {
-					if (Math.random() < 0.2) {
+					chance = 0.2;
+					if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
+						chance = chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
+					}
+					if (Math.random() < chance) {
 						change_x = sourceentity.getX() - entity.getX();
 						change_y = sourceentity.getY() - entity.getY();
 						change_z = sourceentity.getZ() - entity.getZ();
