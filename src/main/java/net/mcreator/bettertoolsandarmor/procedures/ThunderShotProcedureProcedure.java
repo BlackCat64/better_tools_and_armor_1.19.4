@@ -50,12 +50,15 @@ public class ThunderShotProcedureProcedure {
 			LightningChance = 0;
 			LightningChance = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(BetterToolsModEnchantments.THUNDER_SHOT.get()) * 0.1;
 			if (sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ELECTRIC_NECKLACE.get(), lv).isPresent() : false) {
-				if (entity instanceof LivingEntity && ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
-					LightningChance = LightningChance + 0.1 + ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
-				}
+				LightningChance = LightningChance + 0.1;
 			}
 			if (world.getLevelData().isThundering() == true) {
 				LightningChance = LightningChance * 2;
+			}
+			if (LightningChance > 0) {
+				if (entity instanceof LivingEntity && ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
+					LightningChance = LightningChance + ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
+				}
 			}
 			if (Math.random() < LightningChance) {
 				if (world instanceof ServerLevel _level) {
