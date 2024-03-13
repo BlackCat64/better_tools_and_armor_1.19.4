@@ -10,9 +10,6 @@
     "textureLeggings": "netherdiamond_leggings",
     "enableBoots": true,
     "textureBoots": "netherdiamond_boots",
-    "onHelmetTick": {
-      "name": "NetherDiamondArmorProcedure"
-    },
     "creativeTab": {
       "value": "CUSTOM:ToolsAndArmorTab"
     },
@@ -69,6 +66,18 @@
     "bodyImmuneToFire": true,
     "leggingsImmuneToFire": true,
     "bootsImmuneToFire": true,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 33,
     "damageValueHelmet": 3,
     "damageValueBody": 8,

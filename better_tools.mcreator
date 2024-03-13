@@ -1869,20 +1869,6 @@
       "path": "~/Advancements"
     },
     {
-      "name": "NetherDiamondArmorAdv",
-      "type": "achievement",
-      "sortid": 470,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nether_diamond_armor_adv",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/advancements/nether_diamond_armor_adv.json"
-        ]
-      },
-      "path": "~/Advancements"
-    },
-    {
       "name": "BattleAxeAdv",
       "type": "achievement",
       "sortid": 471,
@@ -2018,26 +2004,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/NetherDiamondToolsProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Advancements"
-    },
-    {
-      "name": "NetherDiamondArmorProcedure",
-      "type": "procedure",
-      "sortid": 481,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nether_diamond_armor_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/NetherDiamondArmorProcedureProcedure.java"
         ],
         "dependencies": [
           {
@@ -30055,7 +30021,6 @@
       "block.better_tools.light_polished_coal_slab": "Light Metallic Coal Slab",
       "item.copper_tools_and_armor.nether_diamond": "Nether Diamond",
       "item.better_tools.gilded_bracelet": "§6Gilded Bracelet",
-      "advancements.nether_diamond_armor_adv.descr": "Wear a full set of Nether Diamond armor",
       "item.better_tools.crystallite_armor_redstone_boots": "Crystallite Boots",
       "item.better_tools.crystallite_armor_ruby_leggings": "Crystallite Leggings",
       "item.better_tools.crystallite_hoe_netherite": "Crystallite Hoe",
@@ -30343,7 +30308,6 @@
       "death.attack.freeze_shatter_damage": "%1$s was shattered to pieces by %2$s",
       "jei.better_tools.honey_crystallite_info": "§lCrystallite Upgrades: §6Honey§r\n\nTheme:\nCombos and Bees",
       "block.better_tools.light_polished_nether_diamond_slab": "Light Metallic Nether Diamond Slab",
-      "advancements.nether_diamond_armor_adv.title": "Cover me in Nether Diamonds",
       "jei.better_tools.sapphire_crystallite_info": "§lCrystallite Upgrades: §bSapphire§r\n\nTheme:\nIce",
       "item.better_tools.guardian_spike": "Guardian Spike",
       "item.better_tools.nether_diamond_leggings": "Nether Diamond Leggings",
