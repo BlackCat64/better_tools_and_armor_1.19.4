@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Lucky Leprechaun",
-    "achievementDescription": "Drink a Potion of Luck",
+    "achievementDescription": "Double the drops from an ore using the Luck effect",
     "achievementIcon": {
       "value": "CUSTOM:FourLeafClover"
     },

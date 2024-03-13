@@ -22,10 +22,13 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
@@ -86,6 +89,14 @@ public class CrystallitePickaxeTopazDoubleDropsProcedure {
 											if (((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() > 0) {
 												if (world instanceof ServerLevel _level)
 													_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, (x + 0.5), (y + 0.5), (z + 0.5), 8, 0.5, 0.5, 0.5, 0.1);
+												if (entity instanceof ServerPlayer _player) {
+													Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:luck_adv"));
+													AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+													if (!_ap.isDone()) {
+														for (String criteria : _ap.getRemainingCriteria())
+															_player.getAdvancements().award(_adv, criteria);
+													}
+												}
 											}
 											if (world instanceof Level _level) {
 												if (!_level.isClientSide()) {
