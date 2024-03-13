@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Master of the Deep Dark",
+    "achievementName": "Master of the Deep",
     "achievementDescription": "Kill a Warden",
     "achievementIcon": {
       "value": "Items.ECHO_SHARD"

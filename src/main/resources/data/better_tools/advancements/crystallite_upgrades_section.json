@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
+    "background": "better_tools:textures/screens/crystallite_block.png",
     "icon": {
       "item": "better_tools:crystallite_gem"
     },
