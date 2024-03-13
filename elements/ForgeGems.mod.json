@@ -20,37 +20,7 @@
         "value": "CUSTOM:Topaz"
       },
       {
-        "value": "CUSTOM:FireCore"
-      },
-      {
-        "value": "CUSTOM:IceCore"
-      },
-      {
-        "value": "CUSTOM:ElectricCore"
-      },
-      {
         "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "CUSTOM:ToughCrystal"
-      },
-      {
-        "value": "CUSTOM:GildedCrystal"
-      },
-      {
-        "value": "CUSTOM:MagicCrystal"
-      },
-      {
-        "value": "CUSTOM:HealCrystal"
-      },
-      {
-        "value": "CUSTOM:DiamondHardCrystal"
-      },
-      {
-        "value": "CUSTOM:SpikedCrystal"
-      },
-      {
-        "value": "CUSTOM:SpeedyCrystal"
       }
     ],
     "blocks": [],
