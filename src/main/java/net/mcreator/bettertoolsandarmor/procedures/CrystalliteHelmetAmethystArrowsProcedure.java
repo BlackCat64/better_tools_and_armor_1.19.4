@@ -25,9 +25,12 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -102,6 +105,16 @@ public class CrystalliteHelmetAmethystArrowsProcedure {
 												speed = distance / 5;
 											} else {
 												speed = 2;
+											}
+											if (distance >= 30) {
+												if (entity instanceof ServerPlayer _player) {
+													Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:aimbot_adv"));
+													AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+													if (!_ap.isDone()) {
+														for (String criteria : _ap.getRemainingCriteria())
+															_player.getAdvancements().award(_adv, criteria);
+													}
+												}
 											}
 											if (event != null && event.isCancelable()) {
 												event.setCanceled(true);
