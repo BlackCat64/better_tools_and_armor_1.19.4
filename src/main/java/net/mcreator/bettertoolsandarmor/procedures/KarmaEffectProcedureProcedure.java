@@ -44,6 +44,14 @@ public class KarmaEffectProcedureProcedure {
 		if (!BetterToolsModVariables.being_damaged_flag) {
 			if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(BetterToolsModMobEffects.KARMA_POTION.get())) {
 				damage = ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(BetterToolsModMobEffects.KARMA_POTION.get()) ? _livEnt.getEffect(BetterToolsModMobEffects.KARMA_POTION.get()).getAmplifier() : 0) + 1) * 2;
+				if (entity instanceof ServerPlayer _player) {
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:karma_adv"));
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
 			}
 			if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.POISON_CHARM.get(), lv).isPresent() : false) {
 				damage = damage + 1;
@@ -53,14 +61,6 @@ public class KarmaEffectProcedureProcedure {
 				immediatesourceentity.hurt(
 						new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:karma_damage"))), entity, entity), (float) damage);
 				BetterToolsModVariables.being_damaged_flag = false;
-				if (entity instanceof ServerPlayer _player) {
-					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:karma_adv"));
-					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-					if (!_ap.isDone()) {
-						for (String criteria : _ap.getRemainingCriteria())
-							_player.getAdvancements().award(_adv, criteria);
-					}
-				}
 			}
 		}
 	}
