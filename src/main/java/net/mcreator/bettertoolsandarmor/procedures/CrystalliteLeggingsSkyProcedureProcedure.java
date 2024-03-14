@@ -11,10 +11,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -43,14 +39,6 @@ public class CrystalliteLeggingsSkyProcedureProcedure {
 					.hasModifier((new AttributeModifier(UUID.fromString("eab4ed7b-1527-4afa-82ae-7e1dc9f37c7d"), "crystallite_leggings_sky", (-0.04), AttributeModifier.Operation.ADDITION)))))
 				((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get())
 						.addTransientModifier((new AttributeModifier(UUID.fromString("eab4ed7b-1527-4afa-82ae-7e1dc9f37c7d"), "crystallite_leggings_sky", (-0.04), AttributeModifier.Operation.ADDITION)));
-			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:low_gravity_adv"));
-				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-				if (!_ap.isDone()) {
-					for (String criteria : _ap.getRemainingCriteria())
-						_player.getAdvancements().award(_adv, criteria);
-				}
-			}
 		} else {
 			((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get()).removeModifier(UUID.fromString("eab4ed7b-1527-4afa-82ae-7e1dc9f37c7d"));
 		}
