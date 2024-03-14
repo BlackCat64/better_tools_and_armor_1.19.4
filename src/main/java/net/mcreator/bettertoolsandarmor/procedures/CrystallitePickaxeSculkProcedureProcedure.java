@@ -61,13 +61,6 @@ public class CrystallitePickaxeSculkProcedureProcedure {
 										}
 									} else if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, itemstack) != 0) {
 										world.destroyBlock(BlockPos.containing(x + x_offset, y + y_offset, z + z_offset), false);
-										{
-											double _setval = (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).blocks_broken_with_sculk_crystallite_pickaxe + 1;
-											entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-												capability.blocks_broken_with_sculk_crystallite_pickaxe = _setval;
-												capability.syncPlayerVariables(entity);
-											});
-										}
 									} else {
 										{
 											BlockPos _pos = BlockPos.containing(x + x_offset, y + y_offset, z + z_offset);
@@ -82,6 +75,13 @@ public class CrystallitePickaxeSculkProcedureProcedure {
 											_ist.setDamageValue(0);
 										}
 									}
+									{
+										double _setval = (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).blocks_broken_with_sculk_crystallite_pickaxe + 1;
+										entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+											capability.blocks_broken_with_sculk_crystallite_pickaxe = _setval;
+											capability.syncPlayerVariables(entity);
+										});
+									}
 								}
 							}
 							z_offset = z_offset + 1;
@@ -90,16 +90,18 @@ public class CrystallitePickaxeSculkProcedureProcedure {
 					}
 					x_offset = x_offset + 1;
 				}
-				if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).blocks_broken_with_sculk_crystallite_pickaxe > 1) {
-					BetterToolsMod.queueServerWork(2, () -> {
-						(((Entity) world.getEntitiesOfClass(ItemEntity.class, AABB.ofSize(new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), 1, 1, 1), e -> true).stream().sorted(new Object() {
-							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-							}
-						}.compareDistOf((x + 0.5), (y + 0.5), (z + 0.5))).findFirst().orElse(null)) instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY)
-								.setCount((int) Math.floor((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).blocks_broken_with_sculk_crystallite_pickaxe
-										* (itemstack.getEnchantmentLevel(Enchantments.BLOCK_FORTUNE) * Math.random() + 1)));
-					});
+				if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, itemstack) != 0) {
+					if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).blocks_broken_with_sculk_crystallite_pickaxe > 1) {
+						BetterToolsMod.queueServerWork(2, () -> {
+							(((Entity) world.getEntitiesOfClass(ItemEntity.class, AABB.ofSize(new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), 1, 1, 1), e -> true).stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+								}
+							}.compareDistOf((x + 0.5), (y + 0.5), (z + 0.5))).findFirst().orElse(null)) instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY)
+									.setCount((int) Math.floor((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).blocks_broken_with_sculk_crystallite_pickaxe
+											* (itemstack.getEnchantmentLevel(Enchantments.BLOCK_FORTUNE) * Math.random() + 1)));
+						});
+					}
 				}
 				if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).blocks_broken_with_sculk_crystallite_pickaxe >= 16) {
 					if (entity instanceof ServerPlayer _player) {

@@ -130,7 +130,7 @@
   "item.minecraft.tipped_arrow.effect.criticality_potion_long": "Arrow of Criticality",
   "block.better_tools.light_polished_nether_diamond_trapdoor": "Light Metallic Nether Diamond Trapdoor",
   "item.better_tools.nether_diamond_shovel": "Nether Diamond Shovel",
-  "advancements.deal_dmg_through_armor_adv.descr": "Use a sword to deal damage which bypasses an enemy\u0027s armor protection",
+  "advancements.deal_dmg_through_armor_adv.descr": "Deal melee damage which bypasses an enemy\u0027s armor protection",
   "item.better_tools.crystallite_hoe_amethyst": "Crystallite Hoe",
   "advancements.night_phantom_adv.descr": "Wear a Golden Carrot Hat and Phantom Boots at the same time",
   "death.attack.magic_weapon_damage.player": "%1$s was killed whilst trying to escape %2$s",

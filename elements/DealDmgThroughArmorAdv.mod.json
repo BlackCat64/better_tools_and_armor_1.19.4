@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Mold Breaker",
-    "achievementDescription": "Use a sword to deal damage which bypasses an enemy's armor protection",
+    "achievementDescription": "Deal melee damage which bypasses an enemy's armor protection",
     "achievementIcon": {
       "value": "CUSTOM:CrystalliteSwordLapis"
     },

@@ -61,6 +61,8 @@ public class CrystalliteSwordLapisMagicProcedureProcedure {
 						_level.sendParticles(ParticleTypes.CRIT, (entity.getX()), (entity.getY() + 1), (entity.getZ()), 10, 0.5, 1, 0.5, 0.05);
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.DAMAGE_INDICATOR, (entity.getX()), (entity.getY() + 1), (entity.getZ()), (int) (amount / 2), 0.4, 0.6, 0.4, 0.025);
+				}
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) > 0) {
 					if (sourceentity instanceof ServerPlayer _player) {
 						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:deal_dmg_through_armor_adv"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
