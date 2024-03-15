@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "It's super effective!",
-    "achievementDescription": "Shock a water mob with an Electric Staff",
+    "achievementDescription": "Shock a water mob with an Lightning Staff",
     "achievementIcon": {
       "value": "CUSTOM:ElectricStaff"
     },

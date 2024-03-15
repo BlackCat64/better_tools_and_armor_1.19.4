@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Shocking Staff!",
-    "achievementDescription": "Shock a mob with an Electric Staff",
+    "achievementDescription": "Shock a mob with an Lightning Staff",
     "achievementIcon": {
       "value": "CUSTOM:ElectricStaff"
     },
