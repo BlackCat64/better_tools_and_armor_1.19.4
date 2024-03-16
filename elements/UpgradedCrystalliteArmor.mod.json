@@ -183,6 +183,18 @@
       },
       {
         "value": "CUSTOM:CrystalliteArmorPrismarine.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorHoney.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorHoney.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorHoney.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorHoney.boots"
       }
     ],
     "blocks": [],

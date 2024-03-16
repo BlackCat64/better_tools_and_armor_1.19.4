@@ -273,6 +273,24 @@
       },
       {
         "value": "CUSTOM:CrystalliteDaggerPrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordHoney"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerHoney"
       }
     ],
     "blocks": [],

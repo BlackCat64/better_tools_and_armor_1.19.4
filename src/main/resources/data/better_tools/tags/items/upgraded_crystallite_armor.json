@@ -60,6 +60,10 @@
     "better_tools:crystallite_armor_prismarine_helmet",
     "better_tools:crystallite_armor_prismarine_chestplate",
     "better_tools:crystallite_armor_prismarine_leggings",
-    "better_tools:crystallite_armor_prismarine_boots"
+    "better_tools:crystallite_armor_prismarine_boots",
+    "better_tools:crystallite_armor_honey_helmet",
+    "better_tools:crystallite_armor_honey_chestplate",
+    "better_tools:crystallite_armor_honey_leggings",
+    "better_tools:crystallite_armor_honey_boots"
   ]
 }
