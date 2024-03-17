@@ -6,12 +6,14 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.ForgeMod;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
@@ -25,18 +27,18 @@ public class CrystalliteBootsSkyFallTimerProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player.getY(), event.player);
+			execute(event, event.player.level, event.player.getY(), event.player);
 		}
 	}
 
-	public static void execute(double y, Entity entity) {
-		execute(null, y, entity);
+	public static void execute(LevelAccessor world, double y, Entity entity) {
+		execute(null, world, y, entity);
 	}
 
-	private static void execute(@Nullable Event event, double y, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double y, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getDeltaMovement().y() >= 0) {
+		if (entity.getDeltaMovement().y() >= 0 || entity.isOnGround()) {
 			{
 				double _setval = y;
 				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -47,7 +49,10 @@ public class CrystalliteBootsSkyFallTimerProcedure {
 		} else {
 			if (!entity.isOnGround()) {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SKY_BOOTS.get()) {
-					if (Math.abs(y - (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).fall_start_y) < 7.5) {
+					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList().broadcastSystemMessage(
+								Component.literal(("" + Math.abs(y - (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).fall_start_y))), false);
+					if (Math.abs(y - (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).fall_start_y) < 5) {
 						entity.fallDistance = (float) 0.1;
 					}
 					if (((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get()).getValue() < ((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get()).getBaseValue()) {

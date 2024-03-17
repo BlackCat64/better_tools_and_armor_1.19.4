@@ -22684,6 +22684,10 @@
           {
             "name": "y",
             "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
