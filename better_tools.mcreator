@@ -22668,6 +22668,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "y",
+            "type": "number"
           }
         ]
       },
@@ -29876,6 +29880,12 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "fall_start_y",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [

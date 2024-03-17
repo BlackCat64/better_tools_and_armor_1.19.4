@@ -43,7 +43,7 @@ public class FizzyDrinksAdvProcedureProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_non_carbonated_food_eaten >= 400) {
+			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_non_carbonated_food_eaten >= 24000) {
 				if (entity instanceof ServerPlayer _player) {
 					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:fizzy_drinks_adv"));
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
