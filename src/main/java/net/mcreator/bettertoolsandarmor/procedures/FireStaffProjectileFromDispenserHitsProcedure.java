@@ -4,14 +4,15 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 public class FireStaffProjectileFromDispenserHitsProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		if (entity == null)
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity) {
+		if (entity == null || immediatesourceentity == null)
 			return;
 		double fire_time = 0;
 		boolean play_sfx = false;
@@ -36,6 +37,10 @@ public class FireStaffProjectileFromDispenserHitsProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.fire.extinguish")), SoundSource.NEUTRAL, (float) 0.75, 1, false);
 				}
 			}
+		}
+		if (entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) {
+			if (!immediatesourceentity.level.isClientSide())
+				immediatesourceentity.discard();
 		}
 	}
 }

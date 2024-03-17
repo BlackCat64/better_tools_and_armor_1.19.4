@@ -72,7 +72,7 @@ public class ElectricStaffProjectileEntity extends AbstractArrow implements Item
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		ElectricStaffProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this.getOwner());
+		ElectricStaffProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this, this.getOwner());
 	}
 
 	@Override

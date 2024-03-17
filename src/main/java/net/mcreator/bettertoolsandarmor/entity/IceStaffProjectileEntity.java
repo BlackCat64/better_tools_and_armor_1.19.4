@@ -72,7 +72,7 @@ public class IceStaffProjectileEntity extends AbstractArrow implements ItemSuppl
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		IceStaffProcedure2Procedure.execute(this.level, this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this.getOwner());
+		IceStaffProcedure2Procedure.execute(this.level, this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this, this.getOwner());
 	}
 
 	@Override

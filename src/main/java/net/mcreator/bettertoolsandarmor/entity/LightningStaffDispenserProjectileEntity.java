@@ -72,7 +72,7 @@ public class LightningStaffDispenserProjectileEntity extends AbstractArrow imple
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		LightningStaffDispenserProjectileHitsProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		LightningStaffDispenserProjectileHitsProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this);
 	}
 
 	@Override

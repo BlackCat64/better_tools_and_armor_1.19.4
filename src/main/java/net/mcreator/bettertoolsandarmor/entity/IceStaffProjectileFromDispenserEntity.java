@@ -72,7 +72,7 @@ public class IceStaffProjectileFromDispenserEntity extends AbstractArrow impleme
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		IceStaffProjectileFromDispenserHitsProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity());
+		IceStaffProjectileFromDispenserHitsProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this);
 	}
 
 	@Override

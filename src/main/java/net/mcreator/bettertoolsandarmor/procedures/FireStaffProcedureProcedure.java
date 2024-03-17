@@ -16,8 +16,8 @@ import net.minecraft.advancements.Advancement;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 public class FireStaffProcedureProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
-		if (entity == null || sourceentity == null)
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity, Entity sourceentity) {
+		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
 		double fire_time = 0;
 		boolean play_sfx = false;
@@ -68,6 +68,10 @@ public class FireStaffProcedureProcedure {
 				if (sourceentity instanceof Player _player)
 					_player.getCooldowns().addCooldown(BetterToolsModItems.FIRE_STAFF.get(), 200);
 			}
+		}
+		if (entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) {
+			if (!immediatesourceentity.level.isClientSide())
+				immediatesourceentity.discard();
 		}
 	}
 }
