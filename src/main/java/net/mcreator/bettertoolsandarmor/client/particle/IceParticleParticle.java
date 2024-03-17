@@ -36,6 +36,7 @@ public class IceParticleParticle extends TextureSheetParticle {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
+		this.quadSize *= 1.5f;
 		this.lifetime = 5;
 		this.gravity = 0.5f;
 		this.hasPhysics = true;

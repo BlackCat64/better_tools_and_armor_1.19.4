@@ -7,7 +7,7 @@
     "frameDuration": 1,
     "width": 0.2,
     "height": 0.2,
-    "scale": 1.0,
+    "scale": 1.5,
     "speedFactor": 0.005,
     "gravity": 0.5,
     "maxAge": 5,

@@ -13,7 +13,7 @@ public class FrozenEffectParticlesProcedure {
 			return;
 		if (world.dayTime() % 3 == 0) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ICE_PARTICLE.get()), x, (y + entity.getBbHeight() / 2), z, 1, 0.5, 0.5, 0.5, 0.05);
+				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ICE_PARTICLE.get()), x, (y + entity.getBbHeight() / 2), z, 2, 0.33, 0.5, 0.33, 0.03);
 		}
 		entity.setTicksFrozen(135);
 	}
