@@ -15,6 +15,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
+import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
@@ -43,6 +44,23 @@ public class CrystalliteHelmetSkyFoodRegenProcedure {
 					|| itemstack.getItem() == BetterToolsModItems.EXPERIENCE_POTION.get() || itemstack.getItem() == BetterToolsModItems.ASCENSION_POTION.get() || itemstack.getItem() == BetterToolsModItems.DESCENSION_POTION.get())) {
 				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 0));
+			}
+			{
+				boolean _setval = true;
+				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.last_food_was_carbonated = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else {
+			if (itemstack.getItem().isEdible()) {
+				{
+					boolean _setval = false;
+					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.last_food_was_carbonated = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
 		}
 	}

@@ -32,7 +32,7 @@ public class KillWardenAdvProcedureProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (entity instanceof Warden && sourceentity instanceof Player) {
-			if (entity instanceof ServerPlayer _player) {
+			if (sourceentity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:kill_warden_adv"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 				if (!_ap.isDone()) {

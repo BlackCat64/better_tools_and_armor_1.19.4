@@ -155,5 +155,6 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 				Component.translatable("jei.better_tools.purple_mushroom_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.RECALL_POTION.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.recall_potion_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.LOST_SOULS_POTION.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.lost_souls_potion_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.JEWELLERY_TABLE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.jewellery_table_info"));
 	}
 }

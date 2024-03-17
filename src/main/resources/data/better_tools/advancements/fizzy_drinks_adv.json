@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:echo_shard"
+      "item": "better_tools:crystallite_armor_sky_helmet"
     },
     "title": {
-      "translate": "advancements.kill_warden_adv.title"
+      "translate": "advancements.fizzy_drinks_adv.title"
     },
     "description": {
-      "translate": "advancements.kill_warden_adv.descr"
+      "translate": "advancements.fizzy_drinks_adv.descr"
     },
     "frame": "challenge",
     "show_toast": true,
@@ -15,12 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "kill_warden_adv": {
+    "fizzy_drinks_adv": {
       "trigger": "minecraft:impossible"
     }
   },
   "rewards": {
     "experience": 50
   },
-  "parent": "better_tools:shoot_through_walls_adv"
+  "parent": "better_tools:reflect_projectile_adv"
 }

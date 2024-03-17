@@ -16,7 +16,7 @@
     "rewardRecipes": [],
     "rewardFunction": "No function",
     "rewardXP": 50,
-    "achievementType": "task",
+    "achievementType": "challenge",
     "parent": {
       "value": "CUSTOM:ShootThroughWallsAdv"
     },

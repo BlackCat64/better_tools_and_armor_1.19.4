@@ -87,6 +87,8 @@ public class BetterToolsModVariables {
 			clone.last_death_x = original.last_death_x;
 			clone.last_death_y = original.last_death_y;
 			clone.last_death_z = original.last_death_z;
+			clone.last_food_eaten = original.last_food_eaten;
+			clone.last_food_was_carbonated = original.last_food_was_carbonated;
 			if (!event.isWasDeath()) {
 				clone.time_since_last_hurt = original.time_since_last_hurt;
 				clone.slow_falling_cooldown = original.slow_falling_cooldown;
@@ -106,6 +108,7 @@ public class BetterToolsModVariables {
 				clone.smelting_touch_item_to_smelt = original.smelting_touch_item_to_smelt;
 				clone.smelting_touch_item_to_drop = original.smelting_touch_item_to_drop;
 				clone.ender_titanium_boots_cooldown = original.ender_titanium_boots_cooldown;
+				clone.time_since_non_carbonated_food_eaten = original.time_since_non_carbonated_food_eaten;
 			}
 		}
 	}
@@ -173,6 +176,9 @@ public class BetterToolsModVariables {
 		public double last_death_x = 0;
 		public double last_death_y = 0;
 		public double last_death_z = 0;
+		public double time_since_non_carbonated_food_eaten = 0;
+		public ItemStack last_food_eaten = ItemStack.EMPTY;
+		public boolean last_food_was_carbonated = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -213,6 +219,9 @@ public class BetterToolsModVariables {
 			nbt.putDouble("last_death_x", last_death_x);
 			nbt.putDouble("last_death_y", last_death_y);
 			nbt.putDouble("last_death_z", last_death_z);
+			nbt.putDouble("time_since_non_carbonated_food_eaten", time_since_non_carbonated_food_eaten);
+			nbt.put("last_food_eaten", last_food_eaten.save(new CompoundTag()));
+			nbt.putBoolean("last_food_was_carbonated", last_food_was_carbonated);
 			return nbt;
 		}
 
@@ -250,6 +259,9 @@ public class BetterToolsModVariables {
 			last_death_x = nbt.getDouble("last_death_x");
 			last_death_y = nbt.getDouble("last_death_y");
 			last_death_z = nbt.getDouble("last_death_z");
+			time_since_non_carbonated_food_eaten = nbt.getDouble("time_since_non_carbonated_food_eaten");
+			last_food_eaten = ItemStack.of(nbt.getCompound("last_food_eaten"));
+			last_food_was_carbonated = nbt.getBoolean("last_food_was_carbonated");
 		}
 	}
 
@@ -306,6 +318,9 @@ public class BetterToolsModVariables {
 					variables.last_death_x = message.data.last_death_x;
 					variables.last_death_y = message.data.last_death_y;
 					variables.last_death_z = message.data.last_death_z;
+					variables.time_since_non_carbonated_food_eaten = message.data.time_since_non_carbonated_food_eaten;
+					variables.last_food_eaten = message.data.last_food_eaten;
+					variables.last_food_was_carbonated = message.data.last_food_was_carbonated;
 				}
 			});
 			context.setPacketHandled(true);
