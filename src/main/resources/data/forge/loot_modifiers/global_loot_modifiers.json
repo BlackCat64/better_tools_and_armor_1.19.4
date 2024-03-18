@@ -1,0 +1,8 @@
+{
+  "entries": [
+    "better_tools:supplementaries_inject_uncommon_urn_loot",
+    "better_tools:supplementaries_inject_urn_loot_rare",
+    "better_tools:supplementaries_inject_urn_loot_epic"
+  ],
+  "replace": false
+}

@@ -1,0 +1,8 @@
+{
+  "_fv": 57,
+  "_type": "lootmodifier",
+  "definition": {
+    "modifiedTable": "supplementaries:blocks/urn_loot/uncommon",
+    "modifierTable": "SupplementariesUrnLootUncommon"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "better_tools:better_tools_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "supplementaries:blocks/urn_loot/epic"
+    }
+  ],
+  "lootTable": "better_tools:blocks/supplementaries_urn_loot_epic"
+}
