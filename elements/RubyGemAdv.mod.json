@@ -13,16 +13,7 @@
     "announceToChat": true,
     "hideIfNotCompleted": false,
     "rewardLoot": [],
-    "rewardRecipes": [
-      "RubyToolsPickaxeRecipe",
-      "RubyToolsAxeRecipe",
-      "RubyToolsSwordRecipe",
-      "RubyToolsShovelRecipe",
-      "RubyToolsHoeRecipe",
-      "RubyBlockRecipe",
-      "RubyDaggerRecipe",
-      "RubyIceRecipe"
-    ],
+    "rewardRecipes": [],
     "rewardFunction": "No function",
     "rewardXP": 2,
     "achievementType": "task",

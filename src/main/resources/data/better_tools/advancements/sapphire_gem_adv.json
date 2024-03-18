@@ -33,21 +33,7 @@
     }
   },
   "rewards": {
-    "experience": 5,
-    "recipes": [
-      "better_tools:sapphire_block_recipe",
-      "better_tools:sapphire_block_reverse_recipe",
-      "better_tools:sapphire_sword_recipe",
-      "better_tools:sapphire_pickaxe_recipe",
-      "better_tools:sapphire_axe_recipe",
-      "better_tools:sapphire_shovel_recipe",
-      "better_tools:sapphire_hoe_recipe",
-      "better_tools:sapphire_dagger_recipe",
-      "better_tools:sapphire_helmet_recipe",
-      "better_tools:sapphire_chestplate_recipe",
-      "better_tools:sapphire_legs_recipe",
-      "better_tools:sapphire_boots_recipe"
-    ]
+    "experience": 5
   },
   "parent": "better_tools:progression_section"
 }

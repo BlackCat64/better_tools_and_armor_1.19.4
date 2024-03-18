@@ -19,44 +19,5 @@
     "consumables_section": {
       "trigger": "minecraft:tick"
     }
-  },
-  "rewards": {
-    "experience": 0,
-    "recipes": [
-      "better_tools:golden_potato_recipe",
-      "better_tools:experience_potion_recipe",
-      "better_tools:diamond_apple_recipe",
-      "better_tools:berry_pie_recipe",
-      "better_tools:sugar_clump_recipe",
-      "better_tools:sugar_clump_reverse_recipe",
-      "better_tools:luck_potion_recipe",
-      "better_tools:luck_potion_2_recipe",
-      "better_tools:luck_potion_2_reverse_recipe",
-      "better_tools:blue_slime_block_recipe",
-      "better_tools:blue_slimeball_recipe",
-      "better_tools:blue_slime_stick_recipe",
-      "better_tools:blue_slimeball_smelt",
-      "better_tools:karma_potion_recipe",
-      "better_tools:karma_potion_2_recipe",
-      "better_tools:karma_potion_long_recipe",
-      "better_tools:blank_disc_recipe",
-      "better_tools:shrunk_music_recipe",
-      "better_tools:amogus_recipe",
-      "better_tools:mogus_drip_recipe",
-      "better_tools:master_builder_recipe",
-      "better_tools:block_dance_recipe",
-      "better_tools:glide_recipe",
-      "better_tools:double_jump_potion_recipe",
-      "better_tools:double_jump_potion_long_recipe",
-      "better_tools:double_jump_potion_long_reverse",
-      "better_tools:double_jump_potion_2_recipe",
-      "better_tools:double_jump_potion_2_reverse_recipe",
-      "better_tools:sky_crystal_recipe",
-      "better_tools:swift_swim_potion_recipe",
-      "better_tools:swift_swim_potion_long_recipe",
-      "better_tools:swift_swim_potion_long_reverse_recipe",
-      "better_tools:swift_swim_potion_2_recipe",
-      "better_tools:swift_swim_potion_2_reverse_recipe"
-    ]
   }
 }

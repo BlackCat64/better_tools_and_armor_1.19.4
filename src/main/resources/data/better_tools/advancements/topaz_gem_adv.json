@@ -33,21 +33,7 @@
     }
   },
   "rewards": {
-    "experience": 5,
-    "recipes": [
-      "better_tools:topaz_block_recipe",
-      "better_tools:topaz_block_reverse_recipe",
-      "better_tools:topaz_sword_recipe",
-      "better_tools:topaz_pickaxe_recipe",
-      "better_tools:topaz_axe_recipe",
-      "better_tools:topaz_shovel_recipe",
-      "better_tools:topaz_hoe_recipe",
-      "better_tools:topaz_dagger_recipe",
-      "better_tools:topaz_helmet_recipe",
-      "better_tools:topaz_body_recipe",
-      "better_tools:topaz_legs_recipe",
-      "better_tools:topaz_boots_recipe"
-    ]
+    "experience": 5
   },
   "parent": "better_tools:progression_section"
 }

@@ -33,17 +33,7 @@
     }
   },
   "rewards": {
-    "experience": 2,
-    "recipes": [
-      "better_tools:ruby_tools_pickaxe_recipe",
-      "better_tools:ruby_tools_axe_recipe",
-      "better_tools:ruby_tools_sword_recipe",
-      "better_tools:ruby_tools_shovel_recipe",
-      "better_tools:ruby_tools_hoe_recipe",
-      "better_tools:ruby_block_recipe",
-      "better_tools:ruby_dagger_recipe",
-      "better_tools:ruby_ice_recipe"
-    ]
+    "experience": 2
   },
   "parent": "better_tools:progression_section"
 }

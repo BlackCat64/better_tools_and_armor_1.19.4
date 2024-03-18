@@ -33,32 +33,7 @@
     }
   },
   "rewards": {
-    "experience": 8,
-    "recipes": [
-      "better_tools:nether_diamond_block_recipe",
-      "better_tools:nether_diamond_sword_recipe",
-      "better_tools:nether_diamond_pickaxe_recipe",
-      "better_tools:nether_diamond_axe_recipe",
-      "better_tools:nether_diamond_shovel_recipe",
-      "better_tools:nether_diamond_hoe_recipe",
-      "better_tools:nether_diamond_dagger_recipe",
-      "better_tools:nether_diamond_helmet_recipe",
-      "better_tools:nether_diamond_chestplate_recipe",
-      "better_tools:nether_diamond_leggings_recipe",
-      "better_tools:nether_diamond_boots_recipe",
-      "better_tools:nether_diamond_sword_upgrade",
-      "better_tools:nether_diamond_pickaxe_upgrade",
-      "better_tools:nether_diamond_axe_upgrade",
-      "better_tools:nether_diamond_shovel_upgrade",
-      "better_tools:nether_diamond_hoe_upgrade",
-      "better_tools:nether_diamond_dagger_upgrade",
-      "better_tools:nether_diamond_helmet_upgrade",
-      "better_tools:nether_diamond_chestplate_upgrade",
-      "better_tools:nether_diamond_legs_upgrade",
-      "better_tools:nether_diamond_boots_upgrade",
-      "better_tools:battle_axe_recipe",
-      "better_tools:obsidian_stick_recipe"
-    ]
+    "experience": 8
   },
   "parent": "better_tools:progression_section"
 }
