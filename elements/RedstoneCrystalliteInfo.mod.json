@@ -41,7 +41,8 @@
       }
     ],
     "information": [
-      "§lCrystallite Upgrades: §cRedstone§r",
+      "§lCrystallite Upgrades: ",
+      "§cRedstone§r",
       "",
       "Theme:",
       "HP and Utility"
