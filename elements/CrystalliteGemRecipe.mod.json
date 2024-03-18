@@ -9,7 +9,7 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       {
         "value": "CUSTOM:CrystalliteShards"
@@ -21,10 +21,10 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:CrystalliteShards"
+        "value": ""
       },
       {
-        "value": "CUSTOM:CrystalliteShards"
+        "value": ""
       },
       {
         "value": ""

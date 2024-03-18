@@ -1,17 +1,14 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "group": "crystallite_gem_reverse",
   "category": "misc",
-  "pattern": [
-    "a"
-  ],
-  "key": {
-    "a": {
+  "ingredients": [
+    {
       "item": "better_tools:crystallite_gem"
     }
-  },
+  ],
   "result": {
     "item": "better_tools:crystallite_shards",
-    "count": 4
+    "count": 2
   }
 }

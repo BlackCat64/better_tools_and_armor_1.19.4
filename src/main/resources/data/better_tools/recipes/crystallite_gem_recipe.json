@@ -1,16 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "group": "crystallite_gem",
   "category": "misc",
-  "pattern": [
-    "aa",
-    "aa"
-  ],
-  "key": {
-    "a": {
+  "ingredients": [
+    {
+      "item": "better_tools:crystallite_shards"
+    },
+    {
       "item": "better_tools:crystallite_shards"
     }
-  },
+  ],
   "result": {
     "item": "better_tools:crystallite_gem",
     "count": 1
