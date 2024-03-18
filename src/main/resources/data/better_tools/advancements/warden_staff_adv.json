@@ -22,5 +22,5 @@
   "rewards": {
     "experience": 10
   },
-  "parent": "better_tools:crystallite_gem_adv"
+  "parent": "better_tools:crystallite_upgrades_section"
 }

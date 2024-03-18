@@ -21959,7 +21959,7 @@
           "src/main/resources/data/better_tools/advancements/warden_staff_adv.json"
         ]
       },
-      "path": "~/Advancements/Progression"
+      "path": "~/Advancements/Crystallite Upgrades"
     },
     {
       "name": "ShootThroughWallsAdv",
@@ -21973,7 +21973,7 @@
           "src/main/resources/data/better_tools/advancements/shoot_through_walls_adv.json"
         ]
       },
-      "path": "~/Advancements/Progression"
+      "path": "~/Advancements/Crystallite Upgrades"
     },
     {
       "name": "CharmingAdv",
@@ -24384,7 +24384,7 @@
           "src/main/resources/data/better_tools/advancements/guardian_staff_adv.json"
         ]
       },
-      "path": "~/Advancements/Progression"
+      "path": "~/Advancements/Crystallite Upgrades"
     },
     {
       "name": "GuardianStaffMultikillAdv",
@@ -24398,7 +24398,7 @@
           "src/main/resources/data/better_tools/advancements/guardian_staff_multikill_adv.json"
         ]
       },
-      "path": "~/Advancements/Progression"
+      "path": "~/Advancements/Crystallite Upgrades"
     },
     {
       "name": "CrystalliteArmorGoldReach",
@@ -29317,7 +29317,7 @@
           "src/main/resources/data/better_tools/advancements/kill_warden_adv.json"
         ]
       },
-      "path": "~/Advancements/Progression"
+      "path": "~/Advancements/Crystallite Upgrades"
     },
     {
       "name": "KillWardenAdvProcedure",
@@ -29341,7 +29341,7 @@
           }
         ]
       },
-      "path": "~/Advancements/Progression"
+      "path": "~/Advancements/Crystallite Upgrades"
     },
     {
       "name": "SavedFromVoidAdv",
@@ -29770,6 +29770,26 @@
         ]
       },
       "path": "~/Staffs"
+    },
+    {
+      "name": "CrystalliteUpgradesSectionUnlock",
+      "type": "procedure",
+      "sortid": 1731,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_upgrades_section_unlock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteUpgradesSectionUnlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Advancements/Crystallite Upgrades"
     }
   ],
   "variable_elements": [
