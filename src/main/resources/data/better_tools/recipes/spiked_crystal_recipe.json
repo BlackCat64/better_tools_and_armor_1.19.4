@@ -4,18 +4,18 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "bcb",
-    "aba"
+    "aca",
+    "aaa"
   ],
   "key": {
     "a": {
       "item": "minecraft:flint"
     },
     "b": {
-      "item": "minecraft:netherite_scrap"
+      "item": "minecraft:netherite_ingot"
     },
     "c": {
-      "item": "better_tools:crystallite_shards"
+      "item": "better_tools:crystallite_gem"
     }
   },
   "result": {
