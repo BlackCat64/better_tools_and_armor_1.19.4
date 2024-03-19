@@ -21749,32 +21749,6 @@
       "path": "~/Crystallite/Misc. Charms"
     },
     {
-      "name": "DungeonLoot",
-      "type": "loottable",
-      "sortid": 1338,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dungeon_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/loot_tables/chests/simple_dungeon.json"
-        ]
-      }
-    },
-    {
-      "name": "AbandonedMineshaftLoot",
-      "type": "loottable",
-      "sortid": 1339,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "abandoned_mineshaft_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/loot_tables/chests/abandoned_mineshaft.json"
-        ]
-      }
-    },
-    {
       "name": "Frozen",
       "type": "potioneffect",
       "sortid": 1340,
@@ -29788,6 +29762,84 @@
         ]
       },
       "path": "~/Advancements/Crystallite Upgrades"
+    },
+    {
+      "name": "AncientCityLoot",
+      "type": "loottable",
+      "sortid": 1732,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_city_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_tables/inject/chests/ancient_city.json"
+        ]
+      }
+    },
+    {
+      "name": "ModifyAncientCityLoot",
+      "type": "lootmodifier",
+      "sortid": 1733,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modify_ancient_city_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/modify_ancient_city_loot.json"
+        ]
+      }
+    },
+    {
+      "name": "DungeonTreasureLoot",
+      "type": "loottable",
+      "sortid": 1734,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dungeon_treasure_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_tables/inject/chests/dungeon.json"
+        ]
+      }
+    },
+    {
+      "name": "ModifyDungeonLoot",
+      "type": "lootmodifier",
+      "sortid": 1735,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modify_dungeon_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/modify_dungeon_loot.json"
+        ]
+      }
+    },
+    {
+      "name": "MineshaftTreasureLoot",
+      "type": "loottable",
+      "sortid": 1736,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mineshaft_treasure_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_tables/inject/chests/mineshaft.json"
+        ]
+      }
+    },
+    {
+      "name": "ModifyMineshaftLoot",
+      "type": "lootmodifier",
+      "sortid": 1737,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modify_mineshaft_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/modify_mineshaft_loot.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
