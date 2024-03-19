@@ -29840,6 +29840,84 @@
           "src/main/resources/data/better_tools/loot_modifiers/modify_mineshaft_loot.json"
         ]
       }
+    },
+    {
+      "name": "CharmBaseTreasure",
+      "type": "loottable",
+      "sortid": 1738,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_base_treasure",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_tables/inject/chests/crystallite_charm_base_treasure.json"
+        ]
+      }
+    },
+    {
+      "name": "CharmBaseInDesertTemple",
+      "type": "lootmodifier",
+      "sortid": 1739,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_base_in_desert_temple",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_desert_temple.json"
+        ]
+      }
+    },
+    {
+      "name": "CharmBaseInJungleTemple",
+      "type": "lootmodifier",
+      "sortid": 1740,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_base_in_jungle_temple",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_jungle_temple.json"
+        ]
+      }
+    },
+    {
+      "name": "CharmBaseInWoodlandMansion",
+      "type": "lootmodifier",
+      "sortid": 1741,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_base_in_woodland_mansion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_woodland_mansion.json"
+        ]
+      }
+    },
+    {
+      "name": "CharmBaseInShipwreck",
+      "type": "lootmodifier",
+      "sortid": 1742,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_base_in_shipwreck",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_shipwreck.json"
+        ]
+      }
+    },
+    {
+      "name": "CharmBaseInBastionTreasure",
+      "type": "lootmodifier",
+      "sortid": 1743,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_base_in_bastion_treasure",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_bastion_treasure.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
