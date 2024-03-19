@@ -21759,8 +21759,7 @@
         "files": [
           "src/main/resources/data/minecraft/loot_tables/chests/simple_dungeon.json"
         ]
-      },
-      "path": "~/Crystallite"
+      }
     },
     {
       "name": "AbandonedMineshaftLoot",
@@ -21773,8 +21772,7 @@
         "files": [
           "src/main/resources/data/minecraft/loot_tables/chests/abandoned_mineshaft.json"
         ]
-      },
-      "path": "~/Crystallite"
+      }
     },
     {
       "name": "Frozen",
