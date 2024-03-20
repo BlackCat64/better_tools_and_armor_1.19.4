@@ -21,7 +21,7 @@
         {
           "type": "minecraft:item",
           "name": "better_tools:nether_diamond",
-          "weight": 49,
+          "weight": 99,
           "functions": [
             {
               "function": "set_count",

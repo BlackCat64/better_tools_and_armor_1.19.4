@@ -30,7 +30,7 @@
             "item": {
               "value": "CUSTOM:NetherDiamond"
             },
-            "weight": 49,
+            "weight": 99,
             "minCount": 0,
             "maxCount": 0,
             "minEnchantmentLevel": 0,
