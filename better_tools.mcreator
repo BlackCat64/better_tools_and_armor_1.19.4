@@ -29832,7 +29832,8 @@
         "files": [
           "src/main/resources/data/better_tools/loot_tables/inject/chests/crystallite_charm_base_treasure.json"
         ]
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CharmBaseInDesertTemple",
@@ -29845,7 +29846,8 @@
         "files": [
           "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_desert_temple.json"
         ]
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CharmBaseInJungleTemple",
@@ -29858,7 +29860,8 @@
         "files": [
           "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_jungle_temple.json"
         ]
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CharmBaseInWoodlandMansion",
@@ -29871,7 +29874,8 @@
         "files": [
           "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_woodland_mansion.json"
         ]
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CharmBaseInShipwreck",
@@ -29884,7 +29888,8 @@
         "files": [
           "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_shipwreck.json"
         ]
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CharmBaseInBastionTreasure",
@@ -29897,7 +29902,20 @@
         "files": [
           "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_bastion_treasure.json"
         ]
-      }
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "UtilityPotionsInfo",
+      "type": "jeiinformation",
+      "sortid": 1729,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "utility_potions_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Consumables"
     }
   ],
   "variable_elements": [
@@ -30303,7 +30321,7 @@
       "item.better_tools.crystallite_dagger_nether_diamond": "Crystallite Dagger",
       "advancements.desperation_adv.descr": "Wear a Chestplate enchanted with Desperation while at or below 20% HP",
       "item.better_tools.crystallite_armor_netherite_leggings": "Crystallite Leggings",
-      "jei.better_tools.crystallite_charm_base_info": "Used to craft or smith Crystallite Charms.\nCan be found rarely in Dungeon and Mineshaft chests.\nUse Crystallite Shards to duplicate.\nCan also be duplicated without using Crystallite, through trading with a Jeweller villager.",
+      "jei.better_tools.crystallite_charm_base_info": "Used to craft Crystallite Charms.\nMost likely to be found in Dungeon and Mineshaft chests.\nUse Crystallite Shards to duplicate.\nCan also be duplicated without using Crystallite, through trading with a Jeweller villager.\nSpawns with a 1% chance in chests in these structures:\nDesert Temples, Jungle Temples, Woodland Mansions, Shipwrecks and Bastions.",
       "item.minecraft.potion.effect.double_jump_potion_long": "Potion of Double Jump",
       "block.better_tools.purple_mushroom_block": "Purple Mushroom Block",
       "item.better_tools.end_titanium_helmet": "Ender Titanium Helmet",
@@ -30432,6 +30450,7 @@
       "item.minecraft.splash_potion.effect.double_jump_potion_2": "Splash Potion of Double Jump",
       "item.better_tools.warden_staff": "Warden Staff",
       "item.better_tools.crystallite_gem": "Crystallite Gem",
+      "jei.better_tools.utility_potions_info": "§lUtility Potions§r\n\nThese give various one-off effects when drunk.\nThey spawn in Mineshaft and Dungeon chest loot, or they can be brewed manually.",
       "advancements.freeze_shatter_adv.title": "Ice Breaker",
       "block.better_tools.light_polished_gold_trapdoor": "Light Polished Gold Trapdoor",
       "advancements.aimbot_adv.title": "Literally Aimbot",
