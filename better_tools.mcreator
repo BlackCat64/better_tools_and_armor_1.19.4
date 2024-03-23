@@ -31099,7 +31099,7 @@
       "advancements.ore_location_adv.title": "X-ray Hacks?",
       "block.better_tools.ruby_block": "Ruby Block",
       "gui.better_tools.attributes_viewer.label_empty": "|",
-      "advancements.vein_mining_adv.descr": "Mine 16 ore blocks at once",
+      "advancements.vein_mining_adv.descr": "Mine 10 ore blocks at once",
       "item.better_tools.end_titanium_chestplate": "Ender Titanium Chestplate",
       "item.better_tools.crystallite_axe_netherite": "Crystallite Axe",
       "item.minecraft.potion.effect.swift_swim_potion_long": "Potion of Rapidity",
