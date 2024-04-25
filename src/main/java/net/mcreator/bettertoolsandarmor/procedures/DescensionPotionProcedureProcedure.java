@@ -34,7 +34,7 @@ public class DescensionPotionProcedureProcedure {
 		if (entity.isOnGround()) {
 			y_iterator = y - 3;
 			while (!(!world.getBlockState(BlockPos.containing(x, y_iterator, z)).canOcclude() && !world.getBlockState(BlockPos.containing(x, y_iterator + 1, z)).canOcclude()
-					&& world.getBlockState(BlockPos.containing(x, y_iterator + 2, z)).canOcclude()) && y_iterator >= -64) {
+					&& world.getBlockState(BlockPos.containing(x, y_iterator + 2, z)).canOcclude()) && y_iterator >= min_world_height) {
 				y_iterator = y_iterator - 1;
 			}
 			if (y_iterator >= min_world_height) {
